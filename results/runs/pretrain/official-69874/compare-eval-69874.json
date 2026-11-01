@@ -1,0 +1,272 @@
+{
+ "a": "/workspace/nanochat/dev-ignore/scratch/provisional/eval-69874.json",
+ "b": "official",
+ "rows": {
+  "codegen/humaneval_plus/greedy/humaneval": {
+   "n": 164,
+   "a": 0.2682926829268293,
+   "b": 0.2682926829268293,
+   "diff": 0.0,
+   "se": 0.008649664680624112,
+   "interval": [
+    -0.01695303125237141,
+    0.01695303125237141
+   ],
+   "clusters": null,
+   "corr": 0.9689393939393938,
+   "test": "mcnemar",
+   "p": 1.0,
+   "mde": 0.02423277271087034,
+   "p_holm": 1.0
+  },
+  "codegen/humaneval_plus/greedy/humaneval_plus": {
+   "n": 164,
+   "a": 0.22560975609756098,
+   "b": 0.21951219512195122,
+   "diff": -0.006097560975609756,
+   "se": 0.006097560975609758,
+   "interval": [
+    -0.018048560881341796,
+    0.005853438930122285
+   ],
+   "clusters": null,
+   "corr": 0.9825332674376008,
+   "test": "mcnemar",
+   "p": 1.0,
+   "mde": 0.017082836695810788,
+   "p_holm": 1.0
+  },
+  "codegen/mbpp_plus/greedy/mbpp": {
+   "n": 378,
+   "a": 0.42328042328042326,
+   "b": 0.4444444444444444,
+   "diff": 0.021164021164021163,
+   "se": 0.00830568350089044,
+   "interval": [
+    0.004885180635287357,
+    0.037442861692754986
+   ],
+   "clusters": null,
+   "corr": 0.9470507395124143,
+   "test": "mcnemar",
+   "p": 0.021484375,
+   "mde": 0.023269080122419426,
+   "p_holm": 0.236328125
+  },
+  "codegen/mbpp_plus/greedy/mbpp_plus": {
+   "n": 378,
+   "a": 0.35185185185185186,
+   "b": 0.36507936507936506,
+   "diff": 0.013227513227513227,
+   "se": 0.006975430814364092,
+   "interval": [
+    -0.0004440799452912914,
+    0.02689910640031775
+   ],
+   "clusters": null,
+   "corr": 0.960141409711453,
+   "test": "mcnemar",
+   "p": 0.125,
+   "mde": 0.019542263859492145,
+   "p_holm": 1.0
+  },
+  "codegen/humaneval_cpp/greedy/pass@1": {
+   "n": 161,
+   "a": 0.2236024844720497,
+   "b": 0.21739130434782608,
+   "diff": -0.006211180124223602,
+   "se": 0.006211180124223602,
+   "interval": [
+    -0.018384869469192877,
+    0.005962509220745679
+   ],
+   "clusters": null,
+   "corr": 0.9820927516479788,
+   "test": "mcnemar",
+   "p": 1.0,
+   "mde": 0.017401150423061913,
+   "p_holm": 1.0
+  },
+  "codegen/humaneval_cpp/sampled/pass@1": {
+   "n": 161,
+   "a": 0.22546583850931676,
+   "b": 0.21987577639751552,
+   "diff": -0.005590062111801241,
+   "se": 0.005286691306743943,
+   "interval": [
+    -0.015951786670400363,
+    0.004771662446797885
+   ],
+   "clusters": null,
+   "corr": 0.9831870187535087,
+   "test": "normal",
+   "p": 0.29033643013581467,
+   "mde": 0.014811116217700164,
+   "p_holm": 1.0
+  },
+  "codegen/mbpp_cpp/greedy/pass@1": {
+   "n": 397,
+   "a": 0.3602015113350126,
+   "b": 0.3677581863979849,
+   "diff": 0.007556675062972292,
+   "se": 0.0066619563806106,
+   "interval": [
+    -0.005500519509601294,
+    0.02061386963554588
+   ],
+   "clusters": null,
+   "corr": 0.9620476377617072,
+   "test": "mcnemar",
+   "p": 0.453125,
+   "mde": 0.01866403851963203,
+   "p_holm": 1.0
+  },
+  "codegen/mbpp_cpp/sampled/pass@1": {
+   "n": 397,
+   "a": 0.35025188916876576,
+   "b": 0.35100755667506295,
+   "diff": 0.0007556675062972298,
+   "se": 0.0034899229205128546,
+   "interval": [
+    -0.006084455726728807,
+    0.0075957907393232665
+   ],
+   "clusters": null,
+   "corr": 0.9865189638325307,
+   "test": "normal",
+   "p": 0.8285758722822658,
+   "mde": 0.009777316466462453,
+   "p_holm": 1.0
+  },
+  "codegen/mbpp_3shot/greedy/pass@1": {
+   "n": 500,
+   "a": 0.206,
+   "b": 0.322,
+   "diff": 0.116,
+   "se": 0.017369265464190778,
+   "interval": [
+    0.08195686525227074,
+    0.15004313474772935
+   ],
+   "clusters": null,
+   "corr": 0.6121059232813786,
+   "test": "mcnemar",
+   "p": 4.1079115101301e-11,
+   "mde": 0.04866147737395697,
+   "p_holm": 4.92949381215612e-10
+  },
+  "fim/single-line/psm/greedy/pass@1": {
+   "n": 1033,
+   "a": 0.5537270087124879,
+   "b": 0.5527589545014521,
+   "diff": -0.000968054211035818,
+   "se": 0.003751707964040821,
+   "interval": [
+    -0.00832126670106792,
+    0.006385158278996283
+   ],
+   "clusters": 164,
+   "corr": 0.9745438074695796,
+   "test": "mcnemar",
+   "p": 1.0,
+   "mde": 0.010510729574733464,
+   "p_holm": 1.0
+  },
+  "fim/multi-line/psm/greedy/pass@1": {
+   "n": 5815,
+   "a": 0.26001719690455716,
+   "b": 0.2612209802235598,
+   "diff": 0.0012037833190025795,
+   "se": 0.0014477891190252123,
+   "interval": [
+    -0.0016338312114958094,
+    0.00404139784950097
+   ],
+   "clusters": 164,
+   "corr": 0.967430960732681,
+   "test": "mcnemar",
+   "p": 0.48278855684402133,
+   "mde": 0.004056104594805832,
+   "p_holm": 1.0
+  },
+  "fim/random-span/psm/greedy/pass@1": {
+   "n": 1640,
+   "a": 0.11646341463414635,
+   "b": 0.11341463414634147,
+   "diff": -0.003048780487804878,
+   "se": 0.003701353162673617,
+   "interval": [
+    -0.010303299380708592,
+    0.004205738405098836
+   ],
+   "clusters": 164,
+   "corr": 0.8892136981536181,
+   "test": "mcnemar",
+   "p": 0.5113757815852296,
+   "mde": 0.01036965630756209,
+   "p_holm": 1.0
+  }
+ },
+ "agreement": {
+  "codegen/humaneval_plus/greedy/humaneval": {
+   "both": 43,
+   "a_only": 1,
+   "b_only": 1,
+   "neither": 119
+  },
+  "codegen/humaneval_plus/greedy/humaneval_plus": {
+   "both": 36,
+   "a_only": 1,
+   "b_only": 0,
+   "neither": 127
+  },
+  "codegen/mbpp_plus/greedy/mbpp": {
+   "both": 159,
+   "a_only": 1,
+   "b_only": 9,
+   "neither": 209
+  },
+  "codegen/mbpp_plus/greedy/mbpp_plus": {
+   "both": 132,
+   "a_only": 1,
+   "b_only": 6,
+   "neither": 239
+  },
+  "codegen/humaneval_cpp/greedy/pass@1": {
+   "both": 35,
+   "a_only": 1,
+   "b_only": 0,
+   "neither": 125
+  },
+  "codegen/mbpp_cpp/greedy/pass@1": {
+   "both": 141,
+   "a_only": 2,
+   "b_only": 5,
+   "neither": 249
+  },
+  "codegen/mbpp_3shot/greedy/pass@1": {
+   "both": 91,
+   "a_only": 12,
+   "b_only": 70,
+   "neither": 327
+  },
+  "fim/single-line/psm/greedy/pass@1": {
+   "both": 565,
+   "a_only": 7,
+   "b_only": 6,
+   "neither": 455
+  },
+  "fim/multi-line/psm/greedy/pass@1": {
+   "both": 1479,
+   "a_only": 33,
+   "b_only": 40,
+   "neither": 4263
+  },
+  "fim/random-span/psm/greedy/pass@1": {
+   "both": 170,
+   "a_only": 21,
+   "b_only": 16,
+   "neither": 1433
+  }
+ }
+}

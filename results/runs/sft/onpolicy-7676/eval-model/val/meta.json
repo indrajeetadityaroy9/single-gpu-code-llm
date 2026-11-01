@@ -1,0 +1,35 @@
+{
+ "model": "/workspace/nanochat/artifacts/runs/base=generate=benchmarks,learning_rate_scale=2.7192599564485445,num_checkpoints=10,generate=none,learning_rate_scale=0.06449599703255417,sft_epochs=2.0/onpolicy-7676/model",
+ "split": "val",
+ "held_out": {
+  "rows": 2547,
+  "train_question": 1430,
+  "train_test": 1150,
+  "excluded": 1432,
+  "kept": 1115,
+  "kept_usable": 785
+ },
+ "excluded": 0,
+ "prompts": 512,
+ "sources": {
+  "kodcode/complete": 337,
+  "kodcode/instruct": 155,
+  "kodcode/online_judge": 20
+ },
+ "samples": [
+  [
+   0.6,
+   4
+  ]
+ ],
+ "top_p": 0.95,
+ "max_tokens": 16384,
+ "seed": 0,
+ "chunk": 2048,
+ "loop_stop": 0.99,
+ "responses": 2048,
+ "generated_tokens": 10251756,
+ "generation_seconds": 547,
+ "generated_tokens_per_second": 18741.22684039546,
+ "seconds": 628
+}

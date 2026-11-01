@@ -1,0 +1,1012 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loaded 454 problems
+
+=============
+== PyTorch ==
+=============
+
+NVIDIA Release 26.09 (build 442529826)
+PyTorch Version 2.14.0a0+b2c75dd
+Container image Copyright (c) 2026, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+Copyright (c) 2014-2024 Facebook Inc.
+Copyright (c) 2011-2014 Idiap Research Institute (Ronan Collobert)
+Copyright (c) 2012-2014 Deepmind Technologies    (Koray Kavukcuoglu)
+Copyright (c) 2011-2012 NEC Laboratories America (Koray Kavukcuoglu)
+Copyright (c) 2011-2013 NYU                      (Clement Farabet)
+Copyright (c) 2006-2010 NEC Laboratories America (Ronan Collobert, Leon Bottou, Iain Melvin, Jason Weston)
+Copyright (c) 2006      Idiap Research Institute (Samy Bengio)
+Copyright (c) 2001-2004 Idiap Research Institute (Ronan Collobert, Samy Bengio, Johnny Mariethoz)
+Copyright (c) 2015      Google Inc.
+Copyright (c) 2015      Yangqing Jia
+Copyright (c) 2013-2016 The Caffe contributors
+All rights reserved.
+
+Various files include modifications (c) NVIDIA CORPORATION & AFFILIATES.  All rights reserved.
+
+GOVERNING TERMS: The software and materials are governed by the NVIDIA Software License Agreement
+(found at https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-software-license-agreement/)
+and the Product-Specific Terms for NVIDIA AI Products
+(found at https://www.nvidia.com/en-us/agreements/enterprise-software/product-specific-terms-for-ai-products/).
+
+WARNING: The NVIDIA Driver was not detected.  GPU functionality will not be available.
+   Use the NVIDIA Container Toolkit to start this container with GPU support; see
+   https://docs.nvidia.com/datacenter/cloud-native/ .
+
+NOTE: Mellanox network driver detected, but NVIDIA peer memory driver not
+      detected.  Multi-node communication performance may be reduced.
+
+/workspace/nanochat/artifacts/runs/base=generate=benchmarks,learning_rate_scale=2.7192599564485445,num_checkpoints=10,generate=none,learning_rate_scale=0.06449599703255417,sft_epochs=2.0/official-7676-rl/tokenize-evalplus.json: 542 prompts, 0 with a carriage return (None before normalization); the first's 153 served ids equal
+/workspace/nanochat/artifacts/runs/base=generate=benchmarks,learning_rate_scale=2.7192599564485445,num_checkpoints=10,generate=none,learning_rate_scale=0.06449599703255417,sft_epochs=2.0/official-7676-rl/tokenize-lcb.json: 454 prompts, 0 with a carriage return (177 before normalization); the first's 431 served ids equal
+Greedy decoding ON (--greedy): setting bs=1, n_samples=1, temperature=0
+Initializing a decoder model: nanochat ...
+Sanitized code outputs will be saved to /workspace/nanochat/artifacts/runs/base=generate=benchmarks,learning_rate_scale=2.7192599564485445,num_checkpoints=10,generate=none,learning_rate_scale=0.06449599703255417,sft_epochs=2.0/official-7676-rl/evalplus/humaneval/nanochat_openai_temp_0.0.jsonl
+Raw outputs will be saved to /workspace/nanochat/artifacts/runs/base=generate=benchmarks,learning_rate_scale=2.7192599564485445,num_checkpoints=10,generate=none,learning_rate_scale=0.06449599703255417,sft_epochs=2.0/official-7676-rl/evalplus/humaneval/nanochat_openai_temp_0.0.raw.jsonl
+Codegen: HumanEval/0 @ nanochat
+Codegen: HumanEval/1 @ nanochat
+Codegen: HumanEval/2 @ nanochat
+Codegen: HumanEval/3 @ nanochat
+Codegen: HumanEval/4 @ nanochat
+Codegen: HumanEval/5 @ nanochat
+Codegen: HumanEval/6 @ nanochat
+Codegen: HumanEval/7 @ nanochat
+Codegen: HumanEval/8 @ nanochat
+Codegen: HumanEval/9 @ nanochat
+Codegen: HumanEval/10 @ nanochat
+Codegen: HumanEval/11 @ nanochat
+Codegen: HumanEval/12 @ nanochat
+Codegen: HumanEval/13 @ nanochat
+Codegen: HumanEval/14 @ nanochat
+Codegen: HumanEval/15 @ nanochat
+Codegen: HumanEval/16 @ nanochat
+Codegen: HumanEval/17 @ nanochat
+Codegen: HumanEval/18 @ nanochat
+Codegen: HumanEval/19 @ nanochat
+Codegen: HumanEval/20 @ nanochat
+Codegen: HumanEval/21 @ nanochat
+Codegen: HumanEval/22 @ nanochat
+Codegen: HumanEval/23 @ nanochat
+Codegen: HumanEval/24 @ nanochat
+Codegen: HumanEval/25 @ nanochat
+Codegen: HumanEval/26 @ nanochat
+Codegen: HumanEval/27 @ nanochat
+Codegen: HumanEval/28 @ nanochat
+Codegen: HumanEval/29 @ nanochat
+Codegen: HumanEval/30 @ nanochat
+Codegen: HumanEval/31 @ nanochat
+Codegen: HumanEval/32 @ nanochat
+Codegen: HumanEval/33 @ nanochat
+Codegen: HumanEval/34 @ nanochat
+Codegen: HumanEval/35 @ nanochat
+Codegen: HumanEval/36 @ nanochat
+Codegen: HumanEval/37 @ nanochat
+Codegen: HumanEval/38 @ nanochat
+Codegen: HumanEval/39 @ nanochat
+Codegen: HumanEval/40 @ nanochat
+Codegen: HumanEval/41 @ nanochat
+Codegen: HumanEval/42 @ nanochat
+Codegen: HumanEval/43 @ nanochat
+Codegen: HumanEval/44 @ nanochat
+Codegen: HumanEval/45 @ nanochat
+Codegen: HumanEval/46 @ nanochat
+Codegen: HumanEval/47 @ nanochat
+Codegen: HumanEval/48 @ nanochat
+Codegen: HumanEval/49 @ nanochat
+Codegen: HumanEval/50 @ nanochat
+Codegen: HumanEval/51 @ nanochat
+Codegen: HumanEval/52 @ nanochat
+Codegen: HumanEval/53 @ nanochat
+Codegen: HumanEval/54 @ nanochat
+Codegen: HumanEval/55 @ nanochat
+Codegen: HumanEval/56 @ nanochat
+Codegen: HumanEval/57 @ nanochat
+Codegen: HumanEval/58 @ nanochat
+Codegen: HumanEval/59 @ nanochat
+Codegen: HumanEval/60 @ nanochat
+Codegen: HumanEval/61 @ nanochat
+Codegen: HumanEval/62 @ nanochat
+Codegen: HumanEval/63 @ nanochat
+Codegen: HumanEval/64 @ nanochat
+Codegen: HumanEval/65 @ nanochat
+Codegen: HumanEval/66 @ nanochat
+Codegen: HumanEval/67 @ nanochat
+Codegen: HumanEval/68 @ nanochat
+Codegen: HumanEval/69 @ nanochat
+Codegen: HumanEval/70 @ nanochat
+Codegen: HumanEval/71 @ nanochat
+Codegen: HumanEval/72 @ nanochat
+Codegen: HumanEval/73 @ nanochat
+Codegen: HumanEval/74 @ nanochat
+Codegen: HumanEval/75 @ nanochat
+Codegen: HumanEval/76 @ nanochat
+Codegen: HumanEval/77 @ nanochat
+<unknown>:2: SyntaxWarning: invalid escape sequence '\('
+<unknown>:2: SyntaxWarning: invalid escape sequence '\('
+<unknown>:2: SyntaxWarning: invalid escape sequence '\('
+<unknown>:2: SyntaxWarning: invalid escape sequence '\('
+<unknown>:2: SyntaxWarning: invalid escape sequence '\('
+<unknown>:2: SyntaxWarning: invalid escape sequence '\('
+<unknown>:2: SyntaxWarning: invalid escape sequence '\('
+<unknown>:2: SyntaxWarning: invalid escape sequence '\('
+<unknown>:2: SyntaxWarning: invalid escape sequence '\('
+<unknown>:2: SyntaxWarning: invalid escape sequence '\('
+<unknown>:2: SyntaxWarning: invalid escape sequence '\('
+<unknown>:2: SyntaxWarning: invalid escape sequence '\('
+<unknown>:2: SyntaxWarning: invalid escape sequence '\('
+<unknown>:2: SyntaxWarning: invalid escape sequence '\('
+<unknown>:2: SyntaxWarning: invalid escape sequence '\('
+<unknown>:2: SyntaxWarning: invalid escape sequence '\('
+<unknown>:2: SyntaxWarning: invalid escape sequence '\('
+<unknown>:2: SyntaxWarning: invalid escape sequence '\('
+<unknown>:2: SyntaxWarning: invalid escape sequence '\('
+<unknown>:2: SyntaxWarning: invalid escape sequence '\('
+<unknown>:2: SyntaxWarning: invalid escape sequence '\('
+<unknown>:2: SyntaxWarning: invalid escape sequence '\('
+<unknown>:2: SyntaxWarning: invalid escape sequence '\('
+Codegen: HumanEval/78 @ nanochat
+Codegen: HumanEval/79 @ nanochat
+Codegen: HumanEval/80 @ nanochat
+Codegen: HumanEval/81 @ nanochat
+Codegen: HumanEval/82 @ nanochat
+Codegen: HumanEval/83 @ nanochat
+Codegen: HumanEval/84 @ nanochat
+Codegen: HumanEval/85 @ nanochat
+Codegen: HumanEval/86 @ nanochat
+Codegen: HumanEval/87 @ nanochat
+Codegen: HumanEval/88 @ nanochat
+Codegen: HumanEval/89 @ nanochat
+Codegen: HumanEval/90 @ nanochat
+Codegen: HumanEval/91 @ nanochat
+Codegen: HumanEval/92 @ nanochat
+Codegen: HumanEval/93 @ nanochat
+Codegen: HumanEval/94 @ nanochat
+Codegen: HumanEval/95 @ nanochat
+Codegen: HumanEval/96 @ nanochat
+Codegen: HumanEval/97 @ nanochat
+Codegen: HumanEval/98 @ nanochat
+Codegen: HumanEval/99 @ nanochat
+Codegen: HumanEval/100 @ nanochat
+Codegen: HumanEval/101 @ nanochat
+Codegen: HumanEval/102 @ nanochat
+Codegen: HumanEval/103 @ nanochat
+Codegen: HumanEval/104 @ nanochat
+Codegen: HumanEval/105 @ nanochat
+Codegen: HumanEval/106 @ nanochat
+Codegen: HumanEval/107 @ nanochat
+Codegen: HumanEval/108 @ nanochat
+Codegen: HumanEval/109 @ nanochat
+Codegen: HumanEval/110 @ nanochat
+Codegen: HumanEval/111 @ nanochat
+Codegen: HumanEval/112 @ nanochat
+Codegen: HumanEval/113 @ nanochat
+Codegen: HumanEval/114 @ nanochat
+Codegen: HumanEval/115 @ nanochat
+Codegen: HumanEval/116 @ nanochat
+Codegen: HumanEval/117 @ nanochat
+Codegen: HumanEval/118 @ nanochat
+Codegen: HumanEval/119 @ nanochat
+Codegen: HumanEval/120 @ nanochat
+Codegen: HumanEval/121 @ nanochat
+Codegen: HumanEval/122 @ nanochat
+Codegen: HumanEval/123 @ nanochat
+Codegen: HumanEval/124 @ nanochat
+Codegen: HumanEval/125 @ nanochat
+Codegen: HumanEval/126 @ nanochat
+Codegen: HumanEval/127 @ nanochat
+Codegen: HumanEval/128 @ nanochat
+Codegen: HumanEval/129 @ nanochat
+Codegen: HumanEval/130 @ nanochat
+Codegen: HumanEval/131 @ nanochat
+Codegen: HumanEval/132 @ nanochat
+Codegen: HumanEval/133 @ nanochat
+Codegen: HumanEval/134 @ nanochat
+Codegen: HumanEval/135 @ nanochat
+Codegen: HumanEval/136 @ nanochat
+Codegen: HumanEval/137 @ nanochat
+Codegen: HumanEval/138 @ nanochat
+Codegen: HumanEval/139 @ nanochat
+Codegen: HumanEval/140 @ nanochat
+Codegen: HumanEval/141 @ nanochat
+Codegen: HumanEval/142 @ nanochat
+Codegen: HumanEval/143 @ nanochat
+Codegen: HumanEval/144 @ nanochat
+Codegen: HumanEval/145 @ nanochat
+Codegen: HumanEval/146 @ nanochat
+Codegen: HumanEval/147 @ nanochat
+Codegen: HumanEval/148 @ nanochat
+Codegen: HumanEval/149 @ nanochat
+Codegen: HumanEval/150 @ nanochat
+Codegen: HumanEval/151 @ nanochat
+Codegen: HumanEval/152 @ nanochat
+Codegen: HumanEval/153 @ nanochat
+Codegen: HumanEval/154 @ nanochat
+Codegen: HumanEval/155 @ nanochat
+Codegen: HumanEval/156 @ nanochat
+Codegen: HumanEval/157 @ nanochat
+Codegen: HumanEval/158 @ nanochat
+Codegen: HumanEval/159 @ nanochat
+Codegen: HumanEval/160 @ nanochat
+Codegen: HumanEval/161 @ nanochat
+Codegen: HumanEval/162 @ nanochat
+Codegen: HumanEval/163 @ nanochat
+OpenAIChatDecoder •100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 164/164 • 0:19:25
+/workspace/nanochat/artifacts/runs/base=generate=benchmarks,learning_rate_scale=2.7192599564485445,num_checkpoints=10,generate=none,learning_rate_scale=0.06449599703255417,sft_epochs=2.0/official-7676-rl/evalplus/humaneval/nanochat_openai_temp_0.0.jsonl
+Setting batch size to 20
+Initializing a decoder model: nanochat ...
+Sanitized code outputs will be saved to /workspace/nanochat/artifacts/runs/base=generate=benchmarks,learning_rate_scale=2.7192599564485445,num_checkpoints=10,generate=none,learning_rate_scale=0.06449599703255417,sft_epochs=2.0/official-7676-rl/evalplus/humaneval/nanochat_openai_temp_0.6.jsonl
+Raw outputs will be saved to /workspace/nanochat/artifacts/runs/base=generate=benchmarks,learning_rate_scale=2.7192599564485445,num_checkpoints=10,generate=none,learning_rate_scale=0.06449599703255417,sft_epochs=2.0/official-7676-rl/evalplus/humaneval/nanochat_openai_temp_0.6.raw.jsonl
+Codegen: HumanEval/0 @ nanochat
+Codegen: HumanEval/1 @ nanochat
+Codegen: HumanEval/2 @ nanochat
+Codegen: HumanEval/3 @ nanochat
+Codegen: HumanEval/4 @ nanochat
+Codegen: HumanEval/5 @ nanochat
+Codegen: HumanEval/6 @ nanochat
+Codegen: HumanEval/7 @ nanochat
+Codegen: HumanEval/8 @ nanochat
+Codegen: HumanEval/9 @ nanochat
+Codegen: HumanEval/10 @ nanochat
+Codegen: HumanEval/11 @ nanochat
+Codegen: HumanEval/12 @ nanochat
+Codegen: HumanEval/13 @ nanochat
+Codegen: HumanEval/14 @ nanochat
+Codegen: HumanEval/15 @ nanochat
+Codegen: HumanEval/16 @ nanochat
+Codegen: HumanEval/17 @ nanochat
+Codegen: HumanEval/18 @ nanochat
+Codegen: HumanEval/19 @ nanochat
+Codegen: HumanEval/20 @ nanochat
+Codegen: HumanEval/21 @ nanochat
+Codegen: HumanEval/22 @ nanochat
+Codegen: HumanEval/23 @ nanochat
+Codegen: HumanEval/24 @ nanochat
+Codegen: HumanEval/25 @ nanochat
+Codegen: HumanEval/26 @ nanochat
+Codegen: HumanEval/27 @ nanochat
+Codegen: HumanEval/28 @ nanochat
+Codegen: HumanEval/29 @ nanochat
+Codegen: HumanEval/30 @ nanochat
+Codegen: HumanEval/31 @ nanochat
+Codegen: HumanEval/32 @ nanochat
+Codegen: HumanEval/33 @ nanochat
+Codegen: HumanEval/34 @ nanochat
+Codegen: HumanEval/35 @ nanochat
+Codegen: HumanEval/36 @ nanochat
+Codegen: HumanEval/37 @ nanochat
+Codegen: HumanEval/38 @ nanochat
+Codegen: HumanEval/39 @ nanochat
+Codegen: HumanEval/40 @ nanochat
+Codegen: HumanEval/41 @ nanochat
+Codegen: HumanEval/42 @ nanochat
+Codegen: HumanEval/43 @ nanochat
+Codegen: HumanEval/44 @ nanochat
+Codegen: HumanEval/45 @ nanochat
+Codegen: HumanEval/46 @ nanochat
+Codegen: HumanEval/47 @ nanochat
+Codegen: HumanEval/48 @ nanochat
+Codegen: HumanEval/49 @ nanochat
+Codegen: HumanEval/50 @ nanochat
+Codegen: HumanEval/51 @ nanochat
+Codegen: HumanEval/52 @ nanochat
+Codegen: HumanEval/53 @ nanochat
+Codegen: HumanEval/54 @ nanochat
+Codegen: HumanEval/55 @ nanochat
+Codegen: HumanEval/56 @ nanochat
+Codegen: HumanEval/57 @ nanochat
+Codegen: HumanEval/58 @ nanochat
+Codegen: HumanEval/59 @ nanochat
+Codegen: HumanEval/60 @ nanochat
+Codegen: HumanEval/61 @ nanochat
+Codegen: HumanEval/62 @ nanochat
+Codegen: HumanEval/63 @ nanochat
+Codegen: HumanEval/64 @ nanochat
+Codegen: HumanEval/65 @ nanochat
+Codegen: HumanEval/66 @ nanochat
+Codegen: HumanEval/67 @ nanochat
+Codegen: HumanEval/68 @ nanochat
+Codegen: HumanEval/69 @ nanochat
+Codegen: HumanEval/70 @ nanochat
+Codegen: HumanEval/71 @ nanochat
+Codegen: HumanEval/72 @ nanochat
+Codegen: HumanEval/73 @ nanochat
+Codegen: HumanEval/74 @ nanochat
+Codegen: HumanEval/75 @ nanochat
+Codegen: HumanEval/76 @ nanochat
+<unknown>:2: SyntaxWarning: invalid escape sequence '\('
+<unknown>:2: SyntaxWarning: invalid escape sequence '\('
+<unknown>:2: SyntaxWarning: invalid escape sequence '\('
+<unknown>:2: SyntaxWarning: invalid escape sequence '\('
+<unknown>:2: SyntaxWarning: invalid escape sequence '\('
+<unknown>:2: SyntaxWarning: invalid escape sequence '\('
+<unknown>:2: SyntaxWarning: invalid escape sequence '\('
+<unknown>:2: SyntaxWarning: invalid escape sequence '\('
+Codegen: HumanEval/77 @ nanochat
+Codegen: HumanEval/78 @ nanochat
+Codegen: HumanEval/79 @ nanochat
+Codegen: HumanEval/80 @ nanochat
+Codegen: HumanEval/81 @ nanochat
+Codegen: HumanEval/82 @ nanochat
+Codegen: HumanEval/83 @ nanochat
+Codegen: HumanEval/84 @ nanochat
+Codegen: HumanEval/85 @ nanochat
+Codegen: HumanEval/86 @ nanochat
+Codegen: HumanEval/87 @ nanochat
+Codegen: HumanEval/88 @ nanochat
+Codegen: HumanEval/89 @ nanochat
+Codegen: HumanEval/90 @ nanochat
+Codegen: HumanEval/91 @ nanochat
+Codegen: HumanEval/92 @ nanochat
+Codegen: HumanEval/93 @ nanochat
+Codegen: HumanEval/94 @ nanochat
+Codegen: HumanEval/95 @ nanochat
+Codegen: HumanEval/96 @ nanochat
+Codegen: HumanEval/97 @ nanochat
+Codegen: HumanEval/98 @ nanochat
+Codegen: HumanEval/99 @ nanochat
+Codegen: HumanEval/100 @ nanochat
+Codegen: HumanEval/101 @ nanochat
+Codegen: HumanEval/102 @ nanochat
+Codegen: HumanEval/103 @ nanochat
+Codegen: HumanEval/104 @ nanochat
+Codegen: HumanEval/105 @ nanochat
+Codegen: HumanEval/106 @ nanochat
+Codegen: HumanEval/107 @ nanochat
+Codegen: HumanEval/108 @ nanochat
+Codegen: HumanEval/109 @ nanochat
+Codegen: HumanEval/110 @ nanochat
+Codegen: HumanEval/111 @ nanochat
+Codegen: HumanEval/112 @ nanochat
+Codegen: HumanEval/113 @ nanochat
+Codegen: HumanEval/114 @ nanochat
+Codegen: HumanEval/115 @ nanochat
+Codegen: HumanEval/116 @ nanochat
+Codegen: HumanEval/117 @ nanochat
+Codegen: HumanEval/118 @ nanochat
+Codegen: HumanEval/119 @ nanochat
+Codegen: HumanEval/120 @ nanochat
+Codegen: HumanEval/121 @ nanochat
+Codegen: HumanEval/122 @ nanochat
+Codegen: HumanEval/123 @ nanochat
+Codegen: HumanEval/124 @ nanochat
+Codegen: HumanEval/125 @ nanochat
+Codegen: HumanEval/126 @ nanochat
+Codegen: HumanEval/127 @ nanochat
+Codegen: HumanEval/128 @ nanochat
+Codegen: HumanEval/129 @ nanochat
+Codegen: HumanEval/130 @ nanochat
+Codegen: HumanEval/131 @ nanochat
+Codegen: HumanEval/132 @ nanochat
+Codegen: HumanEval/133 @ nanochat
+Codegen: HumanEval/134 @ nanochat
+Codegen: HumanEval/135 @ nanochat
+Codegen: HumanEval/136 @ nanochat
+Codegen: HumanEval/137 @ nanochat
+Codegen: HumanEval/138 @ nanochat
+Codegen: HumanEval/139 @ nanochat
+Codegen: HumanEval/140 @ nanochat
+Codegen: HumanEval/141 @ nanochat
+Codegen: HumanEval/142 @ nanochat
+Codegen: HumanEval/143 @ nanochat
+Codegen: HumanEval/144 @ nanochat
+Codegen: HumanEval/145 @ nanochat
+Codegen: HumanEval/146 @ nanochat
+Codegen: HumanEval/147 @ nanochat
+Codegen: HumanEval/148 @ nanochat
+Codegen: HumanEval/149 @ nanochat
+Codegen: HumanEval/150 @ nanochat
+Codegen: HumanEval/151 @ nanochat
+Codegen: HumanEval/152 @ nanochat
+Codegen: HumanEval/153 @ nanochat
+Codegen: HumanEval/154 @ nanochat
+Codegen: HumanEval/155 @ nanochat
+Codegen: HumanEval/156 @ nanochat
+Codegen: HumanEval/157 @ nanochat
+Codegen: HumanEval/158 @ nanochat
+Codegen: HumanEval/159 @ nanochat
+Codegen: HumanEval/160 @ nanochat
+Codegen: HumanEval/161 @ nanochat
+Codegen: HumanEval/162 @ nanochat
+Codegen: HumanEval/163 @ nanochat
+OpenAIChatDecoder •100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 164/164 • 1:04:23
+/workspace/nanochat/artifacts/runs/base=generate=benchmarks,learning_rate_scale=2.7192599564485445,num_checkpoints=10,generate=none,learning_rate_scale=0.06449599703255417,sft_epochs=2.0/official-7676-rl/evalplus/humaneval/nanochat_openai_temp_0.6.jsonl
+Load from ground-truth from /workspace/nanochat/artifacts/cache/evalplus/fe585eb4df8c88d844eeb463ea4d0302.pkl
+Reading samples...
+0it [00:00, ?it/s]140it [00:00, 1157.86it/s]164it [00:00, 1324.37it/s]
+  0%|          | 0/164 [00:00<?, ?it/s] 13%|█▎        | 22/164 [00:00<00:00, 211.42it/s] 43%|████▎     | 70/164 [00:00<00:00, 276.44it/s] 60%|██████    | 99/164 [00:00<00:00, 221.26it/s] 87%|████████▋ | 143/164 [00:00<00:00, 277.67it/s]100%|██████████| 164/164 [00:01<00:00, 90.01it/s] 
+humaneval (base tests)
+pass@1:	0.409
+humaneval+ (base + extra tests)
+pass@1:	0.384
+Load from ground-truth from /workspace/nanochat/artifacts/cache/evalplus/fe585eb4df8c88d844eeb463ea4d0302.pkl
+Reading samples...
+0it [00:00, ?it/s]140it [00:00, 1177.96it/s]258it [00:00, 1142.33it/s]3280it [00:00, 12361.05it/s]
+  0%|          | 0/3280 [00:00<?, ?it/s]  3%|▎         | 106/3280 [00:00<00:03, 1019.85it/s]  6%|▋         | 208/3280 [00:00<00:06, 448.00it/s]   8%|▊         | 274/3280 [00:00<00:06, 500.50it/s] 10%|█         | 337/3280 [00:01<00:21, 135.31it/s] 12%|█▏        | 382/3280 [00:01<00:17, 161.57it/s] 13%|█▎        | 422/3280 [00:01<00:15, 186.13it/s] 14%|█▍        | 466/3280 [00:02<00:12, 220.17it/s] 15%|█▌        | 506/3280 [00:02<00:14, 187.13it/s] 16%|█▋        | 538/3280 [00:02<00:14, 191.43it/s] 17%|█▋        | 567/3280 [00:02<00:13, 200.64it/s] 18%|█▊        | 601/3280 [00:02<00:11, 224.72it/s] 20%|█▉        | 651/3280 [00:02<00:09, 279.30it/s] 22%|██▏       | 713/3280 [00:02<00:07, 356.60it/s] 24%|██▎       | 774/3280 [00:03<00:06, 417.59it/s] 25%|██▌       | 823/3280 [00:03<00:05, 412.78it/s] 26%|██▋       | 869/3280 [00:03<00:06, 392.77it/s] 28%|██▊       | 917/3280 [00:03<00:05, 414.22it/s] 29%|██▉       | 962/3280 [00:03<00:05, 422.43it/s] 31%|███       | 1015/3280 [00:03<00:05, 451.58it/s] 33%|███▎      | 1071/3280 [00:03<00:04, 482.10it/s] 35%|███▍      | 1139/3280 [00:03<00:04, 531.66it/s] 37%|███▋      | 1206/3280 [00:03<00:03, 570.46it/s] 39%|███▉      | 1271/3280 [00:03<00:03, 583.07it/s] 41%|████      | 1339/3280 [00:04<00:03, 609.36it/s] 43%|████▎     | 1401/3280 [00:04<00:03, 592.65it/s] 45%|████▍     | 1461/3280 [00:04<00:03, 586.75it/s] 47%|████▋     | 1527/3280 [00:04<00:02, 606.01it/s] 48%|████▊     | 1588/3280 [00:04<00:02, 573.31it/s] 50%|█████     | 1648/3280 [00:04<00:02, 572.46it/s] 52%|█████▏    | 1706/3280 [00:04<00:03, 500.73it/s] 54%|█████▎    | 1758/3280 [00:04<00:03, 465.80it/s] 55%|█████▌    | 1806/3280 [00:05<00:03, 453.72it/s] 56%|█████▋    | 1853/3280 [00:05<00:03, 442.04it/s] 58%|█████▊    | 1898/3280 [00:07<00:17, 77.02it/s]  59%|█████▉    | 1931/3280 [00:07<00:15, 89.05it/s] 60%|██████    | 1982/3280 [00:07<00:10, 121.23it/s] 61%|██████▏   | 2017/3280 [00:07<00:09, 128.03it/s] 63%|██████▎   | 2054/3280 [00:07<00:07, 154.26it/s] 64%|██████▎   | 2085/3280 [00:07<00:07, 164.32it/s] 65%|██████▍   | 2123/3280 [00:07<00:05, 196.37it/s] 66%|██████▌   | 2158/3280 [00:08<00:05, 222.91it/s] 67%|██████▋   | 2198/3280 [00:08<00:04, 257.13it/s] 68%|██████▊   | 2234/3280 [00:08<00:03, 277.36it/s] 69%|██████▉   | 2272/3280 [00:08<00:03, 299.47it/s] 70%|███████   | 2312/3280 [00:08<00:02, 324.90it/s] 72%|███████▏  | 2362/3280 [00:08<00:02, 370.46it/s] 74%|███████▍  | 2429/3280 [00:08<00:01, 450.89it/s] 76%|███████▋  | 2502/3280 [00:08<00:01, 529.26it/s] 78%|███████▊  | 2558/3280 [00:08<00:01, 407.27it/s] 79%|███████▉  | 2605/3280 [00:10<00:05, 113.54it/s] 80%|████████  | 2639/3280 [00:11<00:09, 69.78it/s]  83%|████████▎ | 2725/3280 [00:11<00:04, 116.22it/s] 86%|████████▌ | 2818/3280 [00:11<00:02, 179.36it/s] 89%|████████▉ | 2915/3280 [00:11<00:01, 258.11it/s] 91%|█████████▏| 2999/3280 [00:11<00:00, 329.08it/s] 94%|█████████▍| 3091/3280 [00:11<00:00, 417.35it/s] 97%|█████████▋| 3178/3280 [00:11<00:00, 496.50it/s]100%|█████████▉| 3266/3280 [00:12<00:00, 572.60it/s]100%|██████████| 3280/3280 [00:19<00:00, 166.42it/s]
+humaneval (base tests)
+pass@1:	0.409
+pass@10:	0.617
+humaneval+ (base + extra tests)
+pass@1:	0.372
+pass@10:	0.556
+Greedy decoding ON (--greedy): setting bs=1, n_samples=1, temperature=0
+Initializing a decoder model: nanochat ...
+Sanitized code outputs will be saved to /workspace/nanochat/artifacts/runs/base=generate=benchmarks,learning_rate_scale=2.7192599564485445,num_checkpoints=10,generate=none,learning_rate_scale=0.06449599703255417,sft_epochs=2.0/official-7676-rl/evalplus/mbpp/nanochat_openai_temp_0.0.jsonl
+Raw outputs will be saved to /workspace/nanochat/artifacts/runs/base=generate=benchmarks,learning_rate_scale=2.7192599564485445,num_checkpoints=10,generate=none,learning_rate_scale=0.06449599703255417,sft_epochs=2.0/official-7676-rl/evalplus/mbpp/nanochat_openai_temp_0.0.raw.jsonl
+Codegen: Mbpp/2 @ nanochat
+Codegen: Mbpp/3 @ nanochat
+Codegen: Mbpp/4 @ nanochat
+Codegen: Mbpp/6 @ nanochat
+Codegen: Mbpp/7 @ nanochat
+Codegen: Mbpp/8 @ nanochat
+Codegen: Mbpp/9 @ nanochat
+Codegen: Mbpp/11 @ nanochat
+Codegen: Mbpp/12 @ nanochat
+Codegen: Mbpp/14 @ nanochat
+Codegen: Mbpp/16 @ nanochat
+Codegen: Mbpp/17 @ nanochat
+Codegen: Mbpp/18 @ nanochat
+Codegen: Mbpp/19 @ nanochat
+Codegen: Mbpp/20 @ nanochat
+Codegen: Mbpp/56 @ nanochat
+Codegen: Mbpp/57 @ nanochat
+Codegen: Mbpp/58 @ nanochat
+Codegen: Mbpp/59 @ nanochat
+Codegen: Mbpp/61 @ nanochat
+Codegen: Mbpp/62 @ nanochat
+Codegen: Mbpp/63 @ nanochat
+Codegen: Mbpp/64 @ nanochat
+Codegen: Mbpp/65 @ nanochat
+Codegen: Mbpp/66 @ nanochat
+Codegen: Mbpp/67 @ nanochat
+Codegen: Mbpp/68 @ nanochat
+Codegen: Mbpp/69 @ nanochat
+Codegen: Mbpp/70 @ nanochat
+Codegen: Mbpp/71 @ nanochat
+Codegen: Mbpp/72 @ nanochat
+Codegen: Mbpp/74 @ nanochat
+Codegen: Mbpp/75 @ nanochat
+Codegen: Mbpp/77 @ nanochat
+Codegen: Mbpp/79 @ nanochat
+Codegen: Mbpp/80 @ nanochat
+Codegen: Mbpp/82 @ nanochat
+Codegen: Mbpp/84 @ nanochat
+Codegen: Mbpp/85 @ nanochat
+Codegen: Mbpp/86 @ nanochat
+Codegen: Mbpp/87 @ nanochat
+Codegen: Mbpp/88 @ nanochat
+Codegen: Mbpp/89 @ nanochat
+Codegen: Mbpp/90 @ nanochat
+Codegen: Mbpp/91 @ nanochat
+Codegen: Mbpp/92 @ nanochat
+Codegen: Mbpp/93 @ nanochat
+Codegen: Mbpp/94 @ nanochat
+Codegen: Mbpp/95 @ nanochat
+Codegen: Mbpp/96 @ nanochat
+Codegen: Mbpp/97 @ nanochat
+Codegen: Mbpp/98 @ nanochat
+Codegen: Mbpp/99 @ nanochat
+Codegen: Mbpp/100 @ nanochat
+Codegen: Mbpp/101 @ nanochat
+Codegen: Mbpp/102 @ nanochat
+Codegen: Mbpp/103 @ nanochat
+Codegen: Mbpp/104 @ nanochat
+Codegen: Mbpp/105 @ nanochat
+Codegen: Mbpp/106 @ nanochat
+Codegen: Mbpp/108 @ nanochat
+Codegen: Mbpp/109 @ nanochat
+Codegen: Mbpp/111 @ nanochat
+Codegen: Mbpp/113 @ nanochat
+Codegen: Mbpp/116 @ nanochat
+Codegen: Mbpp/118 @ nanochat
+Codegen: Mbpp/119 @ nanochat
+Codegen: Mbpp/120 @ nanochat
+Codegen: Mbpp/123 @ nanochat
+Codegen: Mbpp/124 @ nanochat
+Codegen: Mbpp/125 @ nanochat
+Codegen: Mbpp/126 @ nanochat
+Codegen: Mbpp/127 @ nanochat
+Codegen: Mbpp/128 @ nanochat
+Codegen: Mbpp/129 @ nanochat
+Codegen: Mbpp/130 @ nanochat
+Codegen: Mbpp/131 @ nanochat
+Codegen: Mbpp/132 @ nanochat
+Codegen: Mbpp/133 @ nanochat
+Codegen: Mbpp/135 @ nanochat
+Codegen: Mbpp/137 @ nanochat
+Codegen: Mbpp/138 @ nanochat
+Codegen: Mbpp/139 @ nanochat
+Codegen: Mbpp/140 @ nanochat
+Codegen: Mbpp/141 @ nanochat
+Codegen: Mbpp/142 @ nanochat
+Codegen: Mbpp/145 @ nanochat
+Codegen: Mbpp/160 @ nanochat
+Codegen: Mbpp/161 @ nanochat
+Codegen: Mbpp/162 @ nanochat
+Codegen: Mbpp/165 @ nanochat
+Codegen: Mbpp/166 @ nanochat
+Codegen: Mbpp/167 @ nanochat
+Codegen: Mbpp/168 @ nanochat
+Codegen: Mbpp/170 @ nanochat
+Codegen: Mbpp/171 @ nanochat
+Codegen: Mbpp/172 @ nanochat
+Codegen: Mbpp/222 @ nanochat
+Codegen: Mbpp/223 @ nanochat
+Codegen: Mbpp/224 @ nanochat
+Codegen: Mbpp/226 @ nanochat
+Codegen: Mbpp/227 @ nanochat
+Codegen: Mbpp/230 @ nanochat
+Codegen: Mbpp/232 @ nanochat
+Codegen: Mbpp/233 @ nanochat
+Codegen: Mbpp/234 @ nanochat
+Codegen: Mbpp/235 @ nanochat
+Codegen: Mbpp/237 @ nanochat
+Codegen: Mbpp/238 @ nanochat
+Codegen: Mbpp/239 @ nanochat
+Codegen: Mbpp/240 @ nanochat
+Codegen: Mbpp/242 @ nanochat
+Codegen: Mbpp/244 @ nanochat
+Codegen: Mbpp/245 @ nanochat
+Codegen: Mbpp/247 @ nanochat
+Codegen: Mbpp/250 @ nanochat
+Codegen: Mbpp/251 @ nanochat
+Codegen: Mbpp/252 @ nanochat
+Codegen: Mbpp/253 @ nanochat
+Codegen: Mbpp/255 @ nanochat
+Codegen: Mbpp/256 @ nanochat
+Codegen: Mbpp/257 @ nanochat
+Codegen: Mbpp/259 @ nanochat
+Codegen: Mbpp/260 @ nanochat
+Codegen: Mbpp/261 @ nanochat
+Codegen: Mbpp/262 @ nanochat
+Codegen: Mbpp/264 @ nanochat
+Codegen: Mbpp/265 @ nanochat
+Codegen: Mbpp/266 @ nanochat
+Codegen: Mbpp/267 @ nanochat
+Codegen: Mbpp/268 @ nanochat
+Codegen: Mbpp/269 @ nanochat
+Codegen: Mbpp/270 @ nanochat
+Codegen: Mbpp/271 @ nanochat
+Codegen: Mbpp/272 @ nanochat
+Codegen: Mbpp/273 @ nanochat
+Codegen: Mbpp/274 @ nanochat
+Codegen: Mbpp/276 @ nanochat
+Codegen: Mbpp/277 @ nanochat
+Codegen: Mbpp/278 @ nanochat
+Codegen: Mbpp/279 @ nanochat
+Codegen: Mbpp/280 @ nanochat
+Codegen: Mbpp/281 @ nanochat
+Codegen: Mbpp/282 @ nanochat
+Codegen: Mbpp/283 @ nanochat
+Codegen: Mbpp/284 @ nanochat
+Codegen: Mbpp/285 @ nanochat
+Codegen: Mbpp/286 @ nanochat
+Codegen: Mbpp/287 @ nanochat
+Codegen: Mbpp/290 @ nanochat
+Codegen: Mbpp/292 @ nanochat
+Codegen: Mbpp/293 @ nanochat
+Codegen: Mbpp/294 @ nanochat
+Codegen: Mbpp/296 @ nanochat
+Codegen: Mbpp/297 @ nanochat
+Codegen: Mbpp/299 @ nanochat
+Codegen: Mbpp/300 @ nanochat
+Codegen: Mbpp/301 @ nanochat
+Codegen: Mbpp/305 @ nanochat
+Codegen: Mbpp/306 @ nanochat
+Codegen: Mbpp/308 @ nanochat
+Codegen: Mbpp/309 @ nanochat
+Codegen: Mbpp/310 @ nanochat
+Codegen: Mbpp/311 @ nanochat
+Codegen: Mbpp/312 @ nanochat
+Codegen: Mbpp/388 @ nanochat
+Codegen: Mbpp/389 @ nanochat
+Codegen: Mbpp/390 @ nanochat
+Codegen: Mbpp/391 @ nanochat
+Codegen: Mbpp/392 @ nanochat
+Codegen: Mbpp/394 @ nanochat
+Codegen: Mbpp/395 @ nanochat
+Codegen: Mbpp/397 @ nanochat
+Codegen: Mbpp/398 @ nanochat
+Codegen: Mbpp/404 @ nanochat
+Codegen: Mbpp/405 @ nanochat
+Codegen: Mbpp/406 @ nanochat
+Codegen: Mbpp/409 @ nanochat
+Codegen: Mbpp/410 @ nanochat
+Codegen: Mbpp/412 @ nanochat
+Codegen: Mbpp/413 @ nanochat
+Codegen: Mbpp/414 @ nanochat
+Codegen: Mbpp/415 @ nanochat
+Codegen: Mbpp/418 @ nanochat
+Codegen: Mbpp/419 @ nanochat
+Codegen: Mbpp/420 @ nanochat
+Codegen: Mbpp/421 @ nanochat
+Codegen: Mbpp/422 @ nanochat
+Codegen: Mbpp/424 @ nanochat
+Codegen: Mbpp/425 @ nanochat
+Codegen: Mbpp/426 @ nanochat
+Codegen: Mbpp/427 @ nanochat
+Codegen: Mbpp/428 @ nanochat
+Codegen: Mbpp/429 @ nanochat
+Codegen: Mbpp/430 @ nanochat
+Codegen: Mbpp/432 @ nanochat
+Codegen: Mbpp/433 @ nanochat
+Codegen: Mbpp/435 @ nanochat
+Codegen: Mbpp/436 @ nanochat
+Codegen: Mbpp/437 @ nanochat
+Codegen: Mbpp/439 @ nanochat
+Codegen: Mbpp/440 @ nanochat
+Codegen: Mbpp/441 @ nanochat
+Codegen: Mbpp/445 @ nanochat
+Codegen: Mbpp/446 @ nanochat
+Codegen: Mbpp/447 @ nanochat
+Codegen: Mbpp/448 @ nanochat
+Codegen: Mbpp/450 @ nanochat
+Codegen: Mbpp/451 @ nanochat
+Codegen: Mbpp/453 @ nanochat
+Codegen: Mbpp/454 @ nanochat
+Codegen: Mbpp/455 @ nanochat
+Codegen: Mbpp/456 @ nanochat
+Codegen: Mbpp/457 @ nanochat
+Codegen: Mbpp/458 @ nanochat
+Codegen: Mbpp/459 @ nanochat
+Codegen: Mbpp/460 @ nanochat
+Codegen: Mbpp/462 @ nanochat
+Codegen: Mbpp/463 @ nanochat
+Codegen: Mbpp/465 @ nanochat
+Codegen: Mbpp/468 @ nanochat
+Codegen: Mbpp/470 @ nanochat
+Codegen: Mbpp/471 @ nanochat
+Codegen: Mbpp/472 @ nanochat
+Codegen: Mbpp/473 @ nanochat
+Codegen: Mbpp/474 @ nanochat
+Codegen: Mbpp/475 @ nanochat
+Codegen: Mbpp/476 @ nanochat
+Codegen: Mbpp/477 @ nanochat
+Codegen: Mbpp/478 @ nanochat
+Codegen: Mbpp/479 @ nanochat
+Codegen: Mbpp/554 @ nanochat
+Codegen: Mbpp/555 @ nanochat
+Codegen: Mbpp/556 @ nanochat
+Codegen: Mbpp/557 @ nanochat
+Codegen: Mbpp/558 @ nanochat
+Codegen: Mbpp/559 @ nanochat
+Codegen: Mbpp/560 @ nanochat
+Codegen: Mbpp/562 @ nanochat
+Codegen: Mbpp/563 @ nanochat
+Codegen: Mbpp/564 @ nanochat
+Codegen: Mbpp/565 @ nanochat
+Codegen: Mbpp/566 @ nanochat
+Codegen: Mbpp/567 @ nanochat
+Codegen: Mbpp/568 @ nanochat
+Codegen: Mbpp/569 @ nanochat
+Codegen: Mbpp/572 @ nanochat
+Codegen: Mbpp/573 @ nanochat
+Codegen: Mbpp/576 @ nanochat
+Codegen: Mbpp/577 @ nanochat
+Codegen: Mbpp/578 @ nanochat
+Codegen: Mbpp/579 @ nanochat
+Codegen: Mbpp/580 @ nanochat
+Codegen: Mbpp/581 @ nanochat
+Codegen: Mbpp/583 @ nanochat
+Codegen: Mbpp/585 @ nanochat
+Codegen: Mbpp/586 @ nanochat
+Codegen: Mbpp/587 @ nanochat
+Codegen: Mbpp/588 @ nanochat
+Codegen: Mbpp/589 @ nanochat
+Codegen: Mbpp/590 @ nanochat
+Codegen: Mbpp/591 @ nanochat
+Codegen: Mbpp/592 @ nanochat
+Codegen: Mbpp/593 @ nanochat
+Codegen: Mbpp/594 @ nanochat
+Codegen: Mbpp/596 @ nanochat
+Codegen: Mbpp/597 @ nanochat
+Codegen: Mbpp/598 @ nanochat
+Codegen: Mbpp/599 @ nanochat
+Codegen: Mbpp/600 @ nanochat
+Codegen: Mbpp/602 @ nanochat
+Codegen: Mbpp/603 @ nanochat
+Codegen: Mbpp/604 @ nanochat
+Codegen: Mbpp/605 @ nanochat
+Codegen: Mbpp/606 @ nanochat
+Codegen: Mbpp/607 @ nanochat
+Codegen: Mbpp/608 @ nanochat
+Codegen: Mbpp/610 @ nanochat
+Codegen: Mbpp/611 @ nanochat
+Codegen: Mbpp/612 @ nanochat
+Codegen: Mbpp/614 @ nanochat
+Codegen: Mbpp/615 @ nanochat
+Codegen: Mbpp/616 @ nanochat
+Codegen: Mbpp/618 @ nanochat
+Codegen: Mbpp/619 @ nanochat
+Codegen: Mbpp/620 @ nanochat
+Codegen: Mbpp/622 @ nanochat
+Codegen: Mbpp/623 @ nanochat
+Codegen: Mbpp/624 @ nanochat
+Codegen: Mbpp/626 @ nanochat
+Codegen: Mbpp/628 @ nanochat
+Codegen: Mbpp/629 @ nanochat
+Codegen: Mbpp/630 @ nanochat
+Codegen: Mbpp/631 @ nanochat
+Codegen: Mbpp/632 @ nanochat
+Codegen: Mbpp/633 @ nanochat
+Codegen: Mbpp/635 @ nanochat
+Codegen: Mbpp/637 @ nanochat
+Codegen: Mbpp/638 @ nanochat
+Codegen: Mbpp/639 @ nanochat
+Codegen: Mbpp/641 @ nanochat
+Codegen: Mbpp/643 @ nanochat
+Codegen: Mbpp/644 @ nanochat
+Codegen: Mbpp/720 @ nanochat
+Codegen: Mbpp/721 @ nanochat
+Codegen: Mbpp/722 @ nanochat
+Codegen: Mbpp/723 @ nanochat
+Codegen: Mbpp/724 @ nanochat
+Codegen: Mbpp/725 @ nanochat
+Codegen: Mbpp/726 @ nanochat
+Codegen: Mbpp/728 @ nanochat
+Codegen: Mbpp/730 @ nanochat
+Codegen: Mbpp/731 @ nanochat
+Codegen: Mbpp/732 @ nanochat
+Codegen: Mbpp/733 @ nanochat
+Codegen: Mbpp/734 @ nanochat
+Codegen: Mbpp/735 @ nanochat
+Codegen: Mbpp/736 @ nanochat
+Codegen: Mbpp/737 @ nanochat
+Codegen: Mbpp/739 @ nanochat
+Codegen: Mbpp/740 @ nanochat
+Codegen: Mbpp/741 @ nanochat
+Codegen: Mbpp/742 @ nanochat
+Codegen: Mbpp/743 @ nanochat
+Codegen: Mbpp/744 @ nanochat
+Codegen: Mbpp/745 @ nanochat
+Codegen: Mbpp/748 @ nanochat
+Codegen: Mbpp/749 @ nanochat
+Codegen: Mbpp/750 @ nanochat
+Codegen: Mbpp/751 @ nanochat
+Codegen: Mbpp/752 @ nanochat
+Codegen: Mbpp/753 @ nanochat
+Codegen: Mbpp/754 @ nanochat
+Codegen: Mbpp/755 @ nanochat
+Codegen: Mbpp/757 @ nanochat
+Codegen: Mbpp/758 @ nanochat
+Codegen: Mbpp/759 @ nanochat
+Codegen: Mbpp/760 @ nanochat
+Codegen: Mbpp/762 @ nanochat
+Codegen: Mbpp/763 @ nanochat
+Codegen: Mbpp/764 @ nanochat
+Codegen: Mbpp/765 @ nanochat
+Codegen: Mbpp/766 @ nanochat
+Codegen: Mbpp/767 @ nanochat
+Codegen: Mbpp/769 @ nanochat
+Codegen: Mbpp/770 @ nanochat
+Codegen: Mbpp/771 @ nanochat
+Codegen: Mbpp/772 @ nanochat
+Codegen: Mbpp/773 @ nanochat
+Codegen: Mbpp/775 @ nanochat
+Codegen: Mbpp/777 @ nanochat
+Codegen: Mbpp/778 @ nanochat
+Codegen: Mbpp/780 @ nanochat
+Codegen: Mbpp/781 @ nanochat
+Codegen: Mbpp/782 @ nanochat
+Codegen: Mbpp/784 @ nanochat
+Codegen: Mbpp/785 @ nanochat
+Codegen: Mbpp/786 @ nanochat
+Codegen: Mbpp/787 @ nanochat
+Codegen: Mbpp/788 @ nanochat
+Codegen: Mbpp/790 @ nanochat
+Codegen: Mbpp/791 @ nanochat
+Codegen: Mbpp/792 @ nanochat
+Codegen: Mbpp/793 @ nanochat
+Codegen: Mbpp/794 @ nanochat
+Codegen: Mbpp/796 @ nanochat
+Codegen: Mbpp/797 @ nanochat
+Codegen: Mbpp/798 @ nanochat
+Codegen: Mbpp/799 @ nanochat
+Codegen: Mbpp/800 @ nanochat
+Codegen: Mbpp/801 @ nanochat
+Codegen: Mbpp/803 @ nanochat
+Codegen: Mbpp/804 @ nanochat
+Codegen: Mbpp/805 @ nanochat
+Codegen: Mbpp/806 @ nanochat
+Codegen: Mbpp/807 @ nanochat
+Codegen: Mbpp/808 @ nanochat
+Codegen: Mbpp/809 @ nanochat
+OpenAIChatDecoder •100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 378/378 • 0:17:56
+/workspace/nanochat/artifacts/runs/base=generate=benchmarks,learning_rate_scale=2.7192599564485445,num_checkpoints=10,generate=none,learning_rate_scale=0.06449599703255417,sft_epochs=2.0/official-7676-rl/evalplus/mbpp/nanochat_openai_temp_0.0.jsonl
+Setting batch size to 20
+Initializing a decoder model: nanochat ...
+Sanitized code outputs will be saved to /workspace/nanochat/artifacts/runs/base=generate=benchmarks,learning_rate_scale=2.7192599564485445,num_checkpoints=10,generate=none,learning_rate_scale=0.06449599703255417,sft_epochs=2.0/official-7676-rl/evalplus/mbpp/nanochat_openai_temp_0.6.jsonl
+Raw outputs will be saved to /workspace/nanochat/artifacts/runs/base=generate=benchmarks,learning_rate_scale=2.7192599564485445,num_checkpoints=10,generate=none,learning_rate_scale=0.06449599703255417,sft_epochs=2.0/official-7676-rl/evalplus/mbpp/nanochat_openai_temp_0.6.raw.jsonl
+Codegen: Mbpp/2 @ nanochat
+Codegen: Mbpp/3 @ nanochat
+Codegen: Mbpp/4 @ nanochat
+Codegen: Mbpp/6 @ nanochat
+Codegen: Mbpp/7 @ nanochat
+Codegen: Mbpp/8 @ nanochat
+Codegen: Mbpp/9 @ nanochat
+Codegen: Mbpp/11 @ nanochat
+Codegen: Mbpp/12 @ nanochat
+Codegen: Mbpp/14 @ nanochat
+Codegen: Mbpp/16 @ nanochat
+Codegen: Mbpp/17 @ nanochat
+Codegen: Mbpp/18 @ nanochat
+Codegen: Mbpp/19 @ nanochat
+Codegen: Mbpp/20 @ nanochat
+Codegen: Mbpp/56 @ nanochat
+Codegen: Mbpp/57 @ nanochat
+Codegen: Mbpp/58 @ nanochat
+Codegen: Mbpp/59 @ nanochat
+Codegen: Mbpp/61 @ nanochat
+Codegen: Mbpp/62 @ nanochat
+Codegen: Mbpp/63 @ nanochat
+Codegen: Mbpp/64 @ nanochat
+Codegen: Mbpp/65 @ nanochat
+Codegen: Mbpp/66 @ nanochat
+Codegen: Mbpp/67 @ nanochat
+Codegen: Mbpp/68 @ nanochat
+Codegen: Mbpp/69 @ nanochat
+Codegen: Mbpp/70 @ nanochat
+Codegen: Mbpp/71 @ nanochat
+Codegen: Mbpp/72 @ nanochat
+Codegen: Mbpp/74 @ nanochat
+Codegen: Mbpp/75 @ nanochat
+Codegen: Mbpp/77 @ nanochat
+Codegen: Mbpp/79 @ nanochat
+Codegen: Mbpp/80 @ nanochat
+Codegen: Mbpp/82 @ nanochat
+Codegen: Mbpp/84 @ nanochat
+Codegen: Mbpp/85 @ nanochat
+Codegen: Mbpp/86 @ nanochat
+Codegen: Mbpp/87 @ nanochat
+Codegen: Mbpp/88 @ nanochat
+Codegen: Mbpp/89 @ nanochat
+Codegen: Mbpp/90 @ nanochat
+Codegen: Mbpp/91 @ nanochat
+Codegen: Mbpp/92 @ nanochat
+Codegen: Mbpp/93 @ nanochat
+Codegen: Mbpp/94 @ nanochat
+Codegen: Mbpp/95 @ nanochat
+Codegen: Mbpp/96 @ nanochat
+Codegen: Mbpp/97 @ nanochat
+Codegen: Mbpp/98 @ nanochat
+Codegen: Mbpp/99 @ nanochat
+Codegen: Mbpp/100 @ nanochat
+Codegen: Mbpp/101 @ nanochat
+Codegen: Mbpp/102 @ nanochat
+Codegen: Mbpp/103 @ nanochat
+Codegen: Mbpp/104 @ nanochat
+Codegen: Mbpp/105 @ nanochat
+Codegen: Mbpp/106 @ nanochat
+Codegen: Mbpp/108 @ nanochat
+Codegen: Mbpp/109 @ nanochat
+Codegen: Mbpp/111 @ nanochat
+Codegen: Mbpp/113 @ nanochat
+Codegen: Mbpp/116 @ nanochat
+Codegen: Mbpp/118 @ nanochat
+Codegen: Mbpp/119 @ nanochat
+Codegen: Mbpp/120 @ nanochat
+Codegen: Mbpp/123 @ nanochat
+Codegen: Mbpp/124 @ nanochat
+Codegen: Mbpp/125 @ nanochat
+Codegen: Mbpp/126 @ nanochat
+Codegen: Mbpp/127 @ nanochat
+Codegen: Mbpp/128 @ nanochat
+Codegen: Mbpp/129 @ nanochat
+Codegen: Mbpp/130 @ nanochat
+Codegen: Mbpp/131 @ nanochat
+Codegen: Mbpp/132 @ nanochat
+Codegen: Mbpp/133 @ nanochat
+Codegen: Mbpp/135 @ nanochat
+Codegen: Mbpp/137 @ nanochat
+Codegen: Mbpp/138 @ nanochat
+Codegen: Mbpp/139 @ nanochat
+Codegen: Mbpp/140 @ nanochat
+Codegen: Mbpp/141 @ nanochat
+Codegen: Mbpp/142 @ nanochat
+Codegen: Mbpp/145 @ nanochat
+Codegen: Mbpp/160 @ nanochat
+Codegen: Mbpp/161 @ nanochat
+Codegen: Mbpp/162 @ nanochat
+Codegen: Mbpp/165 @ nanochat
+Codegen: Mbpp/166 @ nanochat
+Codegen: Mbpp/167 @ nanochat
+Codegen: Mbpp/168 @ nanochat
+Codegen: Mbpp/170 @ nanochat
+Codegen: Mbpp/171 @ nanochat
+Codegen: Mbpp/172 @ nanochat
+Codegen: Mbpp/222 @ nanochat
+Codegen: Mbpp/223 @ nanochat
+Codegen: Mbpp/224 @ nanochat
+Codegen: Mbpp/226 @ nanochat
+Codegen: Mbpp/227 @ nanochat
+Codegen: Mbpp/230 @ nanochat
+Codegen: Mbpp/232 @ nanochat
+Codegen: Mbpp/233 @ nanochat
+Codegen: Mbpp/234 @ nanochat
+Codegen: Mbpp/235 @ nanochat
+Codegen: Mbpp/237 @ nanochat
+Codegen: Mbpp/238 @ nanochat
+Codegen: Mbpp/239 @ nanochat
+Codegen: Mbpp/240 @ nanochat
+Codegen: Mbpp/242 @ nanochat
+Codegen: Mbpp/244 @ nanochat
+Codegen: Mbpp/245 @ nanochat
+Codegen: Mbpp/247 @ nanochat
+Codegen: Mbpp/250 @ nanochat
+Codegen: Mbpp/251 @ nanochat
+Codegen: Mbpp/252 @ nanochat
+Codegen: Mbpp/253 @ nanochat
+Codegen: Mbpp/255 @ nanochat
+Codegen: Mbpp/256 @ nanochat
+Codegen: Mbpp/257 @ nanochat
+Codegen: Mbpp/259 @ nanochat
+Codegen: Mbpp/260 @ nanochat
+Codegen: Mbpp/261 @ nanochat
+Codegen: Mbpp/262 @ nanochat
+Codegen: Mbpp/264 @ nanochat
+Codegen: Mbpp/265 @ nanochat
+Codegen: Mbpp/266 @ nanochat
+Codegen: Mbpp/267 @ nanochat
+Codegen: Mbpp/268 @ nanochat
+Codegen: Mbpp/269 @ nanochat
+Codegen: Mbpp/270 @ nanochat
+Codegen: Mbpp/271 @ nanochat
+Codegen: Mbpp/272 @ nanochat
+Codegen: Mbpp/273 @ nanochat
+Codegen: Mbpp/274 @ nanochat
+Codegen: Mbpp/276 @ nanochat
+Codegen: Mbpp/277 @ nanochat
+Codegen: Mbpp/278 @ nanochat
+Codegen: Mbpp/279 @ nanochat
+Codegen: Mbpp/280 @ nanochat
+Codegen: Mbpp/281 @ nanochat
+Codegen: Mbpp/282 @ nanochat
+Codegen: Mbpp/283 @ nanochat
+Codegen: Mbpp/284 @ nanochat
+Codegen: Mbpp/285 @ nanochat
+Codegen: Mbpp/286 @ nanochat
+Codegen: Mbpp/287 @ nanochat
+Codegen: Mbpp/290 @ nanochat
+Codegen: Mbpp/292 @ nanochat
+Codegen: Mbpp/293 @ nanochat
+Codegen: Mbpp/294 @ nanochat
+Codegen: Mbpp/296 @ nanochat
+Codegen: Mbpp/297 @ nanochat
+Codegen: Mbpp/299 @ nanochat
+Codegen: Mbpp/300 @ nanochat
+Codegen: Mbpp/301 @ nanochat
+Codegen: Mbpp/305 @ nanochat
+Codegen: Mbpp/306 @ nanochat
+Codegen: Mbpp/308 @ nanochat
+Codegen: Mbpp/309 @ nanochat
+Codegen: Mbpp/310 @ nanochat
+Codegen: Mbpp/311 @ nanochat
+Codegen: Mbpp/312 @ nanochat
+Codegen: Mbpp/388 @ nanochat
+Codegen: Mbpp/389 @ nanochat
+Codegen: Mbpp/390 @ nanochat
+Codegen: Mbpp/391 @ nanochat
+Codegen: Mbpp/392 @ nanochat
+Codegen: Mbpp/394 @ nanochat
+Codegen: Mbpp/395 @ nanochat
+Codegen: Mbpp/397 @ nanochat
+Codegen: Mbpp/398 @ nanochat
+Codegen: Mbpp/404 @ nanochat
+Codegen: Mbpp/405 @ nanochat
+Codegen: Mbpp/406 @ nanochat
+Codegen: Mbpp/409 @ nanochat
+Codegen: Mbpp/410 @ nanochat
+Codegen: Mbpp/412 @ nanochat
+Codegen: Mbpp/413 @ nanochat
+Codegen: Mbpp/414 @ nanochat
+Codegen: Mbpp/415 @ nanochat
+Codegen: Mbpp/418 @ nanochat
+Codegen: Mbpp/419 @ nanochat
+Codegen: Mbpp/420 @ nanochat
+Codegen: Mbpp/421 @ nanochat
+Codegen: Mbpp/422 @ nanochat
+Codegen: Mbpp/424 @ nanochat
+Codegen: Mbpp/425 @ nanochat
+Codegen: Mbpp/426 @ nanochat
+Codegen: Mbpp/427 @ nanochat
+Codegen: Mbpp/428 @ nanochat
+Codegen: Mbpp/429 @ nanochat
+Codegen: Mbpp/430 @ nanochat
+scripts/official_reasoning.sh: line 1: 372346 Hangup                  sleep $HEALTH_INTERVAL

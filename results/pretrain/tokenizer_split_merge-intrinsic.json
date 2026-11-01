@@ -1,0 +1,1026 @@
+{
+ "arms": {
+  "sa-bpe": {
+   "data_key": "054a5beebb0fbcb3e21b5f62f2545e49b79d8620ba75322c1804f5a004283e3a",
+   "sources": {
+    "stack_edu_python": {
+     "bytes": 678829366,
+     "tokens": 197195311,
+     "bytes_per_token": 3.442421437698384
+    },
+    "stack_edu_cpp": {
+     "bytes": 439794831,
+     "tokens": 143053587,
+     "bytes_per_token": 3.0743362695267473
+    },
+    "ultradata_stack_v3_l2_python": {
+     "bytes": 923594727,
+     "tokens": 249243010,
+     "bytes_per_token": 3.7055993145003345
+    },
+    "ultradata_stack_v3_l2_cpp": {
+     "bytes": 459010625,
+     "tokens": 151896412,
+     "bytes_per_token": 3.021866145199006
+    },
+    "ultradata_code_l2_python": {
+     "bytes": 1630212207,
+     "tokens": 436543675,
+     "bytes_per_token": 3.7343622193128785
+    },
+    "ultradata_code_l2_cpp": {
+     "bytes": 345127263,
+     "tokens": 115876214,
+     "bytes_per_token": 2.978413352372731
+    },
+    "ultradata_code_l3_python": {
+     "bytes": 104332980,
+     "tokens": 26808342,
+     "bytes_per_token": 3.891810243244435
+    },
+    "ultradata_code_l3_cpp": {
+     "bytes": 106466885,
+     "tokens": 29450447,
+     "bytes_per_token": 3.615119492074263
+    },
+    "nemotron_rewriting_python": {
+     "bytes": 651116292,
+     "tokens": 164408597,
+     "bytes_per_token": 3.960354287312603
+    },
+    "nemotron_transpilation_cpp": {
+     "bytes": 220686558,
+     "tokens": 59701259,
+     "bytes_per_token": 3.696514306339838
+    },
+    "codexglue_python": {
+     "bytes": 1499643,
+     "tokens": 373213,
+     "bytes_per_token": 4.018196043546179
+    },
+    "ultradata_math_l3_qa": {
+     "bytes": 26766488,
+     "tokens": 9127548,
+     "bytes_per_token": 2.9324949044365476
+    },
+    "ultradata_math_l3_conversation": {
+     "bytes": 25564679,
+     "tokens": 7321238,
+     "bytes_per_token": 3.4918519244969226
+    },
+    "ultradata_math_l3_multi_style": {
+     "bytes": 34889001,
+     "tokens": 10552979,
+     "bytes_per_token": 3.3060807758643316
+    },
+    "ultradata_math_l3_textbook_exercise": {
+     "bytes": 29176407,
+     "tokens": 9531582,
+     "bytes_per_token": 3.061024602211889
+    },
+    "codeforces_cots": {
+     "bytes": 11323986,
+     "tokens": 3264645,
+     "bytes_per_token": 3.468673010388572
+    },
+    "kaggle_notebooks": {
+     "bytes": 51046450,
+     "tokens": 15001176,
+     "bytes_per_token": 3.402829884803698
+    },
+    "climbmix": {
+     "bytes": 468849113,
+     "tokens": 110501895,
+     "bytes_per_token": 4.242905635238201
+    }
+   },
+   "file_stage_bytes_per_token": {
+    "all": 3.624163598800835,
+    "repository": 3.4422774325675354,
+    "synthetic": 3.861353893056915,
+    "notebooks": 3.402829884803698,
+    "functions": 4.018196043546179,
+    "text": 4.242905635238201,
+    "math": 3.1857303398855974
+   },
+   "train_tokens_over_draw": {
+    "synthetic": 1.0961944128145258,
+    "text": 1.0707109784097604,
+    "math": 1.168510223905483
+   },
+   "line_break_entries": {
+    "line_break": 72,
+    "punctuation_line_break": 0,
+    "line_break_indentation": 5
+   },
+   "merged_reads": {
+    "never": 5,
+    "under 10": 11,
+    "under 100": 54
+   },
+   "depth_invariance": {
+    "stack_edu_python": {
+     "lines": 50000,
+     "invariant": 462,
+     "rate": 0.00924
+    },
+    "stack_edu_cpp": {
+     "lines": 50000,
+     "invariant": 6881,
+     "rate": 0.13762
+    },
+    "ultradata_stack_v3_l2_python": {
+     "lines": 50000,
+     "invariant": 140,
+     "rate": 0.0028
+    },
+    "ultradata_stack_v3_l2_cpp": {
+     "lines": 50000,
+     "invariant": 1212,
+     "rate": 0.02424
+    },
+    "ultradata_code_l2_python": {
+     "lines": 50000,
+     "invariant": 13,
+     "rate": 0.00026
+    },
+    "ultradata_code_l2_cpp": {
+     "lines": 50000,
+     "invariant": 1831,
+     "rate": 0.03662
+    },
+    "ultradata_code_l3_python": {
+     "lines": 50000,
+     "invariant": 0,
+     "rate": 0.0
+    },
+    "ultradata_code_l3_cpp": {
+     "lines": 50000,
+     "invariant": 0,
+     "rate": 0.0
+    },
+    "nemotron_rewriting_python": {
+     "lines": 50000,
+     "invariant": 0,
+     "rate": 0.0
+    },
+    "nemotron_transpilation_cpp": {
+     "lines": 50000,
+     "invariant": 3,
+     "rate": 6e-05
+    },
+    "codexglue_python": {
+     "lines": 34317,
+     "invariant": 1,
+     "rate": 2.914007634700003e-05
+    }
+   },
+   "fidelity": {
+    "stack_edu_python": {
+     "documents": 200,
+     "chunks": 126388
+    },
+    "stack_edu_cpp": {
+     "documents": 200,
+     "chunks": 164379
+    },
+    "ultradata_stack_v3_l2_python": {
+     "documents": 200,
+     "chunks": 228540
+    },
+    "ultradata_stack_v3_l2_cpp": {
+     "documents": 200,
+     "chunks": 233216
+    },
+    "ultradata_code_l2_python": {
+     "documents": 200,
+     "chunks": 142401
+    },
+    "ultradata_code_l2_cpp": {
+     "documents": 200,
+     "chunks": 127081
+    },
+    "ultradata_code_l3_python": {
+     "documents": 200,
+     "chunks": 143334
+    },
+    "ultradata_code_l3_cpp": {
+     "documents": 200,
+     "chunks": 134427
+    },
+    "nemotron_rewriting_python": {
+     "documents": 200,
+     "chunks": 167457
+    },
+    "nemotron_transpilation_cpp": {
+     "documents": 200,
+     "chunks": 214660
+    },
+    "codexglue_python": {
+     "documents": 200,
+     "chunks": 33934
+    },
+    "ultradata_math_l3_qa": {
+     "documents": 200,
+     "chunks": 155404
+    },
+    "ultradata_math_l3_conversation": {
+     "documents": 200,
+     "chunks": 213499
+    },
+    "ultradata_math_l3_multi_style": {
+     "documents": 200,
+     "chunks": 280422
+    },
+    "ultradata_math_l3_textbook_exercise": {
+     "documents": 200,
+     "chunks": 174037
+    },
+    "codeforces_cots": {
+     "documents": 200,
+     "chunks": 2825909
+    },
+    "kaggle_notebooks": {
+     "documents": 200,
+     "chunks": 426799
+    },
+    "climbmix": {
+     "documents": 200,
+     "chunks": 104124
+    }
+   }
+  },
+  "sa-bpe-fused": {
+   "data_key": "523ebb0f5530865b1dfdef077200a8f3960a8df871e5753b9e35111d0b967330",
+   "sources": {
+    "stack_edu_python": {
+     "bytes": 678829366,
+     "tokens": 186213403,
+     "bytes_per_token": 3.645437734683362
+    },
+    "stack_edu_cpp": {
+     "bytes": 439794831,
+     "tokens": 131007961,
+     "bytes_per_token": 3.3570084416472983
+    },
+    "ultradata_stack_v3_l2_python": {
+     "bytes": 923594727,
+     "tokens": 233368948,
+     "bytes_per_token": 3.9576590412534234
+    },
+    "ultradata_stack_v3_l2_cpp": {
+     "bytes": 459010625,
+     "tokens": 140004404,
+     "bytes_per_token": 3.2785441877956925
+    },
+    "ultradata_code_l2_python": {
+     "bytes": 1630212207,
+     "tokens": 407319236,
+     "bytes_per_token": 4.002296142478279
+    },
+    "ultradata_code_l2_cpp": {
+     "bytes": 345127263,
+     "tokens": 106692602,
+     "bytes_per_token": 3.234781573702739
+    },
+    "ultradata_code_l3_python": {
+     "bytes": 104332980,
+     "tokens": 25547432,
+     "bytes_per_token": 4.083893050385651
+    },
+    "ultradata_code_l3_cpp": {
+     "bytes": 106466885,
+     "tokens": 27846153,
+     "bytes_per_token": 3.8233965388324913
+    },
+    "nemotron_rewriting_python": {
+     "bytes": 651116292,
+     "tokens": 152071065,
+     "bytes_per_token": 4.28165799983054
+    },
+    "nemotron_transpilation_cpp": {
+     "bytes": 220686558,
+     "tokens": 54725885,
+     "bytes_per_token": 4.032580889281188
+    },
+    "codexglue_python": {
+     "bytes": 1499643,
+     "tokens": 347648,
+     "bytes_per_token": 4.3136822303019144
+    },
+    "ultradata_math_l3_qa": {
+     "bytes": 26766488,
+     "tokens": 8754079,
+     "bytes_per_token": 3.0576018333853283
+    },
+    "ultradata_math_l3_conversation": {
+     "bytes": 25564679,
+     "tokens": 7142687,
+     "bytes_per_token": 3.5791403151223062
+    },
+    "ultradata_math_l3_multi_style": {
+     "bytes": 34889001,
+     "tokens": 10149725,
+     "bytes_per_token": 3.43743313242477
+    },
+    "ultradata_math_l3_textbook_exercise": {
+     "bytes": 29176407,
+     "tokens": 9158630,
+     "bytes_per_token": 3.18567373067806
+    },
+    "codeforces_cots": {
+     "bytes": 11323986,
+     "tokens": 3143287,
+     "bytes_per_token": 3.602593717977391
+    },
+    "kaggle_notebooks": {
+     "bytes": 51046450,
+     "tokens": 14113446,
+     "bytes_per_token": 3.6168664973812916
+    },
+    "climbmix": {
+     "bytes": 468849113,
+     "tokens": 109168785,
+     "bytes_per_token": 4.294717697920701
+    }
+   },
+   "file_stage_bytes_per_token": {
+    "all": 3.8678610154159654,
+    "repository": 3.698294272416962,
+    "synthetic": 4.1610004999630075,
+    "notebooks": 3.616866497381291,
+    "functions": 4.3136822303019144,
+    "text": 4.294717697920701,
+    "math": 3.3059770370236303
+   },
+   "train_tokens_over_draw": {
+    "synthetic": 1.017254038663595,
+    "text": 1.057793774479205,
+    "math": 1.1260085690472998
+   },
+   "line_break_entries": {
+    "line_break": 748,
+    "punctuation_line_break": 693,
+    "line_break_indentation": 0
+   },
+   "merged_reads": {
+    "never": 5,
+    "under 10": 11,
+    "under 100": 54
+   },
+   "depth_invariance": {
+    "stack_edu_python": {
+     "lines": 50000,
+     "invariant": 462,
+     "rate": 0.00924
+    },
+    "stack_edu_cpp": {
+     "lines": 50000,
+     "invariant": 6880,
+     "rate": 0.1376
+    },
+    "ultradata_stack_v3_l2_python": {
+     "lines": 50000,
+     "invariant": 140,
+     "rate": 0.0028
+    },
+    "ultradata_stack_v3_l2_cpp": {
+     "lines": 50000,
+     "invariant": 1212,
+     "rate": 0.02424
+    },
+    "ultradata_code_l2_python": {
+     "lines": 50000,
+     "invariant": 13,
+     "rate": 0.00026
+    },
+    "ultradata_code_l2_cpp": {
+     "lines": 50000,
+     "invariant": 1833,
+     "rate": 0.03666
+    },
+    "ultradata_code_l3_python": {
+     "lines": 50000,
+     "invariant": 0,
+     "rate": 0.0
+    },
+    "ultradata_code_l3_cpp": {
+     "lines": 50000,
+     "invariant": 0,
+     "rate": 0.0
+    },
+    "nemotron_rewriting_python": {
+     "lines": 50000,
+     "invariant": 0,
+     "rate": 0.0
+    },
+    "nemotron_transpilation_cpp": {
+     "lines": 50000,
+     "invariant": 3,
+     "rate": 6e-05
+    },
+    "codexglue_python": {
+     "lines": 34317,
+     "invariant": 1,
+     "rate": 2.914007634700003e-05
+    }
+   },
+   "fidelity": {
+    "stack_edu_python": {
+     "documents": 200,
+     "chunks": 118018
+    },
+    "stack_edu_cpp": {
+     "documents": 200,
+     "chunks": 147422
+    },
+    "ultradata_stack_v3_l2_python": {
+     "documents": 200,
+     "chunks": 213339
+    },
+    "ultradata_stack_v3_l2_cpp": {
+     "documents": 200,
+     "chunks": 210326
+    },
+    "ultradata_code_l2_python": {
+     "documents": 200,
+     "chunks": 131394
+    },
+    "ultradata_code_l2_cpp": {
+     "documents": 200,
+     "chunks": 114716
+    },
+    "ultradata_code_l3_python": {
+     "documents": 200,
+     "chunks": 136463
+    },
+    "ultradata_code_l3_cpp": {
+     "documents": 200,
+     "chunks": 126573
+    },
+    "nemotron_rewriting_python": {
+     "documents": 200,
+     "chunks": 153360
+    },
+    "nemotron_transpilation_cpp": {
+     "documents": 200,
+     "chunks": 195549
+    },
+    "codexglue_python": {
+     "documents": 200,
+     "chunks": 31218
+    },
+    "ultradata_math_l3_qa": {
+     "documents": 200,
+     "chunks": 148647
+    },
+    "ultradata_math_l3_conversation": {
+     "documents": 200,
+     "chunks": 207665
+    },
+    "ultradata_math_l3_multi_style": {
+     "documents": 200,
+     "chunks": 268777
+    },
+    "ultradata_math_l3_textbook_exercise": {
+     "documents": 200,
+     "chunks": 166855
+    },
+    "codeforces_cots": {
+     "documents": 200,
+     "chunks": 2714761
+    },
+    "kaggle_notebooks": {
+     "documents": 200,
+     "chunks": 396593
+    },
+    "climbmix": {
+     "documents": 200,
+     "chunks": 102392
+    }
+   }
+  },
+  "hybrid": {
+   "data_key": "9fa2093b2699c5177603869b39b163f8a4262f317543cf92dae75d3efd4e3ca1",
+   "sources": {
+    "stack_edu_python": {
+     "bytes": 678829366,
+     "tokens": 197798019,
+     "bytes_per_token": 3.4319320761245846
+    },
+    "stack_edu_cpp": {
+     "bytes": 439794831,
+     "tokens": 143731553,
+     "bytes_per_token": 3.0598349619168173
+    },
+    "ultradata_stack_v3_l2_python": {
+     "bytes": 923594727,
+     "tokens": 250242468,
+     "bytes_per_token": 3.6907993050963674
+    },
+    "ultradata_stack_v3_l2_cpp": {
+     "bytes": 459010625,
+     "tokens": 152527846,
+     "bytes_per_token": 3.009356239122396
+    },
+    "ultradata_code_l2_python": {
+     "bytes": 1630212207,
+     "tokens": 437342895,
+     "bytes_per_token": 3.727537878487771
+    },
+    "ultradata_code_l2_cpp": {
+     "bytes": 345127263,
+     "tokens": 116189088,
+     "bytes_per_token": 2.970393080286507
+    },
+    "ultradata_code_l3_python": {
+     "bytes": 104332980,
+     "tokens": 26884565,
+     "bytes_per_token": 3.8807762000240658
+    },
+    "ultradata_code_l3_cpp": {
+     "bytes": 106466885,
+     "tokens": 29517467,
+     "bytes_per_token": 3.606911290863813
+    },
+    "nemotron_rewriting_python": {
+     "bytes": 651116292,
+     "tokens": 164534863,
+     "bytes_per_token": 3.9573150645890776
+    },
+    "nemotron_transpilation_cpp": {
+     "bytes": 220686558,
+     "tokens": 59729919,
+     "bytes_per_token": 3.694740620692956
+    },
+    "codexglue_python": {
+     "bytes": 1499643,
+     "tokens": 373006,
+     "bytes_per_token": 4.020425944890967
+    },
+    "ultradata_math_l3_qa": {
+     "bytes": 26766488,
+     "tokens": 9137690,
+     "bytes_per_token": 2.9292401033521602
+    },
+    "ultradata_math_l3_conversation": {
+     "bytes": 25564679,
+     "tokens": 7334563,
+     "bytes_per_token": 3.485508134567799
+    },
+    "ultradata_math_l3_multi_style": {
+     "bytes": 34889001,
+     "tokens": 10579301,
+     "bytes_per_token": 3.2978550284182293
+    },
+    "ultradata_math_l3_textbook_exercise": {
+     "bytes": 29176407,
+     "tokens": 9571317,
+     "bytes_per_token": 3.048316861723418
+    },
+    "codeforces_cots": {
+     "bytes": 11323986,
+     "tokens": 3268263,
+     "bytes_per_token": 3.464833154492157
+    },
+    "kaggle_notebooks": {
+     "bytes": 51046450,
+     "tokens": 14957708,
+     "bytes_per_token": 3.4127187133215866
+    },
+    "climbmix": {
+     "bytes": 468849113,
+     "tokens": 110655353,
+     "bytes_per_token": 4.237021529360627
+    }
+   },
+   "file_stage_bytes_per_token": {
+    "all": 3.615846250779052,
+    "repository": 3.4315324774189433,
+    "synthetic": 3.857263283904904,
+    "notebooks": 3.412718713321587,
+    "functions": 4.020425944890967,
+    "text": 4.237021529360627,
+    "math": 3.17793432331753
+   },
+   "train_tokens_over_draw": {
+    "synthetic": 1.097356921714593,
+    "text": 1.072197913682,
+    "math": 1.1713767793904981
+   },
+   "line_break_entries": {
+    "line_break": 9,
+    "punctuation_line_break": 0,
+    "line_break_indentation": 0
+   },
+   "merged_reads": {
+    "never": 5,
+    "under 10": 13,
+    "under 100": 56
+   },
+   "depth_invariance": {
+    "stack_edu_python": {
+     "lines": 50000,
+     "invariant": 49971,
+     "rate": 0.99942
+    },
+    "stack_edu_cpp": {
+     "lines": 50000,
+     "invariant": 49469,
+     "rate": 0.98938
+    },
+    "ultradata_stack_v3_l2_python": {
+     "lines": 50000,
+     "invariant": 49968,
+     "rate": 0.99936
+    },
+    "ultradata_stack_v3_l2_cpp": {
+     "lines": 50000,
+     "invariant": 49569,
+     "rate": 0.99138
+    },
+    "ultradata_code_l2_python": {
+     "lines": 50000,
+     "invariant": 49980,
+     "rate": 0.9996
+    },
+    "ultradata_code_l2_cpp": {
+     "lines": 50000,
+     "invariant": 49744,
+     "rate": 0.99488
+    },
+    "ultradata_code_l3_python": {
+     "lines": 50000,
+     "invariant": 49998,
+     "rate": 0.99996
+    },
+    "ultradata_code_l3_cpp": {
+     "lines": 50000,
+     "invariant": 49551,
+     "rate": 0.99102
+    },
+    "nemotron_rewriting_python": {
+     "lines": 50000,
+     "invariant": 50000,
+     "rate": 1.0
+    },
+    "nemotron_transpilation_cpp": {
+     "lines": 50000,
+     "invariant": 48940,
+     "rate": 0.9788
+    },
+    "codexglue_python": {
+     "lines": 34317,
+     "invariant": 34316,
+     "rate": 0.999970859923653
+    }
+   },
+   "fidelity": {
+    "stack_edu_python": {
+     "documents": 200,
+     "chunks": 126287
+    },
+    "stack_edu_cpp": {
+     "documents": 200,
+     "chunks": 167060
+    },
+    "ultradata_stack_v3_l2_python": {
+     "documents": 200,
+     "chunks": 227389
+    },
+    "ultradata_stack_v3_l2_cpp": {
+     "documents": 200,
+     "chunks": 234757
+    },
+    "ultradata_code_l2_python": {
+     "documents": 200,
+     "chunks": 142252
+    },
+    "ultradata_code_l2_cpp": {
+     "documents": 200,
+     "chunks": 128089
+    },
+    "ultradata_code_l3_python": {
+     "documents": 200,
+     "chunks": 143625
+    },
+    "ultradata_code_l3_cpp": {
+     "documents": 200,
+     "chunks": 134774
+    },
+    "nemotron_rewriting_python": {
+     "documents": 200,
+     "chunks": 167074
+    },
+    "nemotron_transpilation_cpp": {
+     "documents": 200,
+     "chunks": 214602
+    },
+    "codexglue_python": {
+     "documents": 200,
+     "chunks": 33821
+    },
+    "ultradata_math_l3_qa": {
+     "documents": 200,
+     "chunks": 155526
+    },
+    "ultradata_math_l3_conversation": {
+     "documents": 200,
+     "chunks": 213587
+    },
+    "ultradata_math_l3_multi_style": {
+     "documents": 200,
+     "chunks": 281074
+    },
+    "ultradata_math_l3_textbook_exercise": {
+     "documents": 200,
+     "chunks": 174759
+    },
+    "codeforces_cots": {
+     "documents": 200,
+     "chunks": 2828150
+    },
+    "kaggle_notebooks": {
+     "documents": 200,
+     "chunks": 423123
+    },
+    "climbmix": {
+     "documents": 200,
+     "chunks": 104117
+    }
+   }
+  },
+  "bpe": {
+   "data_key": "ada659e9364eafaea2a5881b712d6f927de32202fdc83c6613d753a1681985bf",
+   "sources": {
+    "stack_edu_python": {
+     "bytes": 678829366,
+     "tokens": 197188645,
+     "bytes_per_token": 3.442537809415953
+    },
+    "stack_edu_cpp": {
+     "bytes": 439794831,
+     "tokens": 142999785,
+     "bytes_per_token": 3.0754929526642294
+    },
+    "ultradata_stack_v3_l2_python": {
+     "bytes": 923594727,
+     "tokens": 249229771,
+     "bytes_per_token": 3.7057961546656477
+    },
+    "ultradata_stack_v3_l2_cpp": {
+     "bytes": 459010625,
+     "tokens": 151826311,
+     "bytes_per_token": 3.023261396372859
+    },
+    "ultradata_code_l2_python": {
+     "bytes": 1630212207,
+     "tokens": 436467753,
+     "bytes_per_token": 3.735011798225561
+    },
+    "ultradata_code_l2_cpp": {
+     "bytes": 345127263,
+     "tokens": 115790761,
+     "bytes_per_token": 2.980611406466186
+    },
+    "ultradata_code_l3_python": {
+     "bytes": 104332980,
+     "tokens": 26807871,
+     "bytes_per_token": 3.8918786202753664
+    },
+    "ultradata_code_l3_cpp": {
+     "bytes": 106466885,
+     "tokens": 29456745,
+     "bytes_per_token": 3.614346561373295
+    },
+    "nemotron_rewriting_python": {
+     "bytes": 651116292,
+     "tokens": 164445150,
+     "bytes_per_token": 3.959473976581249
+    },
+    "nemotron_transpilation_cpp": {
+     "bytes": 220686558,
+     "tokens": 59709174,
+     "bytes_per_token": 3.6960242993815324
+    },
+    "codexglue_python": {
+     "bytes": 1499643,
+     "tokens": 373177,
+     "bytes_per_token": 4.018583674770953
+    },
+    "ultradata_math_l3_qa": {
+     "bytes": 26766488,
+     "tokens": 9126422,
+     "bytes_per_token": 2.9328567098913463
+    },
+    "ultradata_math_l3_conversation": {
+     "bytes": 25564679,
+     "tokens": 7324991,
+     "bytes_per_token": 3.4900628546847363
+    },
+    "ultradata_math_l3_multi_style": {
+     "bytes": 34889001,
+     "tokens": 10562505,
+     "bytes_per_token": 3.3030991227933146
+    },
+    "ultradata_math_l3_textbook_exercise": {
+     "bytes": 29176407,
+     "tokens": 9530883,
+     "bytes_per_token": 3.0612490993751575
+    },
+    "codeforces_cots": {
+     "bytes": 11323986,
+     "tokens": 3266039,
+     "bytes_per_token": 3.467192522808209
+    },
+    "kaggle_notebooks": {
+     "bytes": 51046450,
+     "tokens": 15002167,
+     "bytes_per_token": 3.4026051036493596
+    },
+    "climbmix": {
+     "bytes": 468849113,
+     "tokens": 110831169,
+     "bytes_per_token": 4.230300169440602
+    }
+   },
+   "file_stage_bytes_per_token": {
+    "all": 3.6233897321360997,
+    "repository": 3.4431230283296643,
+    "synthetic": 3.8606604435913634,
+    "notebooks": 3.402605103649359,
+    "functions": 4.018583674770953,
+    "text": 4.230300169440602,
+    "math": 3.1847320411829205
+   },
+   "train_tokens_over_draw": {
+    "synthetic": 1.0963913105839134,
+    "text": 1.0739014873752846,
+    "math": 1.168876509742252
+   },
+   "line_break_entries": {
+    "line_break": 67,
+    "punctuation_line_break": 0,
+    "line_break_indentation": 5
+   },
+   "merged_reads": {
+    "never": 15,
+    "under 10": 26,
+    "under 100": 84
+   },
+   "depth_invariance": {
+    "stack_edu_python": {
+     "lines": 50000,
+     "invariant": 452,
+     "rate": 0.00904
+    },
+    "stack_edu_cpp": {
+     "lines": 50000,
+     "invariant": 6810,
+     "rate": 0.1362
+    },
+    "ultradata_stack_v3_l2_python": {
+     "lines": 50000,
+     "invariant": 132,
+     "rate": 0.00264
+    },
+    "ultradata_stack_v3_l2_cpp": {
+     "lines": 50000,
+     "invariant": 1200,
+     "rate": 0.024
+    },
+    "ultradata_code_l2_python": {
+     "lines": 50000,
+     "invariant": 13,
+     "rate": 0.00026
+    },
+    "ultradata_code_l2_cpp": {
+     "lines": 50000,
+     "invariant": 1846,
+     "rate": 0.03692
+    },
+    "ultradata_code_l3_python": {
+     "lines": 50000,
+     "invariant": 0,
+     "rate": 0.0
+    },
+    "ultradata_code_l3_cpp": {
+     "lines": 50000,
+     "invariant": 0,
+     "rate": 0.0
+    },
+    "nemotron_rewriting_python": {
+     "lines": 50000,
+     "invariant": 0,
+     "rate": 0.0
+    },
+    "nemotron_transpilation_cpp": {
+     "lines": 50000,
+     "invariant": 3,
+     "rate": 6e-05
+    },
+    "codexglue_python": {
+     "lines": 34317,
+     "invariant": 1,
+     "rate": 2.914007634700003e-05
+    }
+   },
+   "fidelity": {
+    "stack_edu_python": {
+     "documents": 200,
+     "chunks": 126388
+    },
+    "stack_edu_cpp": {
+     "documents": 200,
+     "chunks": 164379
+    },
+    "ultradata_stack_v3_l2_python": {
+     "documents": 200,
+     "chunks": 228540
+    },
+    "ultradata_stack_v3_l2_cpp": {
+     "documents": 200,
+     "chunks": 233216
+    },
+    "ultradata_code_l2_python": {
+     "documents": 200,
+     "chunks": 142401
+    },
+    "ultradata_code_l2_cpp": {
+     "documents": 200,
+     "chunks": 127081
+    },
+    "ultradata_code_l3_python": {
+     "documents": 200,
+     "chunks": 143334
+    },
+    "ultradata_code_l3_cpp": {
+     "documents": 200,
+     "chunks": 134427
+    },
+    "nemotron_rewriting_python": {
+     "documents": 200,
+     "chunks": 167457
+    },
+    "nemotron_transpilation_cpp": {
+     "documents": 200,
+     "chunks": 214660
+    },
+    "codexglue_python": {
+     "documents": 200,
+     "chunks": 33934
+    },
+    "ultradata_math_l3_qa": {
+     "documents": 200,
+     "chunks": 155404
+    },
+    "ultradata_math_l3_conversation": {
+     "documents": 200,
+     "chunks": 213499
+    },
+    "ultradata_math_l3_multi_style": {
+     "documents": 200,
+     "chunks": 280422
+    },
+    "ultradata_math_l3_textbook_exercise": {
+     "documents": 200,
+     "chunks": 174037
+    },
+    "codeforces_cots": {
+     "documents": 200,
+     "chunks": 2825909
+    },
+    "kaggle_notebooks": {
+     "documents": 200,
+     "chunks": 426799
+    },
+    "climbmix": {
+     "documents": 200,
+     "chunks": 104124
+    }
+   }
+  }
+ },
+ "seconds": {
+  "compile": 53.08608274500057,
+  "measures": 19.423443147999933,
+  "all": 114.29539993800063
+ },
+ "provenance": {
+  "commit": "ebd80587f5883839b8a47d6b0b8a85187d2ba036",
+  "utc": "2026-10-24T19:14:21+00:00",
+  "host": "gh200",
+  "machine": "aarch64",
+  "cpus": 64,
+  "memory_gb": 525.6783447265625,
+  "python": "3.12.3",
+  "packages": {
+   "tiktoken": "0.14.0",
+   "tokenizers": "0.23.2",
+   "numpy": "2.1.0",
+   "scipy": "1.18.1",
+   "pyarrow": "26.0.0",
+   "regex": "2026.9.29"
+  }
+ }
+}

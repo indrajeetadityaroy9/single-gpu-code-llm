@@ -1,0 +1,42 @@
+# Evaluation image "sgc-eval": vLLM 0.32.0 (with torch, transformers and g++) and the benchmarks' official tools at
+# pinned commits, in a virtual environment on top of it (paper §6.1). Used by scripts/serve.sh and the evaluation
+# scripts. Every install is constrained to the base image's inference stack (vLLM, torch, Triton, transformers,
+# tokenizers, safetensors, numpy), so that stack stays as vLLM ships it.
+
+FROM vllm/vllm-openai:v0.32.0@sha256:befccf0e7e4089aa23926bb6f887a85c0d46c2a99e6de5c5ffdf5cb7957c5b34
+ENV VIRTUAL_ENV=/opt/venv PATH=/opt/venv/bin:$PATH UV_LINK_MODE=copy
+RUN python3 -m pip freeze --all | \
+      grep -iE '^(vllm|torch|torchvision|torchaudio|triton|transformers|tokenizers|safetensors|numpy|flashinfer[-a-z]*)==' \
+      > /opt/base-constraints.txt && \
+    uv venv --system-site-packages --python /usr/bin/python3 $VIRTUAL_ENV
+
+# GitHub archives of the pinned commits (the image has no git)
+ARG EVALPLUS=26d6d00bb1fd0fa37f39c99d5290da67891d1c5e
+ARG MULTIPL_E=3025a531af7450e7df8b96fe0440e9804480bbad
+ARG LM_EVAL=d6de81643928d653435c431bae19945d41d32520
+ARG HUMAN_EVAL_INFILLING=88062ff9859c875d04db115b698ed4b0f0395170
+RUN fetch() { mkdir -p $2 && curl -sSfL https://github.com/$1/archive/$3.tar.gz | tar xz --strip-components=1 -C $2; } \
+    && fetch evalplus/evalplus /opt/evalplus $EVALPLUS && \
+    fetch nuprl/MultiPL-E /opt/MultiPL-E $MULTIPL_E && \
+    fetch EleutherAI/lm-evaluation-harness /opt/lm-evaluation-harness $LM_EVAL && \
+    fetch openai/human-eval-infilling /opt/human-eval-infilling $HUMAN_EVAL_INFILLING
+
+# Install EvalPlus and lm-evaluation-harness with their dependencies: evaluate (lm-eval's MBPP scorer) and fire
+# (human-eval-infilling's command line). EvalPlus takes its version from setuptools-scm, which an archive lacks.
+# human-eval-infilling and MultiPL-E stay checkouts on sys.path: human-eval-infilling reads <package>/../data, and
+# MultiPL-E's judge is a set of scripts. human-eval-infilling is set up as its README describes: program execution
+# enabled, and HumanEval-RandomSpan.jsonl.gz, the name data.py:13 reads, linked to the shipped file.
+RUN SETUPTOOLS_SCM_PRETEND_VERSION=0.0.0 uv pip install -c /opt/base-constraints.txt /opt/evalplus \
+      /opt/lm-evaluation-harness evaluate fire && \
+    H=/opt/human-eval-infilling && sed -i 's/^#\( *exec(check_program, exec_globals)\)/\1/' \
+      $H/human_eval_infilling/execution.py && \
+    ln -s HumanEval-RandomSpanInfilling.jsonl.gz $H/data/HumanEval-RandomSpan.jsonl.gz && \
+    echo $H > /opt/venv/lib/python3.12/site-packages/human_eval_infilling.pth
+# Record the tool commits and the inference stack's versions; eval/official.py copies this into every summary
+RUN python -c "import json, sys, importlib.metadata as m; json.dump({**dict(a.split('=', 1) for a in sys.argv[1:]), \
+      **{p: m.version(p) for p in ('vllm', 'torch', 'transformers', 'tokenizers', 'datasets')}, \
+      'image': 'vllm/vllm-openai:v0.32.0'}, open('/opt/tools.json', 'w'), indent=1)" \
+      evalplus=$EVALPLUS multipl_e=$MULTIPL_E lm_evaluation_harness=$LM_EVAL \
+      human_eval_infilling=$HUMAN_EVAL_INFILLING
+ENV MULTIPL_E=/opt/MultiPL-E PYTHONUNBUFFERED=1
+ENTRYPOINT []

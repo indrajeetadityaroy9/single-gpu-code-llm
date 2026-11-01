@@ -1,0 +1,508 @@
+{
+ "all": {
+  "responses": 2048,
+  "prompts": 512,
+  "samples_per_prompt": [
+   4
+  ],
+  "outcomes": {
+   "closed_ended": 1136,
+   "closed_limit": 0,
+   "unclosed_limit": 24,
+   "unclosed_loop_stopped": 888,
+   "unclosed_ended": 0
+  },
+  "loop_rate_responses": 0.43505859375,
+  "loop_rate_prompts": 0.720703125,
+  "loops_exact_cycle": 802,
+  "loop_onset_tokens": {
+   "n": 802,
+   "p10_p50_p90": [
+    1465.6000000000001,
+    3444.5,
+    6816.999999999999
+   ],
+   "max": 12909
+  },
+  "loop_period_tokens": {
+   "n": 802,
+   "p10_p50_p90": [
+    24.0,
+    87.0,
+    240.0
+   ],
+   "max": 1368
+  },
+  "verified_responses": 2048,
+  "verdicts_closed_ended": {
+   "pass": 666,
+   "pass_trivial": 7,
+   "fail": 457,
+   "timeout": 6,
+   "no_code": 0
+  },
+  "pass@1": 0.3251953125,
+  "pass@4": 0.55078125,
+  "prompts_solved": 0.55078125,
+  "prompts_mixed": 0.31640625,
+  "success_tokens": {
+   "n": 666,
+   "p10_p50_p90": [
+    1037.0,
+    1953.5,
+    3814.5
+   ],
+   "max": 8403
+  }
+ },
+ "by_temperature": {
+  "0.6": {
+   "responses": 2048,
+   "prompts": 512,
+   "samples_per_prompt": [
+    4
+   ],
+   "outcomes": {
+    "closed_ended": 1136,
+    "closed_limit": 0,
+    "unclosed_limit": 24,
+    "unclosed_loop_stopped": 888,
+    "unclosed_ended": 0
+   },
+   "loop_rate_responses": 0.43505859375,
+   "loop_rate_prompts": 0.720703125,
+   "loops_exact_cycle": 802,
+   "loop_onset_tokens": {
+    "n": 802,
+    "p10_p50_p90": [
+     1465.6000000000001,
+     3444.5,
+     6816.999999999999
+    ],
+    "max": 12909
+   },
+   "loop_period_tokens": {
+    "n": 802,
+    "p10_p50_p90": [
+     24.0,
+     87.0,
+     240.0
+    ],
+    "max": 1368
+   },
+   "verified_responses": 2048,
+   "verdicts_closed_ended": {
+    "pass": 666,
+    "pass_trivial": 7,
+    "fail": 457,
+    "timeout": 6,
+    "no_code": 0
+   },
+   "pass@1": 0.3251953125,
+   "pass@4": 0.55078125,
+   "prompts_solved": 0.55078125,
+   "prompts_mixed": 0.31640625,
+   "success_tokens": {
+    "n": 666,
+    "p10_p50_p90": [
+     1037.0,
+     1953.5,
+     3814.5
+    ],
+    "max": 8403
+   }
+  }
+ },
+ "by_source": {
+  "kodcode/complete": {
+   "responses": 1348,
+   "prompts": 337,
+   "samples_per_prompt": [
+    4
+   ],
+   "outcomes": {
+    "closed_ended": 721,
+    "closed_limit": 0,
+    "unclosed_limit": 16,
+    "unclosed_loop_stopped": 611,
+    "unclosed_ended": 0
+   },
+   "loop_rate_responses": 0.4547477744807122,
+   "loop_rate_prompts": 0.7566765578635015,
+   "loops_exact_cycle": 548,
+   "loop_onset_tokens": {
+    "n": 548,
+    "p10_p50_p90": [
+     1525.8000000000002,
+     3474.0,
+     6705.200000000001
+    ],
+    "max": 12000
+   },
+   "loop_period_tokens": {
+    "n": 548,
+    "p10_p50_p90": [
+     25.700000000000003,
+     92.0,
+     244.50000000000006
+    ],
+    "max": 1368
+   },
+   "verified_responses": 1348,
+   "verdicts_closed_ended": {
+    "pass": 413,
+    "pass_trivial": 0,
+    "fail": 302,
+    "timeout": 6,
+    "no_code": 0
+   },
+   "pass@1": 0.306379821958457,
+   "pass@4": 0.5222551928783383,
+   "prompts_solved": 0.5222551928783383,
+   "prompts_mixed": 0.32344213649851633,
+   "success_tokens": {
+    "n": 413,
+    "p10_p50_p90": [
+     1169.0,
+     2020.0,
+     3832.0
+    ],
+    "max": 8403
+   }
+  },
+  "kodcode/instruct": {
+   "responses": 620,
+   "prompts": 155,
+   "samples_per_prompt": [
+    4
+   ],
+   "outcomes": {
+    "closed_ended": 377,
+    "closed_limit": 0,
+    "unclosed_limit": 6,
+    "unclosed_loop_stopped": 237,
+    "unclosed_ended": 0
+   },
+   "loop_rate_responses": 0.38387096774193546,
+   "loop_rate_prompts": 0.632258064516129,
+   "loops_exact_cycle": 221,
+   "loop_onset_tokens": {
+    "n": 221,
+    "p10_p50_p90": [
+     1377.0,
+     3285.0,
+     6781.0
+    ],
+    "max": 12909
+   },
+   "loop_period_tokens": {
+    "n": 221,
+    "p10_p50_p90": [
+     22.0,
+     82.0,
+     229.0
+    ],
+    "max": 695
+   },
+   "verified_responses": 620,
+   "verdicts_closed_ended": {
+    "pass": 235,
+    "pass_trivial": 7,
+    "fail": 135,
+    "timeout": 0,
+    "no_code": 0
+   },
+   "pass@1": 0.3790322580645161,
+   "pass@4": 0.6193548387096774,
+   "prompts_solved": 0.6193548387096774,
+   "prompts_mixed": 0.3032258064516129,
+   "success_tokens": {
+    "n": 235,
+    "p10_p50_p90": [
+     944.0,
+     1661.0,
+     3644.6
+    ],
+    "max": 7538
+   }
+  },
+  "kodcode/online_judge": {
+   "responses": 80,
+   "prompts": 20,
+   "samples_per_prompt": [
+    4
+   ],
+   "outcomes": {
+    "closed_ended": 38,
+    "closed_limit": 0,
+    "unclosed_limit": 2,
+    "unclosed_loop_stopped": 40,
+    "unclosed_ended": 0
+   },
+   "loop_rate_responses": 0.5,
+   "loop_rate_prompts": 0.8,
+   "loops_exact_cycle": 33,
+   "loop_onset_tokens": {
+    "n": 33,
+    "p10_p50_p90": [
+     1336.6000000000001,
+     4728.0,
+     8143.400000000001
+    ],
+    "max": 11054
+   },
+   "loop_period_tokens": {
+    "n": 33,
+    "p10_p50_p90": [
+     15.200000000000003,
+     70.0,
+     256.8
+    ],
+    "max": 621
+   },
+   "verified_responses": 80,
+   "verdicts_closed_ended": {
+    "pass": 18,
+    "pass_trivial": 0,
+    "fail": 20,
+    "timeout": 0,
+    "no_code": 0
+   },
+   "pass@1": 0.225,
+   "pass@4": 0.5,
+   "prompts_solved": 0.5,
+   "prompts_mixed": 0.3,
+   "success_tokens": {
+    "n": 18,
+    "p10_p50_p90": [
+     1164.7,
+     2177.5,
+     4363.6
+    ],
+    "max": 5129
+   }
+  }
+ },
+ "ftpo": {
+  "loops_exact_cycle": 802,
+  "max_length": 32768,
+  "strength": 0.3,
+  "rows_before_rebalance": 802,
+  "rows": 561,
+  "rows_unsolved_prompts": 391,
+  "rows_by_temperature": {
+   "0.6": 561
+  },
+  "rows_before_rebalance_by_source": {
+   "kodcode/complete": 548,
+   "kodcode/instruct": 221,
+   "kodcode/online_judge": 33
+  },
+  "rows_by_source": {
+   "kodcode/instruct": 157,
+   "kodcode/complete": 380,
+   "kodcode/online_judge": 24
+  },
+  "rejected_top20_before": [
+   [
+    "Wait",
+    119
+   ],
+   [
+    " the",
+    117
+   ],
+   [
+    " perhaps",
+    87
+   ],
+   [
+    "So",
+    58
+   ],
+   [
+    " So",
+    42
+   ],
+   [
+    " is",
+    23
+   ],
+   [
+    "But",
+    21
+   ],
+   [
+    " in",
+    21
+   ],
+   [
+    " Let",
+    15
+   ],
+   [
+    " which",
+    13
+   ],
+   [
+    " Because",
+    12
+   ],
+   [
+    " but",
+    11
+   ],
+   [
+    "Altern",
+    10
+   ],
+   [
+    " I",
+    8
+   ],
+   [
+    "Another",
+    8
+   ],
+   [
+    "1",
+    7
+   ],
+   [
+    "2",
+    7
+   ],
+   [
+    "H",
+    6
+   ],
+   [
+    "5",
+    6
+   ],
+   [
+    " that",
+    5
+   ]
+  ],
+  "rejected_top20": [
+   [
+    "Wait",
+    48
+   ],
+   [
+    " the",
+    47
+   ],
+   [
+    " perhaps",
+    40
+   ],
+   [
+    "So",
+    31
+   ],
+   [
+    " So",
+    26
+   ],
+   [
+    " is",
+    19
+   ],
+   [
+    " in",
+    18
+   ],
+   [
+    "But",
+    18
+   ],
+   [
+    " Let",
+    15
+   ],
+   [
+    " which",
+    13
+   ],
+   [
+    " Because",
+    12
+   ],
+   [
+    " but",
+    11
+   ],
+   [
+    "Altern",
+    10
+   ],
+   [
+    "Another",
+    8
+   ],
+   [
+    " I",
+    8
+   ],
+   [
+    "1",
+    7
+   ],
+   [
+    "2",
+    7
+   ],
+   [
+    "H",
+    6
+   ],
+   [
+    "5",
+    6
+   ],
+   [
+    " each",
+    5
+   ]
+  ],
+  "position_tokens": {
+   "n": 561,
+   "p10_p50_p90": [
+    1552.0,
+    3510.0,
+    7054.0
+   ],
+   "max": 13105
+  },
+  "rows_target_moved": 340,
+  "onset_tokens": {
+   "n": 561,
+   "p10_p50_p90": [
+    1457.0,
+    3413.0,
+    6916.0
+   ],
+   "max": 12909
+  },
+  "period_tokens": {
+   "n": 561,
+   "p10_p50_p90": [
+    24.0,
+    85.0,
+    248.0
+   ],
+   "max": 1368
+  },
+  "prefix_tokens": {
+   "n": 561,
+   "p10_p50_p90": [
+    1849.0,
+    3842.0,
+    7422.0
+   ],
+   "max": 13718
+  }
+ }
+}

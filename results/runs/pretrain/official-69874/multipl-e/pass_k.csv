@@ -1,0 +1,5 @@
+Dataset,Pass@k,Estimate,NumProblems,MinCompletions,MaxCompletions
+humaneval-cpp,1,0.21739130434782608,161,1,1
+mbpp-cpp,1,0.3677581863979849,397,1,1
+humaneval-cpp,1,0.21987577639751552,161,20,20
+mbpp-cpp,1,0.35100755667506295,397,20,20

@@ -1,0 +1,280 @@
+{
+ "cascade_stage1": {
+  "read": 1301591,
+  "normalized": 16179,
+  "dropped": {
+   "malformed": 0,
+   "placeholder": 0,
+   "no_reasoning": 0,
+   "no_answer": 0,
+   "short_reasoning": 0,
+   "over_length": 0,
+   "contaminated": 72849,
+   "duplicate": 22547,
+   "capped": 976384
+  },
+  "train": {
+   "rows": 227585,
+   "prompts": 149076,
+   "problems": 121438,
+   "tokens": 1549294893,
+   "loss_tokens": 1481941970,
+   "reasoning_p10_p50_p90_max": [
+    1399,
+    4901,
+    12798,
+    18739
+   ]
+  },
+  "val": {
+   "rows": 2226,
+   "prompts": 1445,
+   "problems": 1184,
+   "tokens": 14908587,
+   "loss_tokens": 14264818,
+   "reasoning_p10_p50_p90_max": [
+    1347,
+    4774,
+    12477,
+    17687
+   ]
+  }
+ },
+ "cascade_stage2": {
+  "read": 1392831,
+  "normalized": 773,
+  "dropped": {
+   "malformed": 0,
+   "placeholder": 0,
+   "no_reasoning": 0,
+   "no_answer": 0,
+   "short_reasoning": 0,
+   "over_length": 7250,
+   "contaminated": 70148,
+   "duplicate": 0,
+   "capped": 1166637
+  },
+  "train": {
+   "rows": 147317,
+   "prompts": 74005,
+   "problems": 51203,
+   "tokens": 1723388462,
+   "loss_tokens": 1673704981,
+   "reasoning_p10_p50_p90_max": [
+    696,
+    9022,
+    22649,
+    31796
+   ]
+  },
+  "val": {
+   "rows": 1479,
+   "prompts": 742,
+   "problems": 521,
+   "tokens": 16559393,
+   "loss_tokens": 16066407,
+   "reasoning_p10_p50_p90_max": [
+    530,
+    8379,
+    22245,
+    31256
+   ]
+  }
+ },
+ "cp_python": {
+  "read": 333561,
+  "normalized": 21,
+  "dropped": {
+   "malformed": 0,
+   "placeholder": 0,
+   "no_reasoning": 0,
+   "no_answer": 0,
+   "short_reasoning": 0,
+   "over_length": 176235,
+   "contaminated": 4071,
+   "duplicate": 0,
+   "capped": 104763
+  },
+  "train": {
+   "rows": 48007,
+   "prompts": 24540,
+   "problems": 24511,
+   "tokens": 551816729,
+   "loss_tokens": 526230523,
+   "reasoning_p10_p50_p90_max": [
+    991,
+    6890,
+    27053,
+    32273
+   ]
+  },
+  "val": {
+   "rows": 485,
+   "prompts": 250,
+   "problems": 249,
+   "tokens": 5836303,
+   "loss_tokens": 5572952,
+   "reasoning_p10_p50_p90_max": [
+    899,
+    7703,
+    27832,
+    31683
+   ]
+  }
+ },
+ "cp_cpp": {
+  "read": 332186,
+  "normalized": 21,
+  "dropped": {
+   "malformed": 0,
+   "placeholder": 0,
+   "no_reasoning": 0,
+   "no_answer": 0,
+   "short_reasoning": 0,
+   "over_length": 175514,
+   "contaminated": 403,
+   "duplicate": 0,
+   "capped": 107773
+  },
+  "train": {
+   "rows": 48017,
+   "prompts": 24500,
+   "problems": 24471,
+   "tokens": 557574368,
+   "loss_tokens": 532001770,
+   "reasoning_p10_p50_p90_max": [
+    968,
+    7173,
+    27015,
+    32239
+   ]
+  },
+  "val": {
+   "rows": 479,
+   "prompts": 246,
+   "problems": 245,
+   "tokens": 5741565,
+   "loss_tokens": 5481242,
+   "reasoning_p10_p50_p90_max": [
+    912,
+    8034,
+    26966,
+    31736
+   ]
+  }
+ },
+ "cp_exercism": {
+  "read": 79244,
+  "normalized": 0,
+  "dropped": {
+   "malformed": 0,
+   "placeholder": 0,
+   "no_reasoning": 170,
+   "no_answer": 141,
+   "short_reasoning": 25,
+   "over_length": 0,
+   "contaminated": 1736,
+   "duplicate": 0,
+   "capped": 0
+  },
+  "train": {
+   "rows": 76375,
+   "prompts": 75341,
+   "problems": 74978,
+   "tokens": 82729082,
+   "loss_tokens": 43927409,
+   "reasoning_p10_p50_p90_max": [
+    209,
+    298,
+    415,
+    2532
+   ]
+  },
+  "val": {
+   "rows": 797,
+   "prompts": 789,
+   "problems": 787,
+   "tokens": 874497,
+   "loss_tokens": 458759,
+   "reasoning_p10_p50_p90_max": [
+    210,
+    299,
+    412,
+    1061
+   ]
+  }
+ },
+ "kodcode": {
+  "read": 268211,
+  "normalized": 26,
+  "dropped": {
+   "malformed": 0,
+   "placeholder": 0,
+   "no_reasoning": 0,
+   "no_answer": 0,
+   "short_reasoning": 0,
+   "over_length": 0,
+   "contaminated": 15015,
+   "duplicate": 0,
+   "capped": 0
+  },
+  "train": {
+   "rows": 250649,
+   "prompts": 250646,
+   "problems": 250616,
+   "tokens": 1189512215,
+   "loss_tokens": 1116638551,
+   "reasoning_p10_p50_p90_max": [
+    849,
+    3039,
+    8264,
+    17752
+   ]
+  },
+  "val": {
+   "rows": 2547,
+   "prompts": 2547,
+   "problems": 2547,
+   "tokens": 12374484,
+   "loss_tokens": 11630470,
+   "reasoning_p10_p50_p90_max": [
+    891,
+    3113,
+    8516,
+    16477
+   ]
+  }
+ },
+ "all": {
+  "train": {
+   "rows": 797950,
+   "prompts": 539127,
+   "problems": 455953,
+   "tokens": 5654315749,
+   "loss_tokens": 5374445204,
+   "reasoning_p10_p50_p90_max": [
+    389,
+    4022,
+    14930,
+    32273
+   ],
+   "packed_rows": 172726,
+   "fill": 0.9988749297272012
+  },
+  "val": {
+   "rows": 8013,
+   "prompts": 5443,
+   "problems": 4606,
+   "tokens": 56294829,
+   "loss_tokens": 53474648,
+   "reasoning_p10_p50_p90_max": [
+    383,
+    3961,
+    14920,
+    31736
+   ],
+   "packed_rows": 1720,
+   "fill": 0.9986844794694767
+  }
+ }
+}

@@ -1,0 +1,152 @@
+{
+ "record": "termination-2000-chunked.json",
+ "window": 32,
+ "loop": 0.99,
+ "sets": {
+  "evalplus": {
+   "unclosed_with_text": 22,
+   "loops": 19,
+   "onset_median": 1332,
+   "responses": [
+    {
+     "id": "HumanEval/1",
+     "tokens": 6143,
+     "repetition": 1.0,
+     "onset": 1685
+    },
+    {
+     "id": "HumanEval/6",
+     "tokens": 32623,
+     "repetition": 0.0,
+     "onset": 19641
+    },
+    {
+     "id": "HumanEval/10",
+     "tokens": 8192,
+     "repetition": 1.0,
+     "onset": 2672
+    },
+    {
+     "id": "HumanEval/11",
+     "tokens": 6144,
+     "repetition": 1.0,
+     "onset": 1501
+    },
+    {
+     "id": "HumanEval/20",
+     "tokens": 6144,
+     "repetition": 1.0,
+     "onset": 941
+    },
+    {
+     "id": "HumanEval/30",
+     "tokens": 6144,
+     "repetition": 1.0,
+     "onset": 1030
+    },
+    {
+     "id": "HumanEval/32",
+     "tokens": 6144,
+     "repetition": 1.0,
+     "onset": 1483
+    },
+    {
+     "id": "HumanEval/33",
+     "tokens": 6144,
+     "repetition": 1.0,
+     "onset": 869
+    },
+    {
+     "id": "HumanEval/36",
+     "tokens": 32655,
+     "repetition": 0.15673828125,
+     "onset": 18550
+    },
+    {
+     "id": "HumanEval/37",
+     "tokens": 6144,
+     "repetition": 1.0,
+     "onset": 1747
+    },
+    {
+     "id": "HumanEval/38",
+     "tokens": 6144,
+     "repetition": 1.0,
+     "onset": 1127
+    },
+    {
+     "id": "HumanEval/39",
+     "tokens": 8192,
+     "repetition": 1.0,
+     "onset": 2632
+    },
+    {
+     "id": "HumanEval/40",
+     "tokens": 6144,
+     "repetition": 1.0,
+     "onset": 2006
+    },
+    {
+     "id": "HumanEval/41",
+     "tokens": 6144,
+     "repetition": 1.0,
+     "onset": 569
+    },
+    {
+     "id": "HumanEval/46",
+     "tokens": 32563,
+     "repetition": 0.0,
+     "onset": 32563
+    },
+    {
+     "id": "HumanEval/48",
+     "tokens": 6144,
+     "repetition": 1.0,
+     "onset": 1271
+    },
+    {
+     "id": "HumanEval/54",
+     "tokens": 6144,
+     "repetition": 1.0,
+     "onset": 1529
+    },
+    {
+     "id": "HumanEval/56",
+     "tokens": 6085,
+     "repetition": 1.0,
+     "onset": 1332
+    },
+    {
+     "id": "HumanEval/58",
+     "tokens": 6144,
+     "repetition": 1.0,
+     "onset": 1431
+    },
+    {
+     "id": "HumanEval/59",
+     "tokens": 6144,
+     "repetition": 1.0,
+     "onset": 1034
+    },
+    {
+     "id": "HumanEval/61",
+     "tokens": 6144,
+     "repetition": 1.0,
+     "onset": 1251
+    },
+    {
+     "id": "HumanEval/62",
+     "tokens": 6144,
+     "repetition": 1.0,
+     "onset": 1260
+    }
+   ]
+  },
+  "val": {
+   "unclosed_with_text": 0,
+   "loops": 0,
+   "onset_median": null,
+   "responses": []
+  }
+ }
+}

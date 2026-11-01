@@ -1,0 +1,398 @@
+
+=============
+== PyTorch ==
+=============
+
+NVIDIA Release 26.09 (build 442529826)
+PyTorch Version 2.14.0a0+b2c75dd
+Container image Copyright (c) 2026, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+Copyright (c) 2014-2024 Facebook Inc.
+Copyright (c) 2011-2014 Idiap Research Institute (Ronan Collobert)
+Copyright (c) 2012-2014 Deepmind Technologies    (Koray Kavukcuoglu)
+Copyright (c) 2011-2012 NEC Laboratories America (Koray Kavukcuoglu)
+Copyright (c) 2011-2013 NYU                      (Clement Farabet)
+Copyright (c) 2006-2010 NEC Laboratories America (Ronan Collobert, Leon Bottou, Iain Melvin, Jason Weston)
+Copyright (c) 2006      Idiap Research Institute (Samy Bengio)
+Copyright (c) 2001-2004 Idiap Research Institute (Ronan Collobert, Samy Bengio, Johnny Mariethoz)
+Copyright (c) 2015      Google Inc.
+Copyright (c) 2015      Yangqing Jia
+Copyright (c) 2013-2016 The Caffe contributors
+All rights reserved.
+
+Various files include modifications (c) NVIDIA CORPORATION & AFFILIATES.  All rights reserved.
+
+GOVERNING TERMS: The software and materials are governed by the NVIDIA Software License Agreement
+(found at https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-software-license-agreement/)
+and the Product-Specific Terms for NVIDIA AI Products
+(found at https://www.nvidia.com/en-us/agreements/enterprise-software/product-specific-terms-for-ai-products/).
+
+WARNING: The NVIDIA Driver was not detected.  GPU functionality will not be available.
+   Use the NVIDIA Container Toolkit to start this container with GPU support; see
+   https://docs.nvidia.com/datacenter/cloud-native/ .
+
+NOTE: Mellanox network driver detected, but NVIDIA peer memory driver not
+      detected.  Multi-node communication performance may be reduced.
+
+/opt/pytorch/ao/torchao/quantization/quant_api.py:1542: SyntaxWarning: invalid escape sequence '\.'
+  """Configuration class for applying different quantization configs to modules or parameters based on their fully qualified names (FQNs).
+W1101 00:19:05.972000 7 torch/utils/_pytree.py:630] <enum 'KernelPreference'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+W1101 00:19:06.044000 7 torch/utils/_pytree.py:630] <enum 'ScaleCalculationMode'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loaded 454 problems
+
+=============
+== PyTorch ==
+=============
+
+NVIDIA Release 26.09 (build 442529826)
+PyTorch Version 2.14.0a0+b2c75dd
+Container image Copyright (c) 2026, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+Copyright (c) 2014-2024 Facebook Inc.
+Copyright (c) 2011-2014 Idiap Research Institute (Ronan Collobert)
+Copyright (c) 2012-2014 Deepmind Technologies    (Koray Kavukcuoglu)
+Copyright (c) 2011-2012 NEC Laboratories America (Koray Kavukcuoglu)
+Copyright (c) 2011-2013 NYU                      (Clement Farabet)
+Copyright (c) 2006-2010 NEC Laboratories America (Ronan Collobert, Leon Bottou, Iain Melvin, Jason Weston)
+Copyright (c) 2006      Idiap Research Institute (Samy Bengio)
+Copyright (c) 2001-2004 Idiap Research Institute (Ronan Collobert, Samy Bengio, Johnny Mariethoz)
+Copyright (c) 2015      Google Inc.
+Copyright (c) 2015      Yangqing Jia
+Copyright (c) 2013-2016 The Caffe contributors
+All rights reserved.
+
+Various files include modifications (c) NVIDIA CORPORATION & AFFILIATES.  All rights reserved.
+
+GOVERNING TERMS: The software and materials are governed by the NVIDIA Software License Agreement
+(found at https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-software-license-agreement/)
+and the Product-Specific Terms for NVIDIA AI Products
+(found at https://www.nvidia.com/en-us/agreements/enterprise-software/product-specific-terms-for-ai-products/).
+
+WARNING: The NVIDIA Driver was not detected.  GPU functionality will not be available.
+   Use the NVIDIA Container Toolkit to start this container with GPU support; see
+   https://docs.nvidia.com/datacenter/cloud-native/ .
+
+NOTE: Mellanox network driver detected, but NVIDIA peer memory driver not
+      detected.  Multi-node communication performance may be reduced.
+
+/workspace/nanochat/artifacts/runs/base=generate=benchmarks,learning_rate_scale=2.7192599564485445,num_checkpoints=10,generate=none,learning_rate_scale=0.06449599703255417,sft_epochs=2.0/official-7676/tokenize-evalplus.json: 542 prompts, 0 with a carriage return (None before normalization); the first's 153 served ids equal
+/workspace/nanochat/artifacts/runs/base=generate=benchmarks,learning_rate_scale=2.7192599564485445,num_checkpoints=10,generate=none,learning_rate_scale=0.06449599703255417,sft_epochs=2.0/official-7676/tokenize-lcb.json: 454 prompts, 0 with a carriage return (177 before normalization); the first's 431 served ids equal
+Greedy decoding ON (--greedy): setting bs=1, n_samples=1, temperature=0
+Initializing a decoder model: nanochat ...
+Sanitized code outputs will be saved to /workspace/nanochat/artifacts/runs/base=generate=benchmarks,learning_rate_scale=2.7192599564485445,num_checkpoints=10,generate=none,learning_rate_scale=0.06449599703255417,sft_epochs=2.0/official-7676/evalplus/humaneval/nanochat_openai_temp_0.0.jsonl
+Raw outputs will be saved to /workspace/nanochat/artifacts/runs/base=generate=benchmarks,learning_rate_scale=2.7192599564485445,num_checkpoints=10,generate=none,learning_rate_scale=0.06449599703255417,sft_epochs=2.0/official-7676/evalplus/humaneval/nanochat_openai_temp_0.0.raw.jsonl
+Codegen: HumanEval/0 @ nanochat
+Codegen: HumanEval/1 @ nanochat
+Codegen: HumanEval/2 @ nanochat
+Codegen: HumanEval/3 @ nanochat
+Codegen: HumanEval/4 @ nanochat
+Codegen: HumanEval/5 @ nanochat
+Codegen: HumanEval/6 @ nanochat
+Codegen: HumanEval/7 @ nanochat
+Codegen: HumanEval/8 @ nanochat
+Codegen: HumanEval/9 @ nanochat
+Codegen: HumanEval/10 @ nanochat
+Codegen: HumanEval/11 @ nanochat
+Codegen: HumanEval/12 @ nanochat
+Codegen: HumanEval/13 @ nanochat
+Codegen: HumanEval/14 @ nanochat
+Codegen: HumanEval/15 @ nanochat
+Codegen: HumanEval/16 @ nanochat
+Codegen: HumanEval/17 @ nanochat
+Codegen: HumanEval/18 @ nanochat
+Codegen: HumanEval/19 @ nanochat
+Codegen: HumanEval/20 @ nanochat
+Codegen: HumanEval/21 @ nanochat
+Codegen: HumanEval/22 @ nanochat
+Codegen: HumanEval/23 @ nanochat
+Codegen: HumanEval/24 @ nanochat
+Codegen: HumanEval/25 @ nanochat
+Codegen: HumanEval/26 @ nanochat
+Codegen: HumanEval/27 @ nanochat
+Codegen: HumanEval/28 @ nanochat
+Codegen: HumanEval/29 @ nanochat
+Codegen: HumanEval/30 @ nanochat
+Codegen: HumanEval/31 @ nanochat
+Codegen: HumanEval/32 @ nanochat
+Codegen: HumanEval/33 @ nanochat
+Codegen: HumanEval/34 @ nanochat
+Codegen: HumanEval/35 @ nanochat
+Codegen: HumanEval/36 @ nanochat
+Codegen: HumanEval/37 @ nanochat
+Codegen: HumanEval/38 @ nanochat
+Codegen: HumanEval/39 @ nanochat
+Codegen: HumanEval/40 @ nanochat
+Codegen: HumanEval/41 @ nanochat
+Codegen: HumanEval/42 @ nanochat
+Codegen: HumanEval/43 @ nanochat
+Codegen: HumanEval/44 @ nanochat
+Codegen: HumanEval/45 @ nanochat
+Codegen: HumanEval/46 @ nanochat
+Codegen: HumanEval/47 @ nanochat
+Codegen: HumanEval/48 @ nanochat
+Codegen: HumanEval/49 @ nanochat
+Codegen: HumanEval/50 @ nanochat
+Codegen: HumanEval/51 @ nanochat
+Codegen: HumanEval/52 @ nanochat
+Codegen: HumanEval/53 @ nanochat
+Codegen: HumanEval/54 @ nanochat
+Codegen: HumanEval/55 @ nanochat
+Codegen: HumanEval/56 @ nanochat
+Codegen: HumanEval/57 @ nanochat
+Codegen: HumanEval/58 @ nanochat
+Codegen: HumanEval/59 @ nanochat
+Codegen: HumanEval/60 @ nanochat
+Codegen: HumanEval/61 @ nanochat
+Codegen: HumanEval/62 @ nanochat
+Codegen: HumanEval/63 @ nanochat
+Codegen: HumanEval/64 @ nanochat
+Codegen: HumanEval/65 @ nanochat
+Codegen: HumanEval/66 @ nanochat
+Codegen: HumanEval/67 @ nanochat
+Codegen: HumanEval/68 @ nanochat
+Codegen: HumanEval/69 @ nanochat
+Codegen: HumanEval/70 @ nanochat
+Codegen: HumanEval/71 @ nanochat
+Codegen: HumanEval/72 @ nanochat
+Codegen: HumanEval/73 @ nanochat
+Codegen: HumanEval/74 @ nanochat
+Codegen: HumanEval/75 @ nanochat
+Codegen: HumanEval/76 @ nanochat
+Codegen: HumanEval/77 @ nanochat
+Codegen: HumanEval/78 @ nanochat
+Codegen: HumanEval/79 @ nanochat
+Codegen: HumanEval/80 @ nanochat
+Codegen: HumanEval/81 @ nanochat
+Codegen: HumanEval/82 @ nanochat
+Codegen: HumanEval/83 @ nanochat
+Codegen: HumanEval/84 @ nanochat
+Codegen: HumanEval/85 @ nanochat
+Codegen: HumanEval/86 @ nanochat
+Codegen: HumanEval/87 @ nanochat
+Codegen: HumanEval/88 @ nanochat
+Codegen: HumanEval/89 @ nanochat
+Codegen: HumanEval/90 @ nanochat
+Codegen: HumanEval/91 @ nanochat
+Codegen: HumanEval/92 @ nanochat
+Codegen: HumanEval/93 @ nanochat
+Codegen: HumanEval/94 @ nanochat
+Codegen: HumanEval/95 @ nanochat
+Codegen: HumanEval/96 @ nanochat
+Codegen: HumanEval/97 @ nanochat
+Codegen: HumanEval/98 @ nanochat
+Codegen: HumanEval/99 @ nanochat
+Codegen: HumanEval/100 @ nanochat
+Codegen: HumanEval/101 @ nanochat
+Codegen: HumanEval/102 @ nanochat
+Codegen: HumanEval/103 @ nanochat
+Codegen: HumanEval/104 @ nanochat
+Codegen: HumanEval/105 @ nanochat
+Codegen: HumanEval/106 @ nanochat
+Codegen: HumanEval/107 @ nanochat
+Codegen: HumanEval/108 @ nanochat
+Codegen: HumanEval/109 @ nanochat
+Codegen: HumanEval/110 @ nanochat
+Codegen: HumanEval/111 @ nanochat
+Codegen: HumanEval/112 @ nanochat
+Codegen: HumanEval/113 @ nanochat
+Codegen: HumanEval/114 @ nanochat
+Codegen: HumanEval/115 @ nanochat
+Codegen: HumanEval/116 @ nanochat
+Codegen: HumanEval/117 @ nanochat
+Codegen: HumanEval/118 @ nanochat
+Codegen: HumanEval/119 @ nanochat
+Codegen: HumanEval/120 @ nanochat
+Codegen: HumanEval/121 @ nanochat
+Codegen: HumanEval/122 @ nanochat
+Codegen: HumanEval/123 @ nanochat
+Codegen: HumanEval/124 @ nanochat
+Codegen: HumanEval/125 @ nanochat
+Codegen: HumanEval/126 @ nanochat
+Codegen: HumanEval/127 @ nanochat
+Codegen: HumanEval/128 @ nanochat
+Codegen: HumanEval/129 @ nanochat
+Codegen: HumanEval/130 @ nanochat
+Codegen: HumanEval/131 @ nanochat
+Codegen: HumanEval/132 @ nanochat
+Codegen: HumanEval/133 @ nanochat
+Codegen: HumanEval/134 @ nanochat
+Codegen: HumanEval/135 @ nanochat
+Codegen: HumanEval/136 @ nanochat
+Codegen: HumanEval/137 @ nanochat
+Codegen: HumanEval/138 @ nanochat
+Codegen: HumanEval/139 @ nanochat
+Codegen: HumanEval/140 @ nanochat
+Codegen: HumanEval/141 @ nanochat
+Codegen: HumanEval/142 @ nanochat
+Codegen: HumanEval/143 @ nanochat
+Codegen: HumanEval/144 @ nanochat
+Codegen: HumanEval/145 @ nanochat
+Codegen: HumanEval/146 @ nanochat
+Codegen: HumanEval/147 @ nanochat
+Codegen: HumanEval/148 @ nanochat
+Codegen: HumanEval/149 @ nanochat
+Codegen: HumanEval/150 @ nanochat
+Codegen: HumanEval/151 @ nanochat
+Codegen: HumanEval/152 @ nanochat
+Codegen: HumanEval/153 @ nanochat
+Codegen: HumanEval/154 @ nanochat
+Codegen: HumanEval/155 @ nanochat
+Codegen: HumanEval/156 @ nanochat
+Codegen: HumanEval/157 @ nanochat
+Codegen: HumanEval/158 @ nanochat
+Codegen: HumanEval/159 @ nanochat
+Codegen: HumanEval/160 @ nanochat
+Codegen: HumanEval/161 @ nanochat
+Codegen: HumanEval/162 @ nanochat
+Codegen: HumanEval/163 @ nanochat
+OpenAIChatDecoder •100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 164/164 • 0:32:20
+/workspace/nanochat/artifacts/runs/base=generate=benchmarks,learning_rate_scale=2.7192599564485445,num_checkpoints=10,generate=none,learning_rate_scale=0.06449599703255417,sft_epochs=2.0/official-7676/evalplus/humaneval/nanochat_openai_temp_0.0.jsonl
+Setting batch size to 20
+Initializing a decoder model: nanochat ...
+Sanitized code outputs will be saved to /workspace/nanochat/artifacts/runs/base=generate=benchmarks,learning_rate_scale=2.7192599564485445,num_checkpoints=10,generate=none,learning_rate_scale=0.06449599703255417,sft_epochs=2.0/official-7676/evalplus/humaneval/nanochat_openai_temp_0.6.jsonl
+Raw outputs will be saved to /workspace/nanochat/artifacts/runs/base=generate=benchmarks,learning_rate_scale=2.7192599564485445,num_checkpoints=10,generate=none,learning_rate_scale=0.06449599703255417,sft_epochs=2.0/official-7676/evalplus/humaneval/nanochat_openai_temp_0.6.raw.jsonl
+Codegen: HumanEval/0 @ nanochat
+Codegen: HumanEval/1 @ nanochat
+Codegen: HumanEval/2 @ nanochat
+Codegen: HumanEval/3 @ nanochat
+Codegen: HumanEval/4 @ nanochat
+Codegen: HumanEval/5 @ nanochat
+Codegen: HumanEval/6 @ nanochat
+Codegen: HumanEval/7 @ nanochat
+Codegen: HumanEval/8 @ nanochat
+Codegen: HumanEval/9 @ nanochat
+Codegen: HumanEval/10 @ nanochat
+Codegen: HumanEval/11 @ nanochat
+Codegen: HumanEval/12 @ nanochat
+Codegen: HumanEval/13 @ nanochat
+Codegen: HumanEval/14 @ nanochat
+Codegen: HumanEval/15 @ nanochat
+Codegen: HumanEval/16 @ nanochat
+Codegen: HumanEval/17 @ nanochat
+Codegen: HumanEval/18 @ nanochat
+Codegen: HumanEval/19 @ nanochat
+Codegen: HumanEval/20 @ nanochat
+Codegen: HumanEval/21 @ nanochat
+Codegen: HumanEval/22 @ nanochat
+Codegen: HumanEval/23 @ nanochat
+Codegen: HumanEval/24 @ nanochat
+Codegen: HumanEval/25 @ nanochat
+Codegen: HumanEval/26 @ nanochat
+Codegen: HumanEval/27 @ nanochat
+Codegen: HumanEval/28 @ nanochat
+Codegen: HumanEval/29 @ nanochat
+Codegen: HumanEval/30 @ nanochat
+Codegen: HumanEval/31 @ nanochat
+Codegen: HumanEval/32 @ nanochat
+Codegen: HumanEval/33 @ nanochat
+Codegen: HumanEval/34 @ nanochat
+Codegen: HumanEval/35 @ nanochat
+Codegen: HumanEval/36 @ nanochat
+Codegen: HumanEval/37 @ nanochat
+Codegen: HumanEval/38 @ nanochat
+Codegen: HumanEval/39 @ nanochat
+Codegen: HumanEval/40 @ nanochat
+Codegen: HumanEval/41 @ nanochat
+Codegen: HumanEval/42 @ nanochat
+Codegen: HumanEval/43 @ nanochat
+Codegen: HumanEval/44 @ nanochat
+Codegen: HumanEval/45 @ nanochat
+Codegen: HumanEval/46 @ nanochat
+Codegen: HumanEval/47 @ nanochat
+Codegen: HumanEval/48 @ nanochat
+Codegen: HumanEval/49 @ nanochat
+Codegen: HumanEval/50 @ nanochat
+Codegen: HumanEval/51 @ nanochat
+Codegen: HumanEval/52 @ nanochat
+Codegen: HumanEval/53 @ nanochat
+Codegen: HumanEval/54 @ nanochat
+Codegen: HumanEval/55 @ nanochat
+Codegen: HumanEval/56 @ nanochat
+Codegen: HumanEval/57 @ nanochat
+Codegen: HumanEval/58 @ nanochat
+Codegen: HumanEval/59 @ nanochat
+Codegen: HumanEval/60 @ nanochat
+Codegen: HumanEval/61 @ nanochat
+Codegen: HumanEval/62 @ nanochat
+Codegen: HumanEval/63 @ nanochat
+Codegen: HumanEval/64 @ nanochat
+Codegen: HumanEval/65 @ nanochat
+Codegen: HumanEval/66 @ nanochat
+Codegen: HumanEval/67 @ nanochat
+Codegen: HumanEval/68 @ nanochat
+Codegen: HumanEval/69 @ nanochat
+Codegen: HumanEval/70 @ nanochat
+Codegen: HumanEval/71 @ nanochat
+Codegen: HumanEval/72 @ nanochat
+Codegen: HumanEval/73 @ nanochat
+Codegen: HumanEval/74 @ nanochat
+Codegen: HumanEval/75 @ nanochat
+Codegen: HumanEval/76 @ nanochat
+Codegen: HumanEval/77 @ nanochat
+Codegen: HumanEval/78 @ nanochat
+Codegen: HumanEval/79 @ nanochat
+Codegen: HumanEval/80 @ nanochat
+Codegen: HumanEval/81 @ nanochat
+Codegen: HumanEval/82 @ nanochat
+Codegen: HumanEval/83 @ nanochat
+Codegen: HumanEval/84 @ nanochat
+Codegen: HumanEval/85 @ nanochat
+Codegen: HumanEval/86 @ nanochat
+Codegen: HumanEval/87 @ nanochat
+Codegen: HumanEval/88 @ nanochat
+Codegen: HumanEval/89 @ nanochat
+Codegen: HumanEval/90 @ nanochat
+Codegen: HumanEval/91 @ nanochat
+Codegen: HumanEval/92 @ nanochat
+Codegen: HumanEval/93 @ nanochat
+Codegen: HumanEval/94 @ nanochat
+Codegen: HumanEval/95 @ nanochat
+Codegen: HumanEval/96 @ nanochat
+Codegen: HumanEval/97 @ nanochat
+Codegen: HumanEval/98 @ nanochat
+Codegen: HumanEval/99 @ nanochat
+Codegen: HumanEval/100 @ nanochat
+Codegen: HumanEval/101 @ nanochat
+Codegen: HumanEval/102 @ nanochat
+Codegen: HumanEval/103 @ nanochat
+Codegen: HumanEval/104 @ nanochat
+Codegen: HumanEval/105 @ nanochat
+Codegen: HumanEval/106 @ nanochat
+Codegen: HumanEval/107 @ nanochat
+Codegen: HumanEval/108 @ nanochat
+Codegen: HumanEval/109 @ nanochat
+Codegen: HumanEval/110 @ nanochat
+Codegen: HumanEval/111 @ nanochat
+Codegen: HumanEval/112 @ nanochat
+Codegen: HumanEval/113 @ nanochat
+Codegen: HumanEval/114 @ nanochat
+Codegen: HumanEval/115 @ nanochat
+Codegen: HumanEval/116 @ nanochat
+Codegen: HumanEval/117 @ nanochat
+Codegen: HumanEval/118 @ nanochat
+Codegen: HumanEval/119 @ nanochat
+Codegen: HumanEval/120 @ nanochat
+Codegen: HumanEval/121 @ nanochat
+Codegen: HumanEval/122 @ nanochat
+Codegen: HumanEval/123 @ nanochat
+Codegen: HumanEval/124 @ nanochat
+Codegen: HumanEval/125 @ nanochat
+Codegen: HumanEval/126 @ nanochat
+Codegen: HumanEval/127 @ nanochat
+Codegen: HumanEval/128 @ nanochat
+Codegen: HumanEval/129 @ nanochat
+Codegen: HumanEval/130 @ nanochat
+Codegen: HumanEval/131 @ nanochat
+Codegen: HumanEval/132 @ nanochat
+Codegen: HumanEval/133 @ nanochat
+Codegen: HumanEval/134 @ nanochat
+Codegen: HumanEval/135 @ nanochat
+Codegen: HumanEval/136 @ nanochat
+Codegen: HumanEval/137 @ nanochat
+Codegen: HumanEval/138 @ nanochat
+Codegen: HumanEval/139 @ nanochat
+Codegen: HumanEval/140 @ nanochat
+Codegen: HumanEval/141 @ nanochat
+Codegen: HumanEval/142 @ nanochat
+Codegen: HumanEval/143 @ nanochat
+Codegen: HumanEval/144 @ nanochat
+scripts/official_reasoning.sh: line 1: 372348 Hangup                  sleep $HEALTH_INTERVAL

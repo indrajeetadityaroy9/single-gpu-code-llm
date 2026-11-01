@@ -1,0 +1,32 @@
+[package]
+name = "sgc_corpus"
+edition = "2024"
+
+[lib]
+crate-type = ["cdylib"]
+path = "lib.rs"
+
+[dependencies]
+bytemuck = "1.25.2"
+# tiktoken's regex engine, so training splits text into pre-tokens exactly as encoding does
+fancy-regex = "0.19.2"
+fixedbitset = "0.5.7"
+libc = "0.2.190"
+memmap2 = "0.9.11"
+path-clean = "1.0.1"
+petgraph = { version = "0.8.3", default-features = false, features = ["std"] }
+pyo3 = { version = "0.30.1", features = ["extension-module"] }
+rand = { version = "0.10.3", default-features = false, features = ["alloc"] }
+rand_chacha = "0.10.0"
+rayon = "1.12.0"
+rustc-hash = "2.1.3"
+tiktoken-rs = "0.12.1"
+# import resolution, statement boundaries for chunking, and AST-FIM middles (arXiv 2506.00204)
+tree-sitter = "0.27.1"
+tree-sitter-cpp = "0.23.4"
+tree-sitter-python = "0.25.0"
+
+# Faster than cargo's release defaults for pack and train, with identical outputs
+[profile.release]
+codegen-units = 1
+lto = true

@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+dev-ignore/
+.worktrees/
+
+# Local setup
+CLAUDE.md
+.omp/
+/artifacts/

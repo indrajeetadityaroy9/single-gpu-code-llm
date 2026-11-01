@@ -1,0 +1,31 @@
+[project]
+name = "sgc"
+version = "0.1.0"
+requires-python = "==3.12.*"
+dependencies = [
+    "duckdb==2.0.0",
+    "evalplus",
+    "fissix==24.4.24",
+    "flash-attn-4==4.0.0b36",
+    "huggingface-hub==2.3.0",
+    "nvidia-cutlass-dsl[cu13]==4.8.1",
+    "obstore==0.12.0",
+    "pyarrow==26.0.0",
+    "quack-kernels==0.6.5",
+    "safetensors==0.8.0",
+    "scipy==1.18.1",
+    "statsmodels==0.15.0",
+    "tiktoken==0.14.0",
+    "tokenizers==0.23.3",
+    "transformers==5.21.0",
+]
+
+[tool.uv]
+# the NGC platform stack, and evalplus's model-provider clients (its unused code generation)
+exclude-dependencies = [
+    "torch", "triton", "numpy",
+    "openai", "anthropic", "google-generativeai", "boto3", "ollama",
+]
+
+[tool.uv.sources]
+evalplus = { git = "https://github.com/evalplus/evalplus", rev = "26d6d00bb1fd0fa37f39c99d5290da67891d1c5e" }

@@ -1,0 +1,653 @@
+{
+ "run": {
+  "depth": 16,
+  "ratio": 20,
+  "num_iterations": 4552,
+  "total_batch_size": 294912,
+  "repo_start": 4304
+ },
+ "set": {
+  "file": {
+   "stack_edu_python": 1,
+   "ultradata_stack_v3_l2_python": 1,
+   "ultradata_code_l2_python": 1,
+   "stack_edu_cpp": 1,
+   "ultradata_stack_v3_l2_cpp": 1,
+   "ultradata_code_l2_cpp": 1,
+   "ultradata_code_l3_python": 2,
+   "ultradata_code_l3_cpp": 2,
+   "nemotron_rewriting_python": 2,
+   "nemotron_transpilation_cpp": 2,
+   "kaggle_notebooks": 2,
+   "codexglue_python": 2,
+   "climbmix": 2,
+   "ultradata_math_l3_qa": 2,
+   "ultradata_math_l3_conversation": 2,
+   "ultradata_math_l3_multi_style": 2,
+   "ultradata_math_l3_textbook_exercise": 2
+  },
+  "repository": {
+   "codeforces_cots": 2,
+   "climbmix": 1,
+   "ultradata_math_l3_qa": 1,
+   "ultradata_math_l3_conversation": 1,
+   "ultradata_math_l3_multi_style": 1,
+   "ultradata_math_l3_textbook_exercise": 1
+  },
+  "partitions": [
+   99
+  ],
+  "draws": {
+   "8192": {
+    "stack_edu_python": 118320107.16035484,
+    "ultradata_stack_v3_l2_python": 135616398.63799417,
+    "ultradata_code_l2_python": 242220285.0704559,
+    "stack_edu_cpp": 86163513.26550321,
+    "ultradata_stack_v3_l2_cpp": 95748614.563534,
+    "ultradata_code_l2_cpp": 74417839.62561676,
+    "ultradata_code_l3_python": 31284675.15590756,
+    "ultradata_code_l3_cpp": 34720608.95751862,
+    "nemotron_rewriting_python": 194533151.08728498,
+    "nemotron_transpilation_cpp": 70749190.52728887,
+    "kaggle_notebooks": 19798559.031069595,
+    "codexglue_python": 719142.6774715249,
+    "climbmix": 126930124.80000001,
+    "ultradata_math_l3_qa": 9501169.639167685,
+    "ultradata_math_l3_conversation": 7586723.5046834145,
+    "ultradata_math_l3_multi_style": 11023142.585609488,
+    "ultradata_math_l3_textbook_exercise": 9968001.71053941
+   },
+   "32768": {
+    "repositories_python": 29803486.007505648,
+    "repositories_cpp": 29803486.007505648,
+    "codeforces_cots": 4023241.1049887,
+    "climbmix": 7313817.600000001,
+    "ultradata_math_l3_qa": 547465.1650821528,
+    "ultradata_math_l3_conversation": 437153.213095141,
+    "ultradata_math_l3_multi_style": 635162.4909923683,
+    "ultradata_math_l3_textbook_exercise": 574364.4108303377
+   }
+  }
+ },
+ "arms": {
+  "sa-bpe": {
+   "data_key": "054a5beebb0fbcb3e21b5f62f2545e49b79d8620ba75322c1804f5a004283e3a",
+   "tokens_per_param": 31.415705656232838,
+   "max_steps": 7151,
+   "batch_size": 294912,
+   "repo_level_start": 6761,
+   "learning_rate": 0.001577014654713806,
+   "stages": {
+    "8192": {
+     "stack_edu_python": {
+      "rows": 22766,
+      "weight": 0.09005028760845603,
+      "read": 0.9627514714925767
+     },
+     "ultradata_stack_v3_l2_python": {
+      "rows": 27501,
+      "weight": 0.10877945003602518,
+      "read": 0.9627649903639868
+     },
+     "ultradata_code_l2_python": {
+      "rows": 47824,
+      "weight": 0.1891665182547132,
+      "read": 0.9627383740381399
+     },
+     "stack_edu_cpp": {
+      "rows": 17937,
+      "weight": 0.0709493107631062,
+      "read": 0.9627585437921614
+     },
+     "ultradata_stack_v3_l2_cpp": {
+      "rows": 19052,
+      "weight": 0.07535966263358974,
+      "read": 0.9627335712786059
+     },
+     "ultradata_code_l2_cpp": {
+      "rows": 14860,
+      "weight": 0.05877832178958344,
+      "read": 0.9627187079407806
+     },
+     "ultradata_code_l3_python": {
+      "rows": 6457,
+      "weight": 0.024748182739327725,
+      "read": 0.932786123586805
+     },
+     "ultradata_code_l3_cpp": {
+      "rows": 7172,
+      "weight": 0.027488611833120402,
+      "read": 0.9330730619074178
+     },
+     "nemotron_rewriting_python": {
+      "rows": 39942,
+      "weight": 0.15308841799198203,
+      "read": 0.9328776726253067
+     },
+     "nemotron_transpilation_cpp": {
+      "rows": 14526,
+      "weight": 0.05567478743556985,
+      "read": 0.932878975629905
+     },
+     "kaggle_notebooks": {
+      "rows": 3740,
+      "weight": 0.015365905766734047,
+      "read": 1.0
+     },
+     "codexglue_python": {
+      "rows": 134,
+      "weight": 0.0005505431477920755,
+      "read": 1.0
+     },
+     "climbmix": {
+      "rows": 26754,
+      "weight": 0.1,
+      "read": 0.9097331240188383
+     },
+     "ultradata_math_l3_qa": {
+      "rows": 2174,
+      "weight": 0.007432478632478632,
+      "read": 0.8316467341306347
+     },
+     "ultradata_math_l3_conversation": {
+      "rows": 1753,
+      "weight": 0.005993162393162393,
+      "read": 0.8328579577866515
+     },
+     "ultradata_math_l3_multi_style": {
+      "rows": 2544,
+      "weight": 0.008697435897435896,
+      "read": 0.8321540880503144
+     },
+     "ultradata_math_l3_textbook_exercise": {
+      "rows": 2304,
+      "weight": 0.007876923076923078,
+      "read": 0.83203125
+     }
+    },
+    "32768": {
+     "repositories_python": {
+      "rows": 21519,
+      "weight": 0.5398177004466991,
+      "read": 0.08801524234397509
+     },
+     "repositories_cpp": {
+      "rows": 10993,
+      "weight": 0.27576634513734666,
+      "read": 0.08814700263804238
+     },
+     "codeforces_cots": {
+      "rows": 192,
+      "weight": 0.05441595441595441,
+      "read": 1.0
+     },
+     "climbmix": {
+      "rows": 3357,
+      "weight": 0.10000000000000002,
+      "read": 0.10396187071790289
+     },
+     "ultradata_math_l3_qa": {
+      "rows": 277,
+      "weight": 0.007513562386980109,
+      "read": 0.09747292418772563
+     },
+     "ultradata_math_l3_conversation": {
+      "rows": 220,
+      "weight": 0.0059674502712477396,
+      "read": 0.09545454545454546
+     },
+     "ultradata_math_l3_multi_style": {
+      "rows": 322,
+      "weight": 0.008734177215189874,
+      "read": 0.09627329192546584
+     },
+     "ultradata_math_l3_textbook_exercise": {
+      "rows": 287,
+      "weight": 0.007784810126582278,
+      "read": 0.09407665505226481
+     }
+    }
+   }
+  },
+  "sa-bpe-fused": {
+   "data_key": "523ebb0f5530865b1dfdef077200a8f3960a8df871e5753b9e35111d0b967330",
+   "tokens_per_param": 29.478308621636465,
+   "max_steps": 6710,
+   "batch_size": 294912,
+   "repo_level_start": 6344,
+   "learning_rate": 0.0015896026005707223,
+   "stages": {
+    "8192": {
+     "stack_edu_python": {
+      "rows": 21465,
+      "weight": 0.09102795394108058,
+      "read": 0.968600046587468
+     },
+     "ultradata_stack_v3_l2_python": {
+      "rows": 25864,
+      "weight": 0.10968306548949958,
+      "read": 0.968489019486545
+     },
+     "ultradata_code_l2_python": {
+      "rows": 44871,
+      "weight": 0.19028722670814008,
+      "read": 0.9685097278866083
+     },
+     "stack_edu_cpp": {
+      "rows": 16440,
+      "weight": 0.06971812545033147,
+      "read": 0.9684914841849148
+     },
+     "ultradata_stack_v3_l2_cpp": {
+      "rows": 17540,
+      "weight": 0.0743829635279084,
+      "read": 0.9685860889395667
+     },
+     "ultradata_code_l2_cpp": {
+      "rows": 13669,
+      "weight": 0.057966974256726325,
+      "read": 0.9684687980100959
+     },
+     "ultradata_code_l3_python": {
+      "rows": 6154,
+      "weight": 0.025415266305895755,
+      "read": 0.9432889177770556
+     },
+     "ultradata_code_l3_cpp": {
+      "rows": 6784,
+      "weight": 0.028017089148390774,
+      "read": 0.9432488207547169
+     },
+     "nemotron_rewriting_python": {
+      "rows": 36946,
+      "weight": 0.15258245514098548,
+      "read": 0.9431602879878742
+     },
+     "nemotron_transpilation_cpp": {
+      "rows": 13314,
+      "weight": 0.054985189404728,
+      "read": 0.943217665615142
+     },
+     "kaggle_notebooks": {
+      "rows": 3517,
+      "weight": 0.015390745411237215,
+      "read": 1.0
+     },
+     "codexglue_python": {
+      "rows": 125,
+      "weight": 0.0005429452150763626,
+      "read": 0.992
+     },
+     "climbmix": {
+      "rows": 26433,
+      "weight": 0.1,
+      "read": 0.8639200998751561
+     },
+     "ultradata_math_l3_qa": {
+      "rows": 2084,
+      "weight": 0.007396190701526085,
+      "read": 0.8109404990403071
+     },
+     "ultradata_math_l3_conversation": {
+      "rows": 1710,
+      "weight": 0.006068851295398083,
+      "read": 0.8105263157894737
+     },
+     "ultradata_math_l3_multi_style": {
+      "rows": 2445,
+      "weight": 0.00867739264166568,
+      "read": 0.8106339468302658
+     },
+     "ultradata_math_l3_textbook_exercise": {
+      "rows": 2214,
+      "weight": 0.00785756536141015,
+      "read": 0.8102981029810298
+     }
+    },
+    "32768": {
+     "repositories_python": {
+      "rows": 20232,
+      "weight": 0.5433210234766552,
+      "read": 0.08847370502174773
+     },
+     "repositories_cpp": {
+      "rows": 10096,
+      "weight": 0.2711234209677892,
+      "read": 0.08845087163232963
+     },
+     "codeforces_cots": {
+      "rows": 184,
+      "weight": 0.05555555555555555,
+      "read": 1.0
+     },
+     "climbmix": {
+      "rows": 3317,
+      "weight": 0.10000000000000002,
+      "read": 0.09888453421766656
+     },
+     "ultradata_math_l3_qa": {
+      "rows": 265,
+      "weight": 0.0074718045112781946,
+      "read": 0.09433962264150944
+     },
+     "ultradata_math_l3_conversation": {
+      "rows": 214,
+      "weight": 0.006033834586466166,
+      "read": 0.09345794392523364
+     },
+     "ultradata_math_l3_multi_style": {
+      "rows": 309,
+      "weight": 0.008712406015037593,
+      "read": 0.09385113268608414
+     },
+     "ultradata_math_l3_textbook_exercise": {
+      "rows": 276,
+      "weight": 0.0077819548872180445,
+      "read": 0.09057971014492754
+     }
+    }
+   }
+  },
+  "hybrid": {
+   "data_key": "9fa2093b2699c5177603869b39b163f8a4262f317543cf92dae75d3efd4e3ca1",
+   "tokens_per_param": 31.485996705107084,
+   "max_steps": 7167,
+   "batch_size": 294912,
+   "repo_level_start": 6776,
+   "learning_rate": 0.0015765558172007301,
+   "stages": {
+    "8192": {
+     "stack_edu_python": {
+      "rows": 22836,
+      "weight": 0.09005057452270313,
+      "read": 0.9619022595901209
+     },
+     "ultradata_stack_v3_l2_python": {
+      "rows": 27591,
+      "weight": 0.10880125248099062,
+      "read": 0.9619441122105035
+     },
+     "ultradata_code_l2_python": {
+      "rows": 47919,
+      "weight": 0.18896187951276103,
+      "read": 0.9619357666061479
+     },
+     "stack_edu_cpp": {
+      "rows": 18031,
+      "weight": 0.07110272855223594,
+      "read": 0.9618434917641839
+     },
+     "ultradata_stack_v3_l2_cpp": {
+      "rows": 19129,
+      "weight": 0.0754325380997017,
+      "read": 0.9619426002404726
+     },
+     "ultradata_code_l2_cpp": {
+      "rows": 14917,
+      "weight": 0.058823104753685525,
+      "read": 0.9619226386002547
+     },
+     "ultradata_code_l3_python": {
+      "rows": 6476,
+      "weight": 0.024795153151038613,
+      "read": 0.9339098208770846
+     },
+     "ultradata_code_l3_cpp": {
+      "rows": 7188,
+      "weight": 0.027521241638305362,
+      "read": 0.9341958820255982
+     },
+     "nemotron_rewriting_python": {
+      "rows": 39972,
+      "weight": 0.1530438328834644,
+      "read": 0.9339787851496048
+     },
+     "nemotron_transpilation_cpp": {
+      "rows": 14532,
+      "weight": 0.055639772327191646,
+      "read": 0.9340077071290944
+     },
+     "kaggle_notebooks": {
+      "rows": 3729,
+      "weight": 0.015286796536796536,
+      "read": 0.9997318315902387
+     },
+     "codexglue_python": {
+      "rows": 133,
+      "weight": 0.0005411255411255411,
+      "read": 1.0
+     },
+     "climbmix": {
+      "rows": 26791,
+      "weight": 0.10000000000000002,
+      "read": 0.910455003545967
+     },
+     "ultradata_math_l3_qa": {
+      "rows": 2177,
+      "weight": 0.007424965893587995,
+      "read": 0.8318787322002756
+     },
+     "ultradata_math_l3_conversation": {
+      "rows": 1755,
+      "weight": 0.005985675306957708,
+      "read": 0.833048433048433
+     },
+     "ultradata_math_l3_multi_style": {
+      "rows": 2550,
+      "weight": 0.008697135061391541,
+      "read": 0.831764705882353
+     },
+     "ultradata_math_l3_textbook_exercise": {
+      "rows": 2314,
+      "weight": 0.007892223738062755,
+      "read": 0.8318928262748487
+     }
+    },
+    "32768": {
+     "repositories_python": {
+      "rows": 21581,
+      "weight": 0.5397223148130216,
+      "read": 0.08799406885686484
+     },
+     "repositories_cpp": {
+      "rows": 11036,
+      "weight": 0.2760009020099396,
+      "read": 0.08807538963392533
+     },
+     "codeforces_cots": {
+      "rows": 192,
+      "weight": 0.054276783177038934,
+      "read": 1.0
+     },
+     "climbmix": {
+      "rows": 3362,
+      "weight": 0.10000000000000002,
+      "read": 0.1041046995835812
+     },
+     "ultradata_math_l3_qa": {
+      "rows": 277,
+      "weight": 0.007500000000000001,
+      "read": 0.09747292418772563
+     },
+     "ultradata_math_l3_conversation": {
+      "rows": 220,
+      "weight": 0.0059566787003610105,
+      "read": 0.09545454545454546
+     },
+     "ultradata_math_l3_multi_style": {
+      "rows": 323,
+      "weight": 0.008745487364620937,
+      "read": 0.09597523219814241
+     },
+     "ultradata_math_l3_textbook_exercise": {
+      "rows": 288,
+      "weight": 0.007797833935018051,
+      "read": 0.09375
+     }
+    }
+   }
+  },
+  "bpe": {
+   "data_key": "ada659e9364eafaea2a5881b712d6f927de32202fdc83c6613d753a1681985bf",
+   "tokens_per_param": 31.415705656232838,
+   "max_steps": 7151,
+   "batch_size": 294912,
+   "repo_level_start": 6761,
+   "learning_rate": 0.0015769962781235717,
+   "stages": {
+    "8192": {
+     "stack_edu_python": {
+      "rows": 22764,
+      "weight": 0.09008387775054202,
+      "read": 0.9631874890177473
+     },
+     "ultradata_stack_v3_l2_python": {
+      "rows": 27490,
+      "weight": 0.10878605690398876,
+      "read": 0.9632229901782466
+     },
+     "ultradata_code_l2_python": {
+      "rows": 47815,
+      "weight": 0.18921809060982986,
+      "read": 0.9631705531736903
+     },
+     "stack_edu_cpp": {
+      "rows": 17929,
+      "weight": 0.07095035337328537,
+      "read": 0.9631881309610129
+     },
+     "ultradata_stack_v3_l2_cpp": {
+      "rows": 19029,
+      "weight": 0.07530337856769742,
+      "read": 0.9631614903568237
+     },
+     "ultradata_code_l2_cpp": {
+      "rows": 14846,
+      "weight": 0.05875001094203773,
+      "read": 0.9632224168126094
+     },
+     "ultradata_code_l3_python": {
+      "rows": 6456,
+      "weight": 0.024740353556116756,
+      "read": 0.9327757125154895
+     },
+     "ultradata_code_l3_cpp": {
+      "rows": 7173,
+      "weight": 0.027488004346038646,
+      "read": 0.9328035689390771
+     },
+     "nemotron_rewriting_python": {
+      "rows": 39950,
+      "weight": 0.15309435014976217,
+      "read": 0.9327158948685857
+     },
+     "nemotron_transpilation_cpp": {
+      "rows": 14529,
+      "weight": 0.05567729194808246,
+      "read": 0.932686351435061
+     },
+     "kaggle_notebooks": {
+      "rows": 3739,
+      "weight": 0.0153576887048267,
+      "read": 1.0
+     },
+     "codexglue_python": {
+      "rows": 134,
+      "weight": 0.0005505431477920755,
+      "read": 1.0
+     },
+     "climbmix": {
+      "rows": 26833,
+      "weight": 0.1,
+      "read": 0.9070547460216897
+     },
+     "ultradata_math_l3_qa": {
+      "rows": 2174,
+      "weight": 0.007429938482570062,
+      "read": 0.8316467341306347
+     },
+     "ultradata_math_l3_conversation": {
+      "rows": 1754,
+      "weight": 0.005994531784005468,
+      "read": 0.8323831242873432
+     },
+     "ultradata_math_l3_multi_style": {
+      "rows": 2546,
+      "weight": 0.008701298701298701,
+      "read": 0.8318931657501963
+     },
+     "ultradata_math_l3_textbook_exercise": {
+      "rows": 2304,
+      "weight": 0.00787423103212577,
+      "read": 0.8315972222222222
+     }
+    },
+    "32768": {
+     "repositories_python": {
+      "rows": 21515,
+      "weight": 0.5398834145818947,
+      "read": 0.08807808505693702
+     },
+     "repositories_cpp": {
+      "rows": 10987,
+      "weight": 0.2757006310021509,
+      "read": 0.08810412305451898
+     },
+     "codeforces_cots": {
+      "rows": 192,
+      "weight": 0.05441595441595441,
+      "read": 1.0
+     },
+     "climbmix": {
+      "rows": 3367,
+      "weight": 0.10000000000000002,
+      "read": 0.10365310365310365
+     },
+     "ultradata_math_l3_qa": {
+      "rows": 277,
+      "weight": 0.007513562386980109,
+      "read": 0.09747292418772563
+     },
+     "ultradata_math_l3_conversation": {
+      "rows": 220,
+      "weight": 0.0059674502712477396,
+      "read": 0.09545454545454546
+     },
+     "ultradata_math_l3_multi_style": {
+      "rows": 322,
+      "weight": 0.008734177215189874,
+      "read": 0.09627329192546584
+     },
+     "ultradata_math_l3_textbook_exercise": {
+      "rows": 287,
+      "weight": 0.007784810126582278,
+      "read": 0.09407665505226481
+     }
+    }
+   }
+  }
+ },
+ "seconds": {
+  "compile": 2767.2765371299993,
+  "pack": 234.72798823700214,
+  "all": 3002.290974851998,
+  "repacked": 170.16625638399273
+ },
+ "provenance": {
+  "commit": "ba01bb59b70cf05cf66d382bfc5d7d11adf5ca05",
+  "utc": "2026-10-24T21:35:03+00:00",
+  "host": "8d87e0ba87c3",
+  "machine": "aarch64",
+  "cpus": 64,
+  "memory_gb": 525.6783447265625,
+  "python": "3.12.3",
+  "packages": {
+   "tiktoken": "0.14.0",
+   "tokenizers": "0.23.2",
+   "numpy": "2.1.0",
+   "scipy": "1.18.1",
+   "pyarrow": "26.0.0",
+   "regex": "2026.9.29"
+  }
+ }
+}

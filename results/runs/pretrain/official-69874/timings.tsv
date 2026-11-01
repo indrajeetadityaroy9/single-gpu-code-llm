@@ -1,0 +1,68 @@
+export	10
+evalplus.codegen humaneval	228
+evalplus.evaluate humaneval	33
+evalplus.codegen mbpp	674
+evalplus.evaluate mbpp	66
+evalplus.codegen humaneval	11
+evalplus.evaluate humaneval	1
+evalplus.codegen mbpp	11
+evalplus.evaluate mbpp	1
+evalplus.codegen humaneval	10
+evalplus.evaluate humaneval	1
+evalplus.codegen mbpp	11
+evalplus.evaluate mbpp	1
+multipl-e humaneval-cpp greedy	100
+multipl-e judge humaneval-cpp greedy	17
+multipl-e humaneval-cpp sampled	634
+multipl-e judge humaneval-cpp sampled	93
+multipl-e mbpp-cpp greedy	165
+multipl-e judge mbpp-cpp greedy	26
+multipl-e mbpp-cpp sampled	962
+multipl-e judge mbpp-cpp sampled	195
+evalplus.codegen humaneval	12
+evalplus.evaluate humaneval	1
+evalplus.codegen mbpp	11
+evalplus.evaluate mbpp	1
+multipl-e humaneval-cpp greedy	63
+multipl-e judge humaneval-cpp greedy	1
+multipl-e humaneval-cpp sampled	63
+multipl-e judge humaneval-cpp sampled	2
+multipl-e mbpp-cpp greedy	63
+multipl-e judge mbpp-cpp greedy	1
+multipl-e mbpp-cpp sampled	63
+multipl-e judge mbpp-cpp sampled	4
+lm-eval mbpp	318
+evalplus.codegen humaneval	11
+evalplus.evaluate humaneval	1
+evalplus.codegen mbpp	11
+evalplus.evaluate mbpp	1
+multipl-e humaneval-cpp greedy	65
+multipl-e judge humaneval-cpp greedy	1
+multipl-e humaneval-cpp sampled	63
+multipl-e judge humaneval-cpp sampled	2
+multipl-e mbpp-cpp greedy	64
+multipl-e judge mbpp-cpp greedy	2
+multipl-e mbpp-cpp sampled	65
+multipl-e judge mbpp-cpp sampled	5
+bigcode santacoder_fim	273
+infilling greedy	128
+infilling judge multi-line-psm greedy	42
+infilling judge multi-line-spm greedy	37
+infilling judge random-span-psm greedy	12
+infilling judge random-span-spm greedy	13
+infilling judge single-line-psm greedy	8
+infilling judge single-line-spm greedy	6
+evalplus.codegen humaneval	11
+evalplus.evaluate humaneval	1
+evalplus.codegen mbpp	11
+evalplus.evaluate mbpp	1
+multipl-e humaneval-cpp greedy	63
+multipl-e judge humaneval-cpp greedy	1
+multipl-e humaneval-cpp sampled	63
+multipl-e judge humaneval-cpp sampled	1
+multipl-e mbpp-cpp greedy	63
+multipl-e judge mbpp-cpp greedy	2
+multipl-e mbpp-cpp sampled	59
+multipl-e judge mbpp-cpp sampled	4
+lm-eval mbpp_lf	137
+summary	3

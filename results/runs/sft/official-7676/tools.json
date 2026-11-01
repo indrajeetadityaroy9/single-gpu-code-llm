@@ -1,0 +1,13 @@
+{
+ "evalplus": "26d6d00bb1fd0fa37f39c99d5290da67891d1c5e",
+ "multipl_e": "3025a531af7450e7df8b96fe0440e9804480bbad",
+ "lm_evaluation_harness": "d6de81643928d653435c431bae19945d41d32520",
+ "lcb_runner": "28fef95ea8c9f7a547c8329f2cd3d32b92c1fa24",
+ "human_eval_infilling": "88062ff9859c875d04db115b698ed4b0f0395170",
+ "vllm": "0.32.0",
+ "torch": "2.13.0+cu130",
+ "transformers": "5.19.0",
+ "tokenizers": "0.23.3",
+ "datasets": "5.1.0",
+ "image": "vllm/vllm-openai:v0.32.0"
+}

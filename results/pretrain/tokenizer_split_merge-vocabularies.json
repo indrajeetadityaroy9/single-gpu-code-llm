@@ -1,0 +1,177 @@
+{
+ "sample": {
+  "documents": 3988600,
+  "bytes": 13444424046,
+  "units": 3429396,
+  "seconds": 31.367786136000177,
+  "sources": {
+   "stack_edu_python": {
+    "target_bytes": 1184709403.1604986,
+    "fraction": 0.017757980692896382,
+    "documents": 435558,
+    "bytes": 1186614352,
+    "units": 384949
+   },
+   "ultradata_stack_v3_l2_python": {
+    "target_bytes": 1461705591.1846569,
+    "fraction": 0.017757980692896386,
+    "documents": 311593,
+    "bytes": 1473285022,
+    "units": 291342
+   },
+   "ultradata_code_l2_python": {
+    "target_bytes": 2630971811.682913,
+    "fraction": 0.017757980692896386,
+    "documents": 747214,
+    "bytes": 2662330545,
+    "units": 643565
+   },
+   "stack_edu_cpp": {
+    "target_bytes": 770484685.627753,
+    "fraction": 0.017757980692896382,
+    "documents": 285543,
+    "bytes": 780631927,
+    "units": 232119
+   },
+   "ultradata_stack_v3_l2_cpp": {
+    "target_bytes": 841583021.7554595,
+    "fraction": 0.01775798069289638,
+    "documents": 219730,
+    "bytes": 845083436,
+    "units": 145740
+   },
+   "ultradata_code_l2_cpp": {
+    "target_bytes": 644690501.8807293,
+    "fraction": 0.017757980692896382,
+    "documents": 233492,
+    "bytes": 644617138,
+    "units": 139446
+   },
+   "ultradata_code_l3_python": {
+    "target_bytes": 351960679.5953474,
+    "fraction": 0.03450642415707754,
+    "documents": 135008,
+    "bytes": 351615195,
+    "units": 135008
+   },
+   "ultradata_code_l3_cpp": {
+    "target_bytes": 362844739.6916251,
+    "fraction": 0.034506424157077546,
+    "documents": 147939,
+    "bytes": 362890784,
+    "units": 147939
+   },
+   "nemotron_rewriting_python": {
+    "target_bytes": 2227093762.5632052,
+    "fraction": 0.034506424157077546,
+    "documents": 624869,
+    "bytes": 2226864085,
+    "units": 624869
+   },
+   "nemotron_transpilation_cpp": {
+    "target_bytes": 756005069.2375351,
+    "fraction": 0.034506424157077546,
+    "documents": 176998,
+    "bytes": 755445823,
+    "units": 176998
+   },
+   "kaggle_notebooks": {
+    "target_bytes": 197216108.12496218,
+    "fraction": 0.03830410001653131,
+    "documents": 22001,
+    "bytes": 206881801,
+    "units": 22001
+   },
+   "codexglue_python": {
+    "target_bytes": 8458916.685343005,
+    "fraction": 0.03830410001653131,
+    "documents": 9554,
+    "bytes": 8374803,
+    "units": 3738
+   },
+   "climbmix": {
+    "target_bytes": 1588434785.4615335,
+    "fraction": 0.03407900352630724,
+    "documents": 532506,
+    "bytes": 1585705777,
+    "units": 532506
+   },
+   "ultradata_math_l3_qa": {
+    "target_bytes": 81269469.47521919,
+    "fraction": 0.030881501172536376,
+    "documents": 33157,
+    "bytes": 81689718,
+    "units": 33157
+   },
+   "ultradata_math_l3_conversation": {
+    "target_bytes": 77272179.45136452,
+    "fraction": 0.030881501172536376,
+    "documents": 20645,
+    "bytes": 77885789,
+    "units": 20645
+   },
+   "ultradata_math_l3_multi_style": {
+    "target_bytes": 106299683.54437616,
+    "fraction": 0.030881501172536373,
+    "documents": 20995,
+    "bytes": 105471939,
+    "units": 20995
+   },
+   "ultradata_math_l3_textbook_exercise": {
+    "target_bytes": 88999590.87747884,
+    "fraction": 0.030881501172536376,
+    "documents": 31798,
+    "bytes": 89035912,
+    "units": 31798
+   }
+  }
+ },
+ "arms": {
+  "sa-bpe": {
+   "pattern": "'(?i:[sdmt]|ll|ve|re)|[^\\r\\n\\p{L}\\p{N}]?+\\p{L}+|\\p{N}{1,2}| ?[^\\s\\p{L}\\p{N}]++|\\s*[\\r\\n]|\\s+(?!\\S)|\\s+",
+   "score": "sa-bpe",
+   "merges": 32508,
+   "seconds": 689.738388189,
+   "data_key": "054a5beebb0fbcb3e21b5f62f2545e49b79d8620ba75322c1804f5a004283e3a"
+  },
+  "sa-bpe-fused": {
+   "pattern": "'(?i:[sdmt]|ll|ve|re)|[^\\r\\n\\p{L}\\p{N}]?+\\p{L}+|\\p{N}{1,2}| ?[^\\s\\p{L}\\p{N}]++[\\r\\n]*|\\s*[\\r\\n]|\\s+(?!\\S)|\\s+",
+   "score": "sa-bpe",
+   "merges": 32508,
+   "seconds": 682.862911106,
+   "data_key": "523ebb0f5530865b1dfdef077200a8f3960a8df871e5753b9e35111d0b967330"
+  },
+  "hybrid": {
+   "pattern": "(?:[^\\s\\p{L}\\p{N}]| )?+\\p{L}+|\\p{N}{1,2}| ?[^\\s\\p{L}\\p{N}]++|\\n+|\\r+|\\t+| +|[^\\S\\r\\n\\t ]+",
+   "score": "sa-bpe",
+   "merges": 32508,
+   "seconds": 686.7650668479992,
+   "data_key": "9fa2093b2699c5177603869b39b163f8a4262f317543cf92dae75d3efd4e3ca1"
+  },
+  "bpe": {
+   "pattern": "'(?i:[sdmt]|ll|ve|re)|[^\\r\\n\\p{L}\\p{N}]?+\\p{L}+|\\p{N}{1,2}| ?[^\\s\\p{L}\\p{N}]++|\\s*[\\r\\n]|\\s+(?!\\S)|\\s+",
+   "score": "frequency",
+   "merges": 32508,
+   "seconds": 623.5814725190003,
+   "data_key": "ada659e9364eafaea2a5881b712d6f927de32202fdc83c6613d753a1681985bf"
+  }
+ },
+ "seconds": 736.8969898340001,
+ "provenance": {
+  "commit": "5ba5025e3f17d14462e98e07b7e786dbb205098c",
+  "utc": "2026-10-24T18:58:01+00:00",
+  "host": "gh200",
+  "machine": "aarch64",
+  "cpus": 64,
+  "memory_gb": 525.6783447265625,
+  "python": "3.12.3",
+  "packages": {
+   "tiktoken": "0.14.0",
+   "tokenizers": "0.23.2",
+   "numpy": "2.1.0",
+   "scipy": "1.18.1",
+   "pyarrow": "26.0.0",
+   "regex": "2026.9.29"
+  }
+ }
+}

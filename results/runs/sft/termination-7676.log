@@ -1,0 +1,113 @@
+
+=============
+== PyTorch ==
+=============
+
+NVIDIA Release 26.09 (build 442529826)
+PyTorch Version 2.14.0a0+b2c75dd
+Container image Copyright (c) 2026, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+Copyright (c) 2014-2024 Facebook Inc.
+Copyright (c) 2011-2014 Idiap Research Institute (Ronan Collobert)
+Copyright (c) 2012-2014 Deepmind Technologies    (Koray Kavukcuoglu)
+Copyright (c) 2011-2012 NEC Laboratories America (Koray Kavukcuoglu)
+Copyright (c) 2011-2013 NYU                      (Clement Farabet)
+Copyright (c) 2006-2010 NEC Laboratories America (Ronan Collobert, Leon Bottou, Iain Melvin, Jason Weston)
+Copyright (c) 2006      Idiap Research Institute (Samy Bengio)
+Copyright (c) 2001-2004 Idiap Research Institute (Ronan Collobert, Samy Bengio, Johnny Mariethoz)
+Copyright (c) 2015      Google Inc.
+Copyright (c) 2015      Yangqing Jia
+Copyright (c) 2013-2016 The Caffe contributors
+All rights reserved.
+
+Various files include modifications (c) NVIDIA CORPORATION & AFFILIATES.  All rights reserved.
+
+GOVERNING TERMS: The software and materials are governed by the NVIDIA Software License Agreement
+(found at https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-software-license-agreement/)
+and the Product-Specific Terms for NVIDIA AI Products
+(found at https://www.nvidia.com/en-us/agreements/enterprise-software/product-specific-terms-for-ai-products/).
+
+WARNING: The NVIDIA Driver was not detected.  GPU functionality will not be available.
+   Use the NVIDIA Container Toolkit to start this container with GPU support; see
+   https://docs.nvidia.com/datacenter/cloud-native/ .
+
+NOTE: Mellanox network driver detected, but NVIDIA peer memory driver not
+      detected.  Multi-node communication performance may be reduced.
+
+/opt/pytorch/ao/torchao/quantization/quant_api.py:1542: SyntaxWarning: invalid escape sequence '\.'
+  """Configuration class for applying different quantization configs to modules or parameters based on their fully qualified names (FQNs).
+W1031 12:32:47.429000 7 torch/utils/_pytree.py:630] <enum 'KernelPreference'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+W1031 12:32:47.503000 7 torch/utils/_pytree.py:630] <enum 'ScaleCalculationMode'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+(MainProcess pid=51) INFO 10-31 12:33:00 [api_utils.py:286] non-default args: {'trust_remote_code': True, 'dtype': 'bfloat16', 'max_model_len': 32768, 'enable_prefix_caching': True, 'gpu_memory_utilization': 0.85, 'disable_log_stats': True, 'logits_processors': [], 'model': '/workspace/nanochat/artifacts/cache/termination-7676-PJcYku'}
+(MainProcess pid=51) WARNING 10-31 12:33:00 [interface.py:1457] Unknown vLLM environment variable detected: VLLM_GPU_MEMORY_UTILIZATION
+(MainProcess pid=51) INFO 10-31 12:33:00 [model.py:733] Resolved architecture: TransformersForCausalLM
+(MainProcess pid=51) INFO 10-31 12:33:00 [model.py:2152] Using max model len 32768
+(MainProcess pid=51) INFO 10-31 12:33:00 [scheduler.py:307] Chunked prefill is enabled with max_num_batched_tokens=16384.
+(MainProcess pid=51) INFO 10-31 12:33:00 [kernel.py:467] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['native'], fused_add_rms_norm=['native'], gelu_and_mul_sparse=['triton', 'native'])
+[transformers] The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+(EngineCore pid=250) INFO 10-31 12:33:01 [core.py:133] Initializing a V1 LLM engine (v0.32.0) with config: model='/workspace/nanochat/artifacts/cache/termination-7676-PJcYku', speculative_config=None, tokenizer='/workspace/nanochat/artifacts/cache/termination-7676-PJcYku', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=True, dtype=torch.bfloat16, max_seq_len=32768, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, data_parallel_size=1, decode_context_parallel_size=1, dcp_comm_backend=ag_rs, disable_custom_all_reduce=False, quantization=None, quantization_config=None, enforce_eager=False, aux_output_config=AuxOutputConfig(enable_return_routed_experts=False, max_bytes=None), kv_cache_dtype=auto, device_config=cuda, structured_outputs_config=StructuredOutputsConfig(backend='auto', disable_any_whitespace=False, disable_additional_properties=False, reasoning_parser='', reasoning_parser_plugin='', enable_in_reasoning=False), observability_config=ObservabilityConfig(show_hidden_metrics_for_version=None, otlp_traces_endpoint=None, collect_detailed_traces=None, per_request_spec_decode_metrics='none', kv_cache_metrics=False, kv_cache_metrics_sample=0.01, custom_histogram_buckets=None, cudagraph_metrics=False, enable_layerwise_nvtx_tracing=False, enable_mfu_metrics=False, enable_mm_processor_stats=False, enable_logging_iteration_details=False, jit_monitor_mode='warn', jit_monitor_verbose=False), seed=0, served_model_name=/workspace/nanochat/artifacts/cache/termination-7676-PJcYku, enable_prefix_caching=True, enable_chunked_prefill=True, pooler_config=None, compilation_config={'mode': <CompilationMode.VLLM_COMPILE: 3>, 'debug_dump_path': None, 'cache_dir': '', 'compile_cache_save_format': 'binary', 'backend': 'inductor', 'custom_ops': ['none'], 'ir_enable_torch_wrap': True, 'splitting_ops': ['vllm::unified_attention_with_output', 'vllm::unified_mla_attention_with_output', 'vllm::mamba_mixer2', 'vllm::mamba_mixer', 'vllm::short_conv', 'vllm::qwen4_exp_ple_short_conv', 'vllm::qwen4_exp_qsa_with_output', 'vllm::qwen4_exp_qsa_prepare_with_output', 'vllm::linear_attention', 'vllm::qwen_gdn_attention_core', 'vllm::qwen_gdn_attention_core_fused_norm_packed', 'vllm::gdn_attention_core_xpu', 'vllm::olmo_hybrid_gdn_full_forward', 'vllm::sparse_attn_indexer', 'vllm::rocm_aiter_sparse_attn_indexer', 'vllm::deepseek_v4_attention', 'vllm::hpc_rope_norm_forward', 'vllm::unified_kv_cache_update', 'vllm::unified_mla_kv_cache_update'], 'compile_mm_encoder': False, 'cudagraph_mm_encoder': False, 'encoder_cudagraph_token_budgets': [], 'encoder_cudagraph_max_vision_items_per_batch': 0, 'encoder_cudagraph_max_frames_per_batch': None, 'cudagraph_decoder_replay': True, 'decoder_replay_cudagraph_capture_sizes': [], 'decoder_replay_trim_threshold': 768, 'compile_sizes': [], 'compile_ranges_endpoints': [16384], 'inductor_compile_config': {'enable_auto_functionalized_v2': False, 'combo_kernels': True, 'benchmark_combo_kernel': True}, 'inductor_passes': {}, 'cudagraph_mode': <CUDAGraphMode.FULL_AND_PIECEWISE: (2, 1)>, 'cudagraph_num_of_warmups': 1, 'cudagraph_capture_sizes': [1, 2, 4, 8, 16, 24, 32, 40, 48, 56, 64, 72, 80, 88, 96, 104, 112, 120, 128, 136, 144, 152, 160, 168, 176, 184, 192, 200, 208, 216, 224, 232, 240, 248, 256, 272, 288, 304, 320, 336, 352, 368, 384, 400, 416, 432, 448, 464, 480, 496, 512], 'cudagraph_copy_inputs': False, 'cudagraph_specialize_lora': True, 'use_inductor_graph_partition': False, 'pass_config': {'fuse_norm_quant': False, 'fuse_act_quant': False, 'fuse_attn_quant': False, 'fuse_allreduce_rms': False, 'enable_qk_norm_rope_fusion': False, 'fuse_rope_kvcache_cat_mla': False, 'fuse_act_padding': False, 'fuse_qk_norm_rope_kvcache': False}, 'max_cudagraph_capture_size': 512, 'dynamic_shapes_config': {'type': <DynamicShapesType.BACKED: 'backed'>, 'evaluate_guards': False, 'assume_32_bit_indexing': False}, 'local_cache_dir': None, 'fast_moe_cold_start': False, 'static_all_moe_layers': []}, kernel_config=KernelConfig(ir_op_priority=IrOpPriorityConfig(rms_norm=['native'], fused_add_rms_norm=['native'], gelu_and_mul_sparse=['triton', 'native']), enable_flashinfer_autotune=True, enable_rocm_segmented_attn_autotune=False, enable_cutedsl_warmup=True, enable_jit_warmup=True, moe_backend='auto', sparse_indexer_topk_backend='auto', linear_backend='auto', linear_backend_per_quant=None)
+(EngineCore pid=250) INFO 10-31 12:33:02 [parallel_state.py:1906] world_size=1 rank=0 local_rank=0 distributed_init_method=file:///tmp/vllm_dist_75123121a6424325b23eeeabb936b03b backend=nccl
+(EngineCore pid=250) INFO 10-31 12:33:02 [parallel_state.py:2350] rank 0 in world size 1 is assigned as DP rank 0, PP rank 0, PCP rank 0, TP rank 0, ETP rank 0, EP rank N/A, EPLB rank N/A
+(EngineCore pid=250) INFO 10-31 12:33:02 [gpu_worker.py:518] Using V2 Model Runner
+(EngineCore pid=250) INFO 10-31 12:33:03 [model_runner.py:392] Loading model from scratch...
+(EngineCore pid=250) WARNING 10-31 12:33:03 [utils.py:312] TransformersForCausalLM has no vLLM implementation, falling back to Transformers implementation. Some features may not be supported and performance may not be optimal.
+(EngineCore pid=250) INFO 10-31 12:33:03 [base.py:123] Using Transformers modeling backend.
+(EngineCore pid=250) INFO 10-31 12:33:04 [base.py:575] Found: self_attn (NanochatAttention) -> attention interface
+(EngineCore pid=250) INFO 10-31 12:33:04 [cuda.py:506] Using FLASH_ATTN attention backend out of potential backends: ['FLASH_ATTN', 'FLASHINFER', 'TRITON_ATTN', 'FLEX_ATTENTION'].
+(EngineCore pid=250) INFO 10-31 12:33:04 [flash_attn.py:1117] Using FlashAttention version 3
+(EngineCore pid=250) INFO 10-31 12:33:04 [base_loader.py:82] Initializing model took 1.099163 seconds
+(EngineCore pid=250) INFO 10-31 12:33:04 [weight_utils.py:1108] Filesystem type for checkpoints: EXT4. Checkpoint size: 0.97 GiB. Available RAM: 469.12 GiB.
+(EngineCore pid=250) INFO 10-31 12:33:04 [weight_utils.py:1131] Auto-prefetch is disabled because the filesystem (EXT4) is not a recognized network FS (NFS/Lustre). If you want to force prefetching, start vLLM with --safetensors-load-strategy=prefetch.
+Loading safetensors checkpoint shards:   0% Completed | 0/1 [00:00<?, ?it/s]
+Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:00<00:00,  5.78it/s]
+Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:00<00:00,  5.77it/s]
+
+(EngineCore pid=250) INFO 10-31 12:33:04 [default_loader.py:501] Loading weights took 0.18 seconds
+(EngineCore pid=250) INFO 10-31 12:33:06 [model_runner.py:424] Model loading took 0.99 GiB memory and 2.863788 seconds
+(EngineCore pid=250) INFO 10-31 12:33:06 [topk_topp_sampler.py:124] Using FlashInfer for top-p & top-k sampling.
+(EngineCore pid=250) INFO 10-31 12:33:06 [torch_utils.py:295] Reducing Torch threads from 64 to 1 for serving. Set OMP_NUM_THREADS in the external environment to override.
+(EngineCore pid=250) INFO 10-31 12:33:06 [utils.py:347] Using LBNHC KV cache layout.
+(EngineCore pid=250) INFO 10-31 12:33:06 [monitor.py:40] [backbone] Starting torch.compile
+(EngineCore pid=250) WARNING 10-31 12:33:11 [backends.py:1060] Failed to read file <frozen _collections_abc>
+(EngineCore pid=250) INFO 10-31 12:33:11 [backends.py:1104] [backbone] Using cache directory: /workspace/nanochat/artifacts/cache/vllm/torch_compile_cache/affdec0e15/rank_0_0/backbone for vLLM's torch.compile
+(EngineCore pid=250) INFO 10-31 12:33:11 [backends.py:1166] [backbone] Dynamo bytecode transform time: 4.86 s
+/usr/local/lib/python3.12/dist-packages/torch/_inductor/compile_fx.py:321: UserWarning: TensorFloat32 tensor cores for float32 matrix multiplication available but not enabled. Consider setting `torch.set_float32_matmul_precision('high')` for better performance.
+  warnings.warn(
+(EngineCore pid=250) INFO 10-31 12:33:51 [backends.py:398] [backbone] Compiling a graph for compile range (1, 16384) takes 38.90 s
+(EngineCore pid=250) INFO 10-31 12:33:55 [backends.py:927] collected artifacts: 25 entries, 25 artifacts, 46975670 bytes total
+(EngineCore pid=250) INFO 10-31 12:33:56 [decorators.py:743] [backbone] saved AOT compiled function to /workspace/nanochat/artifacts/cache/vllm/torch_compile_cache/torch_aot_compile/bda55611ea3c6517467382e37db738c3ceb5bc6a24e041cefe51614047395e55/rank_0_0/model
+(EngineCore pid=250) INFO 10-31 12:33:56 [monitor.py:62] [backbone] torch.compile took 49.05 s in total
+(EngineCore pid=250) INFO 10-31 12:33:56 [monitor.py:91] [backbone] Initial profiling/warmup run took 0.05 s
+Capturing CUDA graphs (PIECEWISE):   0%|          | 0/51 [00:00<?, ?it/s]Capturing CUDA graphs (PIECEWISE):   4%|▍         | 2/51 [00:00<00:02, 18.31it/s]Capturing CUDA graphs (PIECEWISE):  10%|▉         | 5/51 [00:00<00:02, 20.08it/s]Capturing CUDA graphs (PIECEWISE):  16%|█▌        | 8/51 [00:00<00:02, 20.91it/s]Capturing CUDA graphs (PIECEWISE):  22%|██▏       | 11/51 [00:00<00:01, 21.40it/s]Capturing CUDA graphs (PIECEWISE):  27%|██▋       | 14/51 [00:00<00:01, 21.46it/s]Capturing CUDA graphs (PIECEWISE):  33%|███▎      | 17/51 [00:00<00:01, 21.70it/s]Capturing CUDA graphs (PIECEWISE):  39%|███▉      | 20/51 [00:00<00:01, 22.34it/s]Capturing CUDA graphs (PIECEWISE):  45%|████▌     | 23/51 [00:01<00:01, 22.58it/s]Capturing CUDA graphs (PIECEWISE):  51%|█████     | 26/51 [00:01<00:01, 22.89it/s]Capturing CUDA graphs (PIECEWISE):  57%|█████▋    | 29/51 [00:01<00:00, 22.55it/s]Capturing CUDA graphs (PIECEWISE):  63%|██████▎   | 32/51 [00:01<00:00, 22.98it/s]Capturing CUDA graphs (PIECEWISE):  69%|██████▊   | 35/51 [00:01<00:00, 23.13it/s]Capturing CUDA graphs (PIECEWISE):  75%|███████▍  | 38/51 [00:01<00:00, 23.23it/s]Capturing CUDA graphs (PIECEWISE):  80%|████████  | 41/51 [00:01<00:00, 23.11it/s]Capturing CUDA graphs (PIECEWISE):  86%|████████▋ | 44/51 [00:01<00:00, 23.20it/s]Capturing CUDA graphs (PIECEWISE):  92%|█████████▏| 47/51 [00:02<00:00, 22.93it/s]Capturing CUDA graphs (PIECEWISE):  98%|█████████▊| 50/51 [00:02<00:00, 24.18it/s]Capturing CUDA graphs (PIECEWISE): 100%|██████████| 51/51 [00:02<00:00, 22.79it/s]
+Capturing CUDA graphs (FULL):   0%|          | 0/2 [00:00<?, ?it/s]Capturing CUDA graphs (FULL): 100%|██████████| 2/2 [00:00<00:00, 31.72it/s]
+(EngineCore pid=250) INFO 10-31 12:34:00 [model_runner.py:1127] Graph capturing finished in 3 secs, took 0.29 GiB
+(EngineCore pid=250) INFO 10-31 12:34:01 [gpu_worker.py:759] Available KV cache memory: 78.22 GiB
+(EngineCore pid=250) INFO 10-31 12:34:01 [gpu_worker.py:774] CUDA graph memory profiling is enabled (default since v0.21.0). The current --gpu-memory-utilization=0.8500 is equivalent to --gpu-memory-utilization=0.8457 without CUDA graph memory profiling. To maintain the same effective KV cache size as before, increase --gpu-memory-utilization to 0.8543. To disable, set VLLM_MEMORY_PROFILER_ESTIMATE_CUDAGRAPHS=0.
+(EngineCore pid=250) INFO 10-31 12:34:01 [kv_cache_utils.py:2327] GPU KV cache size: 1,138,726 tokens, Maximum concurrency for 32,768 tokens per request: 34.75x
+(EngineCore pid=250) INFO 10-31 12:34:01 [kv_cache_utils.py:853] kv cache group sizes (16, 16, 16, 16)
+(EngineCore pid=250) INFO 10-31 12:34:01 [kv_cache_utils.py:854] kv lcm block sizes 16
+(EngineCore pid=250) INFO 10-31 12:34:01 [kernel_warmup.py:176] JIT kernel warmup starting.
+(EngineCore pid=250) INFO 10-31 12:34:01 [kernel_warmup.py:189] JIT kernel warmup finished in 0.00s.
+(EngineCore pid=250) INFO 10-31 12:34:01 [kernel.py:467] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['native'], fused_add_rms_norm=['native'], gelu_and_mul_sparse=['triton', 'native'])
+(EngineCore pid=250) INFO 10-31 12:34:01 [kernel_warmup.py:460] Using FlashInfer autotune cache file: /workspace/nanochat/artifacts/cache/vllm/flashinfer_autotune_cache/0.7.0.post1/90a/80a188aea5385b3db342d32c0fcdbeea2de272e616ce516358dac420c3567a67/autotune_configs_dp0_rank0.json
+2026-10-31 12:34:01,515 - INFO - autotuner.py:1046 - flashinfer.jit: [Autotuner]: Autotuning process starts ...
+(EngineCore pid=250) INFO 10-31 12:34:01 [kernel_warmup.py:367] Running FlashInfer autotune with 16384 tokens and token buckets (1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 768, 1024, 1280, 1536, 1792, 2048, 2560, 3072, 3584, 4096, 8192, 16384).
+2026-10-31 12:34:01,539 - INFO - autotuner.py:1069 - flashinfer.jit: [Autotuner]: Autotuning process ends
+Capturing CUDA graphs (PIECEWISE):   0%|          | 0/51 [00:00<?, ?it/s]Capturing CUDA graphs (PIECEWISE):   4%|▍         | 2/51 [00:00<00:02, 17.11it/s]Capturing CUDA graphs (PIECEWISE):  10%|▉         | 5/51 [00:00<00:02, 20.35it/s]Capturing CUDA graphs (PIECEWISE):  16%|█▌        | 8/51 [00:00<00:02, 21.27it/s]Capturing CUDA graphs (PIECEWISE):  22%|██▏       | 11/51 [00:00<00:01, 21.86it/s]Capturing CUDA graphs (PIECEWISE):  27%|██▋       | 14/51 [00:00<00:01, 22.26it/s]Capturing CUDA graphs (PIECEWISE):  33%|███▎      | 17/51 [00:00<00:01, 22.70it/s]Capturing CUDA graphs (PIECEWISE):  39%|███▉      | 20/51 [00:00<00:01, 23.08it/s]Capturing CUDA graphs (PIECEWISE):  45%|████▌     | 23/51 [00:01<00:01, 23.31it/s]Capturing CUDA graphs (PIECEWISE):  51%|█████     | 26/51 [00:01<00:01, 23.45it/s]Capturing CUDA graphs (PIECEWISE):  57%|█████▋    | 29/51 [00:01<00:00, 23.67it/s]Capturing CUDA graphs (PIECEWISE):  63%|██████▎   | 32/51 [00:01<00:00, 23.89it/s]Capturing CUDA graphs (PIECEWISE):  69%|██████▊   | 35/51 [00:01<00:00, 23.87it/s]Capturing CUDA graphs (PIECEWISE):  75%|███████▍  | 38/51 [00:01<00:00, 23.88it/s]Capturing CUDA graphs (PIECEWISE):  80%|████████  | 41/51 [00:01<00:00, 23.88it/s]Capturing CUDA graphs (PIECEWISE):  86%|████████▋ | 44/51 [00:01<00:00, 23.93it/s]Capturing CUDA graphs (PIECEWISE):  92%|█████████▏| 47/51 [00:02<00:00, 23.91it/s]Capturing CUDA graphs (PIECEWISE):  98%|█████████▊| 50/51 [00:02<00:00, 25.15it/s]Capturing CUDA graphs (PIECEWISE): 100%|██████████| 51/51 [00:02<00:00, 23.53it/s]
+Capturing CUDA graphs (FULL):   0%|          | 0/51 [00:00<?, ?it/s]Capturing CUDA graphs (FULL):   8%|▊         | 4/51 [00:00<00:01, 31.84it/s]Capturing CUDA graphs (FULL):  16%|█▌        | 8/51 [00:00<00:01, 32.11it/s]Capturing CUDA graphs (FULL):  24%|██▎       | 12/51 [00:00<00:01, 32.45it/s]Capturing CUDA graphs (FULL):  31%|███▏      | 16/51 [00:00<00:01, 32.79it/s]Capturing CUDA graphs (FULL):  39%|███▉      | 20/51 [00:00<00:00, 33.01it/s]Capturing CUDA graphs (FULL):  47%|████▋     | 24/51 [00:00<00:00, 33.25it/s]Capturing CUDA graphs (FULL):  55%|█████▍    | 28/51 [00:00<00:00, 33.45it/s]Capturing CUDA graphs (FULL):  63%|██████▎   | 32/51 [00:00<00:00, 33.73it/s]Capturing CUDA graphs (FULL):  71%|███████   | 36/51 [00:01<00:00, 33.87it/s]Capturing CUDA graphs (FULL):  78%|███████▊  | 40/51 [00:01<00:00, 33.95it/s]Capturing CUDA graphs (FULL):  86%|████████▋ | 44/51 [00:01<00:00, 34.10it/s]Capturing CUDA graphs (FULL):  94%|█████████▍| 48/51 [00:01<00:00, 34.24it/s]Capturing CUDA graphs (FULL): 100%|██████████| 51/51 [00:01<00:00, 33.65it/s]
+(EngineCore pid=250) INFO 10-31 12:34:08 [model_runner.py:1127] Graph capturing finished in 5 secs, took 0.17 GiB
+(EngineCore pid=250) INFO 10-31 12:34:08 [gpu_worker.py:971] CUDA graph pool memory: 0.17 GiB (actual), 0.41 GiB (estimated), difference: 0.24 GiB (137.9%).
+(EngineCore pid=250) INFO 10-31 12:34:08 [gpu_worker.py:1034] Free memory on device (93.95/94.5 GiB) on startup. Desired GPU memory utilization is (0.85, 80.33 GiB). Actual usage is 1.42 GiB for consumed memory (weights + non-torch), 0.68 GiB for peak activation, and 0.17 GiB for CUDAGraph memory. Replace gpu_memory_utilization config with `--kv-cache-memory=83645484237` (77.9 GiB) to fit into requested memory, or `--kv-cache-memory=98276409344` (91.53 GiB) to fully utilize gpu memory. Current kv cache memory in use is 78.22 GiB.
+(EngineCore pid=250) INFO 10-31 12:34:08 [jit_monitor.py:84] Kernel JIT monitor activated; monitored JIT compilations during inference will use mode=warn.
+(EngineCore pid=250) INFO 10-31 12:34:09 [core.py:395] init engine (profile, create kv cache, warmup model) took 63.14 s (compilation: 49.05 s)
+(EngineCore pid=250) INFO 10-31 12:34:09 [kernel.py:467] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['native'], fused_add_rms_norm=['native'], gelu_and_mul_sparse=['triton', 'native'])
+(MainProcess pid=51) INFO 10-31 12:34:09 [hf.py:648] Detected the chat template content format to be 'string'. You can set `--chat-template-content-format` to override this.
+(EngineCore pid=250) WARNING 10-31 12:34:10 [jit_monitor.py:140] Triton kernel JIT compilation during inference: _topp_sb_stats_kernel. This causes a latency spike; consider extending warmup to cover this shape/config.
+(EngineCore pid=250) WARNING 10-31 12:34:11 [jit_monitor.py:140] Triton kernel JIT compilation during inference: _topp_sb_step_kernel. This causes a latency spike; consider extending warmup to cover this shape/config.
+(EngineCore pid=250) WARNING 10-31 12:34:12 [jit_monitor.py:140] Triton kernel JIT compilation during inference: _topp_sb_mask_kernel. This causes a latency spike; consider extending warmup to cover this shape/config.
+(EngineCore pid=250) WARNING 10-31 12:34:12 [jit_monitor.py:140] Triton kernel JIT compilation during inference: _topk_topp_kernel. This causes a latency spike; consider extending warmup to cover this shape/config.
+(MainProcess pid=51) INFO 10-31 12:36:18 [utils.py:628] [shutdown] Process manager: send sigterm to process EngineCore
+(EngineCore pid=250) INFO 10-31 12:36:18 [core.py:1454] [shutdown] EngineCore: trigger received signal=SIGTERM
+(EngineCore pid=250) INFO 10-31 12:36:18 [core.py:1635] [shutdown] EngineCore: start mode=abort timeout=0s
+(EngineCore pid=250) INFO 10-31 12:36:18 [core.py:1666] [shutdown] EngineCore: request processing complete; starting resource teardown
+(EngineCore pid=250) INFO 10-31 12:36:18 [core.py:1499] [shutdown] EngineCore: exiting busy loop
+Load from ground-truth from /workspace/nanochat/artifacts/cache/evalplus/fe585eb4df8c88d844eeb463ea4d0302.pkl
