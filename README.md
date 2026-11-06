@@ -2,8 +2,7 @@
 
 sgc (Single-GPU Coder) is a 522M-parameter decoder-only transformer for Python and C++ code, pretrained from scratch
 on one NVIDIA GH200 GPU, then post-trained with supervised fine-tuning (SFT) and reinforcement learning (RL). This
-repository sets up inference and evaluation of the published models, and reproduces their training, for the paper
-*One GPU, 0.1 Trillion Tokens: Pretraining a Sub-Billion-Parameter Code Model*.
+repository sets up inference and evaluation of the published models, and reproduces their training.
 
 ## Models and data
 
